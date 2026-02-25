@@ -393,7 +393,8 @@
       "freeNote": "在免費額度內",
       "appPrice": "Pro 升級 NT$150（一次性，去廣告 + 無限使用）",
       "whisperRate": "Whisper Turbo US$0.04／小時",
-      "llmRate": "Llama 3.1 8B US$0.05–0.08／百萬 tokens"
+      "llmRate": "Llama 3.1 8B US$0.05–0.08／百萬 tokens",
+      "groqLink": "申請 Groq API Key →"
     },
     "comparison": {
       "title": "真實費用比較",

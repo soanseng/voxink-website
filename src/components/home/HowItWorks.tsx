@@ -19,7 +19,24 @@ export default function HowItWorks() {
               <span className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center text-sm font-bold">
                 {i + 1}
               </span>
-              <p className="text-gray-700 pt-1">{step}</p>
+              <p className="text-gray-700 pt-1">
+                {i === 0 ? (
+                  <>
+                    {step.split("groq.com")[0]}
+                    <a
+                      href="https://console.groq.com/keys"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-900 font-medium underline hover:text-gray-600"
+                    >
+                      groq.com
+                    </a>
+                    {step.split("groq.com")[1]}
+                  </>
+                ) : (
+                  step
+                )}
+              </p>
             </li>
           ))}
         </ol>

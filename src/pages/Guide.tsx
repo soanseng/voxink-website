@@ -130,6 +130,16 @@ export default function Guide() {
               <p className="text-gray-600 text-sm leading-relaxed">
                 {t(`guide.faq.${key}.answer`)}
               </p>
+              {key === "q1" && (
+                <a
+                  href="https://console.groq.com/keys"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 mt-2 text-sm font-medium text-gray-900 hover:underline"
+                >
+                  Groq Console &rarr;
+                </a>
+              )}
             </div>
           ))}
         </div>

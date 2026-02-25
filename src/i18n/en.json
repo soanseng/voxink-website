@@ -393,7 +393,8 @@
       "freeNote": "Within free tier",
       "appPrice": "Pro upgrade: $4.70 (one-time, ad-free + unlimited)",
       "whisperRate": "Whisper Turbo $0.04/hr",
-      "llmRate": "Llama 3.1 8B $0.05–0.08/M tokens"
+      "llmRate": "Llama 3.1 8B $0.05–0.08/M tokens",
+      "groqLink": "Get Groq API Key →"
     },
     "comparison": {
       "title": "Real Cost Comparison",

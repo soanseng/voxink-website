@@ -188,6 +188,14 @@ export default function Pricing() {
             <span>{t("pricing.calculator.appPrice")}</span>
             <span>{t("pricing.calculator.whisperRate")}</span>
             {withLlm && <span>{t("pricing.calculator.llmRate")}</span>}
+            <a
+              href="https://console.groq.com/keys"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-500"
+            >
+              {t("pricing.calculator.groqLink")}
+            </a>
           </div>
         </div>
       </section>
@@ -366,7 +374,15 @@ export default function Pricing() {
 
       {/* Disclaimer */}
       <p className="text-xs text-gray-400 text-center leading-relaxed">
-        {t("pricing.disclaimer")}
+        {t("pricing.disclaimer")}{" "}
+        <a
+          href="https://groq.com/pricing/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-500"
+        >
+          Groq Pricing &rarr;
+        </a>
       </p>
     </div>
   );
