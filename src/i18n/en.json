@@ -258,7 +258,7 @@
   },
   "policy": {
     "title": "VoxInk Privacy Policy",
-    "lastUpdated": "Last updated: 2026-02-24",
+    "lastUpdated": "Last updated: 2026-02-25",
     "overview": {
       "title": "Overview",
       "content": "VoxInk (語墨) is an AI voice keyboard (desktop version is open source) that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
@@ -317,6 +317,27 @@
         "RECORD_AUDIO — Voice recording for speech-to-text",
         "INTERNET — Sending audio to your API provider"
       ]
+    },
+    "dataDeletion": {
+      "title": "Data Deletion",
+      "intro": "VoxInk does not store any personal data on any server. All data is stored locally on your device. You can completely delete all data by following these steps:",
+      "items": [
+        "Transcription history: Open VoxInk → Settings → Transcription History → Tap \"Delete All\" to clear all locally stored transcriptions",
+        "API keys: Open VoxInk → Settings → Speech → Clear the API Key field and save",
+        "Full removal (Android): Go to System Settings → Apps → VoxInk → Storage → Clear Data, or simply uninstall the app",
+        "Full removal (Desktop): Uninstall VoxInk — the application data folder will be removed along with it"
+      ],
+      "dataTypes": {
+        "title": "Data Types: Deleted vs Retained",
+        "deleted": [
+          "Transcription history (local database)",
+          "API keys (local encrypted storage)",
+          "App settings and preferences"
+        ],
+        "retained": "VoxInk does not retain any data on any server, so there is no need to request remote data deletion from us. After uninstalling or clearing app data, all data is permanently deleted with no additional retention period.",
+        "deletedLabel": "Data that can be deleted",
+        "retainedLabel": "Server-side data retention"
+      }
     },
     "thirdParty": {
       "title": "Third-Party Services",
