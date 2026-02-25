@@ -69,11 +69,27 @@ export default function Guide() {
       </section>
 
       {/* Cost */}
-      <section className="mb-12 p-6 bg-gray-50 rounded-xl">
-        <h2 className="text-xl font-semibold text-gray-900 mb-2">
+      <section className="mb-12 p-6 bg-gray-50 rounded-xl space-y-5">
+        <h2 className="text-xl font-semibold text-gray-900">
           {t("guide.cost.title")}
         </h2>
-        <p className="text-gray-600 leading-relaxed">{t("guide.cost.description")}</p>
+        <div>
+          <h3 className="text-base font-semibold text-gray-900 mb-1">
+            {t("guide.cost.free.title")}
+          </h3>
+          <p className="text-gray-600 leading-relaxed">{t("guide.cost.free.description")}</p>
+        </div>
+        <div>
+          <h3 className="text-base font-semibold text-gray-900 mb-1">
+            {t("guide.cost.paid.title")}
+          </h3>
+          <p className="text-gray-600 leading-relaxed mb-2">{t("guide.cost.paid.description")}</p>
+          <div className="bg-white rounded-lg p-3 text-sm text-gray-700 font-mono mb-2">
+            {t("guide.cost.paid.breakdown")}
+          </div>
+          <p className="text-gray-800 font-medium">{t("guide.cost.paid.total")}</p>
+        </div>
+        <p className="text-xs text-gray-400">{t("guide.cost.note")}</p>
       </section>
 
       {/* FAQ */}

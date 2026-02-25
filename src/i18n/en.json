@@ -144,7 +144,17 @@
     },
     "cost": {
       "title": "Cost",
-      "description": "Groq offers a generous free tier with daily API call and token limits. Normal daily usage (dozens of voice inputs) typically stays within the free tier. For heavy users, Groq offers affordable pay-as-you-go pricing."
+      "free": {
+        "title": "Free Tier",
+        "description": "Groq's free tier provides 28,800 seconds (8 hours) of audio and ~500K text tokens per day. Normal daily usage (100 voice inputs × ~15 seconds each = 25 minutes) is well within the free limit — it costs nothing."
+      },
+      "paid": {
+        "title": "Paid Tier Breakdown",
+        "description": "Even beyond the free tier, costs are minimal. Example: 100 voice inputs per day (~25 minutes total) + AI refinement:",
+        "breakdown": "Speech recognition (Whisper Turbo): 25 min ≈ $0.017/day | AI refinement (Llama 3.1 8B): ~40K tokens ≈ $0.005/day",
+        "total": "Total: under $0.03/day, about $0.60/month — less than a cup of coffee."
+      },
+      "note": "Based on Groq pricing: Whisper Turbo $0.04/hr, Llama 3.1 8B $0.05–0.08/M tokens."
     },
     "faq": {
       "title": "FAQ",
