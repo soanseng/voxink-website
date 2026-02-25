@@ -16,16 +16,42 @@ export default function Guide() {
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">{t("guide.title")}</h1>
       <p className="text-lg text-gray-500 mb-12">{t("guide.subtitle")}</p>
 
-      {/* Steps 1-2 */}
+      {/* Step 1 */}
       <section className="space-y-10 mb-12">
-        {(["step1", "step2"] as const).map((step) => (
-          <div key={step}>
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">
-              {t(`guide.${step}.title`)}
-            </h2>
-            <p className="text-gray-600 leading-relaxed">{t(`guide.${step}.description`)}</p>
-          </div>
-        ))}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            {t("guide.step1.title")}
+          </h2>
+          <p className="text-gray-600 leading-relaxed">
+            {t("guide.step1.description")}
+          </p>
+          <a
+            href="https://groq.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-gray-900 hover:underline"
+          >
+            groq.com &rarr;
+          </a>
+        </div>
+
+        {/* Step 2 */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            {t("guide.step2.title")}
+          </h2>
+          <p className="text-gray-600 leading-relaxed">
+            {t("guide.step2.description")}
+          </p>
+          <a
+            href="https://console.groq.com/keys"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-gray-900 hover:underline"
+          >
+            Groq Console &rarr;
+          </a>
+        </div>
       </section>
 
       {/* Step 3 with tabs */}
