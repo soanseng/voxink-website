@@ -11,6 +11,7 @@ i18n.use(initReactI18next).init({
   lng: "zh-tw",
   fallbackLng: "zh-tw",
   initImmediate: false,
+  lowerCaseLng: true,
   interpolation: {
     escapeValue: false,
   },

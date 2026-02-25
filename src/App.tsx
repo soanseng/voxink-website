@@ -15,12 +15,16 @@ function LangLayout() {
   const { lang } = useParams<{ lang: string }>();
   const { i18n } = useTranslation();
 
+  // Change language synchronously before render to avoid flash of wrong language
+  if (lang && SUPPORTED_LANGS.includes(lang as Lang) && i18n.language !== lang) {
+    i18n.changeLanguage(lang);
+  }
+
   useEffect(() => {
     if (lang && SUPPORTED_LANGS.includes(lang as Lang)) {
-      i18n.changeLanguage(lang);
       document.documentElement.lang = lang === "zh-tw" ? "zh-TW" : "en";
     }
-  }, [lang, i18n]);
+  }, [lang]);
 
   if (!lang || !SUPPORTED_LANGS.includes(lang as Lang)) {
     return <Navigate to={`/${detectLanguage()}/`} replace />;
