@@ -7,7 +7,9 @@
     "privacyTitle": "VoxInk Privacy — Your Voice, Your Data",
     "privacyDescription": "How VoxInk's privacy-first architecture keeps your data safe.",
     "downloadTitle": "Download VoxInk",
-    "downloadDescription": "Available for Android, Windows, and Linux."
+    "downloadDescription": "Available for Android, Windows, and Linux.",
+    "policyTitle": "VoxInk Privacy Policy",
+    "policyDescription": "VoxInk privacy policy — we do not collect any user data."
   },
   "nav": {
     "features": "Features",
@@ -101,6 +103,7 @@
     "links": {
       "github": "GitHub",
       "privacy": "Privacy",
+      "privacyPolicy": "Privacy Policy",
       "guide": "Guide"
     }
   },
@@ -240,6 +243,85 @@
           "offline": "Local model (limited)"
         }
       }
+    }
+  },
+  "policy": {
+    "title": "VoxInk Privacy Policy",
+    "lastUpdated": "Last updated: 2026-02-24",
+    "overview": {
+      "title": "Overview",
+      "content": "VoxInk (語墨) is an open-source AI voice keyboard that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
+    },
+    "dataCollection": {
+      "title": "Data Collection",
+      "intro": "VoxInk does not collect any personal data.",
+      "items": [
+        "No analytics or telemetry",
+        "No crash reporting to our servers",
+        "No user accounts or registration",
+        "No advertising or tracking"
+      ]
+    },
+    "audioData": {
+      "title": "Audio Data",
+      "intro": "When you use VoxInk for voice input:",
+      "items": [
+        "Audio is recorded locally on your device",
+        "Audio is sent directly from your device to the API provider you configured (e.g., Groq, OpenAI)",
+        "Audio is not stored on your device after transcription completes",
+        "VoxInk has no access to the audio data sent to your API provider"
+      ],
+      "providerNote": "Your API provider's privacy policy governs how they handle the audio data."
+    },
+    "apiKeys": {
+      "title": "API Keys",
+      "items": [
+        "API keys are stored locally on your device using Android EncryptedSharedPreferences (Android) or Tauri encrypted store (Desktop)",
+        "Keys are encrypted at rest using platform encryption mechanisms",
+        "Keys are never transmitted to any server other than the API provider you configured",
+        "Keys are never logged or displayed in full"
+      ]
+    },
+    "transcriptionHistory": {
+      "title": "Transcription History",
+      "items": [
+        "Transcription results are stored locally on your device in a local database",
+        "You can delete individual transcriptions or all data at any time",
+        "No transcription data leaves your device unless you explicitly share or export it"
+      ]
+    },
+    "llmRefinement": {
+      "title": "LLM Refinement",
+      "intro": "When text refinement is enabled:",
+      "items": [
+        "Transcribed text is sent directly to your configured LLM provider (e.g., Groq, OpenAI, Anthropic)",
+        "VoxInk does not see or store the refined text beyond your local device",
+        "Your LLM provider's privacy policy applies to this data"
+      ]
+    },
+    "permissions": {
+      "title": "Permissions",
+      "intro": "VoxInk requests the following permissions:",
+      "items": [
+        "RECORD_AUDIO — Voice recording for speech-to-text",
+        "INTERNET — Sending audio to your API provider"
+      ]
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "content": "VoxInk communicates only with the API providers you explicitly configure. We do not integrate any third-party SDKs for analytics, advertising, or tracking."
+    },
+    "children": {
+      "title": "Children's Privacy",
+      "content": "VoxInk does not knowingly collect data from children under 13. Since VoxInk collects no data at all, this is inherently satisfied."
+    },
+    "changes": {
+      "title": "Changes",
+      "content": "We may update this privacy policy from time to time. Changes will be posted in the app's repository."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "For privacy questions, please open an issue on our GitHub repository."
     }
   },
   "download": {

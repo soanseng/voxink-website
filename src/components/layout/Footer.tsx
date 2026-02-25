@@ -26,6 +26,9 @@ export default function Footer() {
             <Link to={`${base}/privacy`} className="hover:text-gray-900 transition-colors">
               {t("footer.links.privacy")}
             </Link>
+            <Link to={`${base}/privacy-policy`} className="hover:text-gray-900 transition-colors">
+              {t("footer.links.privacyPolicy")}
+            </Link>
             <Link to={`${base}/guide`} className="hover:text-gray-900 transition-colors">
               {t("footer.links.guide")}
             </Link>

@@ -7,7 +7,9 @@
     "privacyTitle": "語墨隱私權 — 家己的聲音家己顧",
     "privacyDescription": "VoxInk 的隱私架構，為什麼你的資料只屬於你。",
     "downloadTitle": "下載語墨 VoxInk",
-    "downloadDescription": "Android、Windows、Linux 全平台下載。"
+    "downloadDescription": "Android、Windows、Linux 全平台下載。",
+    "policyTitle": "VoxInk 隱私權政策",
+    "policyDescription": "VoxInk（語墨）隱私權政策 — 我們不收集任何使用者資料。"
   },
   "nav": {
     "features": "功能",
@@ -101,6 +103,7 @@
     "links": {
       "github": "GitHub",
       "privacy": "隱私權",
+      "privacyPolicy": "隱私權政策",
       "guide": "使用教學"
     }
   },
@@ -240,6 +243,85 @@
           "offline": "本地模型（受限）"
         }
       }
+    }
+  },
+  "policy": {
+    "title": "VoxInk 隱私權政策",
+    "lastUpdated": "最後更新：2026-02-24",
+    "overview": {
+      "title": "概述",
+      "content": "VoxInk（語墨）是一款開源 AI 語音鍵盤，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
+    },
+    "dataCollection": {
+      "title": "資料收集",
+      "intro": "VoxInk 不收集任何個人資料。",
+      "items": [
+        "無分析或遙測資料",
+        "無回報到我們伺服器的當機報告",
+        "無使用者帳號或註冊",
+        "無廣告或追蹤"
+      ]
+    },
+    "audioData": {
+      "title": "音訊資料",
+      "intro": "使用 VoxInk 語音輸入時：",
+      "items": [
+        "音訊在您的裝置上本機錄製",
+        "音訊直接從您的裝置傳送至您設定的 API 服務商（如 Groq、OpenAI）",
+        "轉錄完成後音訊不會儲存在裝置上",
+        "VoxInk 無法存取傳送至 API 服務商的音訊資料"
+      ],
+      "providerNote": "您的 API 服務商的隱私權政策規範他們如何處理音訊資料。"
+    },
+    "apiKeys": {
+      "title": "API 金鑰",
+      "items": [
+        "API 金鑰使用 Android EncryptedSharedPreferences（Android）或 Tauri 加密儲存（桌面版）本機儲存在您的裝置上",
+        "金鑰使用平台加密機制靜態加密",
+        "金鑰絕不會傳輸至您設定的 API 服務商以外的伺服器",
+        "金鑰絕不會被記錄或完整顯示"
+      ]
+    },
+    "transcriptionHistory": {
+      "title": "轉錄紀錄",
+      "items": [
+        "轉錄結果儲存在您裝置上的本機資料庫",
+        "您隨時可以刪除個別轉錄紀錄或全部資料",
+        "除非您主動分享或匯出，轉錄資料不會離開您的裝置"
+      ]
+    },
+    "llmRefinement": {
+      "title": "LLM 文字潤飾",
+      "intro": "啟用文字潤飾功能時：",
+      "items": [
+        "轉錄文字直接傳送至您設定的 LLM 服務商（如 Groq、OpenAI、Anthropic）",
+        "VoxInk 不會檢視或儲存潤飾後的文字（僅存在您的本機裝置）",
+        "您的 LLM 服務商的隱私權政策適用於此資料"
+      ]
+    },
+    "permissions": {
+      "title": "權限",
+      "intro": "VoxInk 請求以下權限：",
+      "items": [
+        "RECORD_AUDIO — 語音錄製以進行語音轉文字",
+        "INTERNET — 將音訊傳送至您的 API 服務商"
+      ]
+    },
+    "thirdParty": {
+      "title": "第三方服務",
+      "content": "VoxInk 僅與您明確設定的 API 服務商通訊。我們不整合任何用於分析、廣告或追蹤的第三方 SDK。"
+    },
+    "children": {
+      "title": "兒童隱私",
+      "content": "VoxInk 不會故意收集 13 歲以下兒童的資料。由於 VoxInk 完全不收集任何資料，此點已自然滿足。"
+    },
+    "changes": {
+      "title": "政策變更",
+      "content": "我們可能不時更新此隱私權政策。變更將公布於應用程式的 GitHub 儲存庫。"
+    },
+    "contact": {
+      "title": "聯絡方式",
+      "content": "如有隱私權問題，請在我們的 GitHub 儲存庫提出 issue。"
     }
   },
   "download": {

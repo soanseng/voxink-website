@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Guide from "./pages/Guide";
 import Privacy from "./pages/Privacy";
 import Download from "./pages/Download";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const SUPPORTED_LANGS = ["zh-tw", "en"] as const;
 type Lang = (typeof SUPPORTED_LANGS)[number];
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="guide" element={<Guide />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="download" element={<Download />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </BrowserRouter>
