@@ -99,7 +99,7 @@
     }
   },
   "footer": {
-    "description": "AI 語音輸入，開源、隱私優先",
+    "description": "AI 語音輸入，桌面版開源、隱私優先",
     "madeIn": "做佇台灣",
     "links": {
       "github": "GitHub",
@@ -237,7 +237,7 @@
         },
         "openSource": {
           "label": "開放原始碼",
-          "voxink": "是",
+          "voxink": "桌面版開源",
           "subscription": "否",
           "offline": "部分"
         },
@@ -261,7 +261,7 @@
     "lastUpdated": "最後更新：2026-02-24",
     "overview": {
       "title": "概述",
-      "content": "VoxInk（語墨）是一款開源 AI 語音鍵盤，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
+      "content": "VoxInk（語墨）是一款 AI 語音鍵盤，桌面版開放原始碼，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
     },
     "dataCollection": {
       "title": "資料收集",
@@ -455,7 +455,7 @@
         },
         "openSource": {
           "label": "開放原始碼",
-          "voxink": "完全開源",
+          "voxink": "桌面版開源",
           "serviceA": "閉源",
           "serviceB": "閉源"
         }
@@ -500,8 +500,8 @@
           "description": "語墨不架設伺服器、不維護帳號系統、不儲存你的資料。這些省下來的成本，就是你省下來的錢。"
         },
         {
-          "title": "開源 = 透明",
-          "description": "你付的每一分錢去了哪裡，程式碼攤在陽光下。不像訂閱制服務，你永遠不知道你的月費有多少是利潤。"
+          "title": "桌面版開源 = 透明",
+          "description": "桌面版程式碼完全公開，你可以親眼檢視語墨如何處理你的聲音。不像訂閱制服務，你永遠不知道背後做了什麼。"
         }
       ]
     },

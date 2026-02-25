@@ -99,7 +99,7 @@
     }
   },
   "footer": {
-    "description": "AI voice input — open source, privacy first",
+    "description": "AI voice input — desktop open source, privacy first",
     "madeIn": "Made in Taiwan",
     "links": {
       "github": "GitHub",
@@ -237,7 +237,7 @@
         },
         "openSource": {
           "label": "Open Source",
-          "voxink": "Yes",
+          "voxink": "Desktop: yes",
           "subscription": "No",
           "offline": "Partial"
         },
@@ -261,7 +261,7 @@
     "lastUpdated": "Last updated: 2026-02-24",
     "overview": {
       "title": "Overview",
-      "content": "VoxInk (語墨) is an open-source AI voice keyboard that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
+      "content": "VoxInk (語墨) is an AI voice keyboard (desktop version is open source) that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
     },
     "dataCollection": {
       "title": "Data Collection",
@@ -455,7 +455,7 @@
         },
         "openSource": {
           "label": "Open source",
-          "voxink": "Fully open source",
+          "voxink": "Desktop: yes",
           "serviceA": "Closed source",
           "serviceB": "Closed source"
         }
@@ -500,8 +500,8 @@
           "description": "VoxInk runs no servers, no account systems, no data storage. Those savings go straight to your wallet."
         },
         {
-          "title": "Open source = transparent",
-          "description": "Every dollar you spend is accounted for in open source code. Unlike subscriptions, where you never know how much is profit margin."
+          "title": "Desktop is open source = transparent",
+          "description": "The desktop version's code is fully public — you can verify exactly how VoxInk handles your voice. Unlike subscriptions, where you never know what happens behind the scenes."
         }
       ]
     },
