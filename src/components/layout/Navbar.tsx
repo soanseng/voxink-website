@@ -1,16 +1,35 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import LangSwitcher from "../ui/LangSwitcher";
 
 export default function Navbar() {
   const { lang } = useParams<{ lang: string }>();
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const base = `/${lang}`;
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const scrollToFeatures = useCallback(
+    (e: React.MouseEvent) => {
+      e.preventDefault();
+      const isHomePage = location.pathname === `/${lang}` || location.pathname === `/${lang}/`;
+      if (isHomePage) {
+        document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        navigate(`/${lang}/`);
+        // Wait for navigation, then scroll
+        setTimeout(() => {
+          document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    },
+    [lang, location.pathname, navigate]
+  );
+
   const links = [
-    { href: `${base}#features`, label: t("nav.features"), isHash: true },
+    { href: `${base}/`, label: t("nav.features"), isHash: true },
     { href: `${base}/guide`, label: t("nav.guide"), isHash: false },
     { href: `${base}/privacy`, label: t("nav.privacy"), isHash: false },
     { href: `${base}/pricing`, label: t("nav.pricing"), isHash: false },
@@ -35,7 +54,8 @@ export default function Navbar() {
             link.isHash ? (
               <a
                 key={link.href}
-                href={link.href}
+                href={`${link.href}#features`}
+                onClick={scrollToFeatures}
                 className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {link.label}
@@ -91,8 +111,11 @@ export default function Navbar() {
             link.isHash ? (
               <a
                 key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
+                href={`${link.href}#features`}
+                onClick={(e) => {
+                  scrollToFeatures(e);
+                  setMenuOpen(false);
+                }}
                 className="block text-sm text-gray-600 hover:text-gray-900 py-1"
               >
                 {link.label}
