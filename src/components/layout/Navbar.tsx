@@ -13,6 +13,7 @@ export default function Navbar() {
     { href: `${base}#features`, label: t("nav.features"), isHash: true },
     { href: `${base}/guide`, label: t("nav.guide"), isHash: false },
     { href: `${base}/privacy`, label: t("nav.privacy"), isHash: false },
+    { href: `${base}/pricing`, label: t("nav.pricing"), isHash: false },
     { href: `${base}/download`, label: t("nav.download"), isHash: false },
   ];
 

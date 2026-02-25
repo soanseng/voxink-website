@@ -15,7 +15,8 @@
     "features": "功能",
     "guide": "教學",
     "privacy": "隱私",
-    "download": "下載"
+    "download": "下載",
+    "pricing": "費用比較"
   },
   "hero": {
     "headline": "出一支嘴，剩下交給語墨",
@@ -362,5 +363,154 @@
     "macos": {
       "comingSoon": "macOS 版即將推出"
     }
+  },
+  "pricing": {
+    "meta": {
+      "title": "費用比較 — 語墨 vs 訂閱制語音輸入",
+      "description": "語墨 + Groq 一年花費不到一個月訂閱費。真實數據，自己算。"
+    },
+    "hero": {
+      "title": "一年的花費，不到別人一個月",
+      "subtitle": "同樣是 AI 語音輸入，為什麼要每月花幾百塊？"
+    },
+    "homeBanner": {
+      "title": "省下來的，拿去喝咖啡",
+      "yearly": "一年只要",
+      "amount": "NT$150",
+      "versus": "vs 訂閱制",
+      "subscriptionAmount": "NT$4,320+／年",
+      "cta": "看完整比較"
+    },
+    "calculator": {
+      "title": "你一天花多少？算給你看",
+      "subtitle": "以實際使用量計算，不灌水",
+      "inputsLabel": "每日語音輸入次數",
+      "avgSecondsLabel": "平均每次秒數",
+      "withLlmLabel": "啟用 AI 潤飾",
+      "dailyCost": "每日 API 費用",
+      "monthlyCost": "每月 API 費用",
+      "yearlyCost": "每年 API 費用（含 App）",
+      "freeNote": "在免費額度內",
+      "appPrice": "App 費用 NT$150（一次性）",
+      "whisperRate": "Whisper Turbo US$0.04／小時",
+      "llmRate": "Llama 3.1 8B US$0.05–0.08／百萬 tokens"
+    },
+    "comparison": {
+      "title": "真實費用比較",
+      "subtitle": "以「每天 50 次語音輸入」的一般使用者為基準",
+      "headers": {
+        "item": "項目",
+        "voxink": "語墨 VoxInk",
+        "serviceA": "訂閱制服務 A",
+        "serviceB": "訂閱制服務 B"
+      },
+      "rows": {
+        "appCost": {
+          "label": "App 費用",
+          "voxink": "NT$150（一次買斷）",
+          "serviceA": "NT$0",
+          "serviceB": "NT$0"
+        },
+        "monthlyCost": {
+          "label": "月費",
+          "voxink": "NT$0（免費額度內）",
+          "serviceA": "NT$960／月（US$30）",
+          "serviceB": "NT$480／月（US$15）"
+        },
+        "yearlyCost": {
+          "label": "一年總費用",
+          "voxink": "NT$150",
+          "serviceA": "NT$4,608（年繳 US$12／月）",
+          "serviceB": "NT$4,608（年繳 US$12／月）"
+        },
+        "twoYearCost": {
+          "label": "兩年總費用",
+          "voxink": "NT$150",
+          "serviceA": "NT$9,216",
+          "serviceB": "NT$9,216"
+        },
+        "freeLimit": {
+          "label": "免費額度",
+          "voxink": "每日 8 小時語音",
+          "serviceA": "4,000 字／週",
+          "serviceB": "2,000 字／週"
+        },
+        "paidOverage": {
+          "label": "超出免費後",
+          "voxink": "每月約 NT$19",
+          "serviceA": "必須訂閱",
+          "serviceB": "必須訂閱"
+        },
+        "dataFlow": {
+          "label": "你的聲音去哪",
+          "voxink": "直送 AI，不經第三方",
+          "serviceA": "先到服務商伺服器",
+          "serviceB": "先到服務商伺服器"
+        },
+        "account": {
+          "label": "要綁帳號嗎",
+          "voxink": "不用",
+          "serviceA": "要，含付款資訊",
+          "serviceB": "要，含付款資訊"
+        },
+        "openSource": {
+          "label": "開放原始碼",
+          "voxink": "完全開源",
+          "serviceA": "閉源",
+          "serviceB": "閉源"
+        }
+      }
+    },
+    "scenarios": {
+      "title": "各種使用情境",
+      "light": {
+        "title": "輕度使用",
+        "usage": "每天 20 次，每次 10 秒",
+        "voxink": "NT$0／月（免費額度內）",
+        "subscription": "NT$384-960／月"
+      },
+      "normal": {
+        "title": "一般使用",
+        "usage": "每天 50 次，每次 15 秒",
+        "voxink": "NT$0／月（免費額度內）",
+        "subscription": "NT$384-960／月"
+      },
+      "heavy": {
+        "title": "重度使用",
+        "usage": "每天 200 次，每次 15 秒",
+        "voxink": "約 NT$19／月",
+        "subscription": "NT$384-960／月"
+      },
+      "writer": {
+        "title": "文字工作者",
+        "usage": "每天 500 次，每次 20 秒",
+        "voxink": "約 NT$60／月",
+        "subscription": "NT$384-960／月"
+      }
+    },
+    "whyFree": {
+      "title": "為什麼語墨可以這麼便宜？",
+      "reasons": [
+        {
+          "title": "沒有中間商",
+          "description": "訂閱制服務收你的月費，再用你的錢去呼叫同一個 AI API。語墨讓你直接呼叫，省掉中間商的利潤。"
+        },
+        {
+          "title": "沒有伺服器成本",
+          "description": "語墨不架設伺服器、不維護帳號系統、不儲存你的資料。這些省下來的成本，就是你省下來的錢。"
+        },
+        {
+          "title": "開源 = 透明",
+          "description": "你付的每一分錢去了哪裡，程式碼攤在陽光下。不像訂閱制服務，你永遠不知道你的月費有多少是利潤。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "算清楚了嗎？",
+      "subtitle": "省下來的訂閱費，一年可以喝 100 杯咖啡。",
+      "download": "下載語墨",
+      "guide": "五分鐘上手教學"
+    },
+    "disclaimer": "費用以 Groq 2026 年 2 月官方定價計算，匯率 1 USD ≈ 32 TWD。訂閱制服務價格取自其官網公開定價（年繳方案）。語墨 Android 版 Google Play 售價 NT$150。"
   }
 }

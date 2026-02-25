@@ -15,7 +15,8 @@
     "features": "Features",
     "guide": "Guide",
     "privacy": "Privacy",
-    "download": "Download"
+    "download": "Download",
+    "pricing": "Pricing"
   },
   "hero": {
     "headline": "Just Speak. VoxInk Writes.",
@@ -362,5 +363,154 @@
     "macos": {
       "comingSoon": "macOS version coming soon"
     }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Pricing — VoxInk vs Subscription Voice Input",
+      "description": "VoxInk + Groq costs less in a year than one month of subscription services. Real numbers, do the math."
+    },
+    "hero": {
+      "title": "A whole year for less than one month elsewhere",
+      "subtitle": "Same AI voice input. Why pay hundreds per year?"
+    },
+    "homeBanner": {
+      "title": "Save enough for daily coffee",
+      "yearly": "One year, just",
+      "amount": "$4.70",
+      "versus": "vs subscription",
+      "subscriptionAmount": "$144+/year",
+      "cta": "See full comparison"
+    },
+    "calculator": {
+      "title": "What does it actually cost? Let's do the math.",
+      "subtitle": "Based on real usage, no fluff",
+      "inputsLabel": "Voice inputs per day",
+      "avgSecondsLabel": "Average seconds each",
+      "withLlmLabel": "AI refinement enabled",
+      "dailyCost": "Daily API cost",
+      "monthlyCost": "Monthly API cost",
+      "yearlyCost": "Yearly cost (incl. app)",
+      "freeNote": "Within free tier",
+      "appPrice": "App price: $4.70 (one-time)",
+      "whisperRate": "Whisper Turbo $0.04/hr",
+      "llmRate": "Llama 3.1 8B $0.05–0.08/M tokens"
+    },
+    "comparison": {
+      "title": "Real Cost Comparison",
+      "subtitle": "Based on a typical user with 50 voice inputs per day",
+      "headers": {
+        "item": "Item",
+        "voxink": "VoxInk",
+        "serviceA": "Subscription Service A",
+        "serviceB": "Subscription Service B"
+      },
+      "rows": {
+        "appCost": {
+          "label": "App price",
+          "voxink": "$4.70 (one-time)",
+          "serviceA": "$0",
+          "serviceB": "$0"
+        },
+        "monthlyCost": {
+          "label": "Monthly fee",
+          "voxink": "$0 (within free tier)",
+          "serviceA": "$30/mo (or $12/mo yearly)",
+          "serviceB": "$15/mo (or $12/mo yearly)"
+        },
+        "yearlyCost": {
+          "label": "Total cost / year",
+          "voxink": "$4.70",
+          "serviceA": "$144 (yearly plan)",
+          "serviceB": "$144 (yearly plan)"
+        },
+        "twoYearCost": {
+          "label": "Total cost / 2 years",
+          "voxink": "$4.70",
+          "serviceA": "$288",
+          "serviceB": "$288"
+        },
+        "freeLimit": {
+          "label": "Free tier",
+          "voxink": "8 hours of audio/day",
+          "serviceA": "4,000 words/week",
+          "serviceB": "2,000 words/week"
+        },
+        "paidOverage": {
+          "label": "Beyond free tier",
+          "voxink": "~$0.60/month",
+          "serviceA": "Must subscribe",
+          "serviceB": "Must subscribe"
+        },
+        "dataFlow": {
+          "label": "Where your voice goes",
+          "voxink": "Direct to AI, no middleman",
+          "serviceA": "To service provider first",
+          "serviceB": "To service provider first"
+        },
+        "account": {
+          "label": "Account required",
+          "voxink": "No",
+          "serviceA": "Yes, with payment info",
+          "serviceB": "Yes, with payment info"
+        },
+        "openSource": {
+          "label": "Open source",
+          "voxink": "Fully open source",
+          "serviceA": "Closed source",
+          "serviceB": "Closed source"
+        }
+      }
+    },
+    "scenarios": {
+      "title": "Cost by Usage",
+      "light": {
+        "title": "Light use",
+        "usage": "20 inputs/day, 10 sec each",
+        "voxink": "$0/mo (free tier)",
+        "subscription": "$12–30/mo"
+      },
+      "normal": {
+        "title": "Normal use",
+        "usage": "50 inputs/day, 15 sec each",
+        "voxink": "$0/mo (free tier)",
+        "subscription": "$12–30/mo"
+      },
+      "heavy": {
+        "title": "Heavy use",
+        "usage": "200 inputs/day, 15 sec each",
+        "voxink": "~$0.60/mo",
+        "subscription": "$12–30/mo"
+      },
+      "writer": {
+        "title": "Writer / Power user",
+        "usage": "500 inputs/day, 20 sec each",
+        "voxink": "~$1.90/mo",
+        "subscription": "$12–30/mo"
+      }
+    },
+    "whyFree": {
+      "title": "How is VoxInk so cheap?",
+      "reasons": [
+        {
+          "title": "No middleman",
+          "description": "Subscription services charge you monthly, then call the same AI API with your money. VoxInk lets you call it directly — cutting out the middleman's profit."
+        },
+        {
+          "title": "No server costs",
+          "description": "VoxInk runs no servers, no account systems, no data storage. Those savings go straight to your wallet."
+        },
+        {
+          "title": "Open source = transparent",
+          "description": "Every dollar you spend is accounted for in open source code. Unlike subscriptions, where you never know how much is profit margin."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Done the math?",
+      "subtitle": "The subscription money you save could buy 100 cups of coffee a year.",
+      "download": "Download VoxInk",
+      "guide": "Get started in 5 minutes"
+    },
+    "disclaimer": "Pricing based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). VoxInk Android: $4.70 on Google Play."
   }
 }

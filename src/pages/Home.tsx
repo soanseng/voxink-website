@@ -4,6 +4,7 @@ import Hero from "../components/home/Hero";
 import Features from "../components/home/Features";
 import PrivacyHighlight from "../components/home/PrivacyHighlight";
 import HowItWorks from "../components/home/HowItWorks";
+import PricingBanner from "../components/home/PricingBanner";
 import Platforms from "../components/home/Platforms";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <PrivacyHighlight />
       <HowItWorks />
+      <PricingBanner />
       <Platforms />
     </>
   );
