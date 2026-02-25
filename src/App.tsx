@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, Outlet, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Layout from "./components/layout/Layout";
@@ -10,7 +10,7 @@ import Download from "./pages/Download";
 const SUPPORTED_LANGS = ["zh-tw", "en"] as const;
 type Lang = (typeof SUPPORTED_LANGS)[number];
 
-function LangProvider({ children }: { children: React.ReactNode }) {
+function LangLayout() {
   const { lang } = useParams<{ lang: string }>();
   const { i18n } = useTranslation();
 
@@ -25,7 +25,11 @@ function LangProvider({ children }: { children: React.ReactNode }) {
     return <Navigate to={`/${detectLanguage()}/`} replace />;
   }
 
-  return <>{children}</>;
+  return (
+    <Layout>
+      <Outlet />
+    </Layout>
+  );
 }
 
 function detectLanguage(): Lang {
@@ -41,21 +45,12 @@ export default function App() {
     <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Navigate to={`/${detectLanguage()}/`} replace />} />
-        <Route
-          path="/:lang/*"
-          element={
-            <LangProvider>
-              <Layout>
-                <Routes>
-                  <Route index element={<Home />} />
-                  <Route path="guide" element={<Guide />} />
-                  <Route path="privacy" element={<Privacy />} />
-                  <Route path="download" element={<Download />} />
-                </Routes>
-              </Layout>
-            </LangProvider>
-          }
-        />
+        <Route path="/:lang" element={<LangLayout />}>
+          <Route index element={<Home />} />
+          <Route path="guide" element={<Guide />} />
+          <Route path="privacy" element={<Privacy />} />
+          <Route path="download" element={<Download />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
