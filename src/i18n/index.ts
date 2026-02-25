@@ -10,6 +10,7 @@ i18n.use(initReactI18next).init({
   },
   lng: "zh-tw",
   fallbackLng: "zh-tw",
+  initImmediate: false,
   interpolation: {
     escapeValue: false,
   },

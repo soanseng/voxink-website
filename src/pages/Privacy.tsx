@@ -7,7 +7,8 @@ const comparisonRows = ["dataFlow", "account", "pricing", "openSource", "serverI
 export default function Privacy() {
   const { t } = useTranslation();
   useDocumentHead(t("meta.privacyTitle"), t("meta.privacyDescription"));
-  const risks = t("privacyPage.concerns.risks", { returnObjects: true }) as string[];
+  const risksRaw = t("privacyPage.concerns.risks", { returnObjects: true });
+  const risks = Array.isArray(risksRaw) ? risksRaw as string[] : [];
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">

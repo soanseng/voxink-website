@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 export default function HowItWorks() {
   const { t } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
-  const steps = t("howItWorks.steps", { returnObjects: true }) as string[];
+  const stepsRaw = t("howItWorks.steps", { returnObjects: true });
+  const steps = Array.isArray(stepsRaw) ? stepsRaw as string[] : [];
 
   return (
     <section className="py-20 px-6 bg-gray-50">
