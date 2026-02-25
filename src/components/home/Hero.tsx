@@ -22,6 +22,11 @@ export default function Hero() {
   return (
     <section className="py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
+        <img
+          src={`${import.meta.env.BASE_URL}icon-512.png`}
+          alt="VoxInk"
+          className="w-24 h-24 mx-auto mb-8 rounded-2xl shadow-lg"
+        />
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
           {t("hero.headline")}
         </h1>
