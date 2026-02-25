@@ -76,9 +76,9 @@
     "title": "Platforms",
     "android": {
       "name": "Android",
-      "description": "Voice keyboard — use in any app",
+      "description": "Voice keyboard — use in any app. Free with ads, $4.70 Pro to go ad-free",
       "requirement": "Android 8.0+",
-      "cta": "Download APK"
+      "cta": "Free Download"
     },
     "windows": {
       "name": "Windows",
@@ -270,7 +270,7 @@
         "No analytics or telemetry",
         "No crash reporting to our servers",
         "No user accounts or registration",
-        "No advertising or tracking"
+        "Android free version includes AdMob ads (Pro is completely ad-free); no usage tracking"
       ]
     },
     "audioData": {
@@ -320,7 +320,7 @@
     },
     "thirdParty": {
       "title": "Third-Party Services",
-      "content": "VoxInk communicates only with the API providers you explicitly configure. We do not integrate any third-party SDKs for analytics, advertising, or tracking."
+      "content": "The desktop version of VoxInk communicates only with the API providers you explicitly configure. The Android free version integrates Google AdMob for displaying ads; upgrading to Pro completely removes all ad-related connections. We do not integrate any third-party SDKs for analytics or tracking."
     },
     "children": {
       "title": "Children's Privacy",
@@ -375,7 +375,7 @@
     },
     "homeBanner": {
       "title": "Save enough for daily coffee",
-      "yearly": "One year, just",
+      "yearly": "Free download, Pro just",
       "amount": "$4.70",
       "versus": "vs subscription",
       "subscriptionAmount": "$144+/year",
@@ -389,9 +389,9 @@
       "withLlmLabel": "AI refinement enabled",
       "dailyCost": "Daily API cost",
       "monthlyCost": "Monthly API cost",
-      "yearlyCost": "Yearly cost (incl. app)",
+      "yearlyCost": "Yearly cost (incl. Pro)",
       "freeNote": "Within free tier",
-      "appPrice": "App price: $4.70 (one-time)",
+      "appPrice": "Pro upgrade: $4.70 (one-time, ad-free + unlimited)",
       "whisperRate": "Whisper Turbo $0.04/hr",
       "llmRate": "Llama 3.1 8B $0.05–0.08/M tokens"
     },
@@ -407,9 +407,15 @@
       "rows": {
         "appCost": {
           "label": "App price",
-          "voxink": "$4.70 (one-time)",
+          "voxink": "Free download (with ads)",
           "serviceA": "$0",
           "serviceB": "$0"
+        },
+        "proCost": {
+          "label": "Ad-free Pro",
+          "voxink": "$4.70 (one-time)",
+          "serviceA": "—",
+          "serviceB": "—"
         },
         "monthlyCost": {
           "label": "Monthly fee",
@@ -419,13 +425,13 @@
         },
         "yearlyCost": {
           "label": "Total cost / year",
-          "voxink": "$4.70",
+          "voxink": "$0–4.70",
           "serviceA": "$144 (yearly plan)",
           "serviceB": "$144 (yearly plan)"
         },
         "twoYearCost": {
           "label": "Total cost / 2 years",
-          "voxink": "$4.70",
+          "voxink": "$0–4.70",
           "serviceA": "$288",
           "serviceB": "$288"
         },
@@ -488,6 +494,31 @@
         "subscription": "$12–30/mo"
       }
     },
+    "androidPricing": {
+      "title": "Android Pricing",
+      "subtitle": "Free to download — upgrade to remove ads",
+      "free": {
+        "title": "Free (with ads)",
+        "features": [
+          "20 voice inputs per day",
+          "5 AI refinements per day",
+          "2 file transcriptions per day",
+          "Banner ad at bottom of screen",
+          "Occasional interstitial ad after transcription (none for first 3 days, max 3/day, at least 5 min apart)",
+          "Watch a short ad for 5 extra voice inputs"
+        ]
+      },
+      "pro": {
+        "title": "Pro ($4.70 one-time)",
+        "features": [
+          "Unlimited voice inputs",
+          "Unlimited AI refinements",
+          "Unlimited file transcriptions",
+          "Completely ad-free",
+          "Pay once, use forever"
+        ]
+      }
+    },
     "whyFree": {
       "title": "How is VoxInk so cheap?",
       "reasons": [
@@ -511,6 +542,6 @@
       "download": "Download VoxInk",
       "guide": "Get started in 5 minutes"
     },
-    "disclaimer": "Pricing based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). VoxInk Android: $4.70 on Google Play."
+    "disclaimer": "Pricing based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). VoxInk Android: free download with ads; Pro upgrade $4.70 (one-time, ad-free + unlimited)."
   }
 }

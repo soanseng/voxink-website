@@ -5,6 +5,7 @@ import { useDocumentHead } from "../hooks/useDocumentHead";
 
 const comparisonRows = [
   "appCost",
+  "proCost",
   "monthlyCost",
   "yearlyCost",
   "twoYearCost",
@@ -270,6 +271,50 @@ export default function Pricing() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Android pricing */}
+      <section className="mb-20">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">
+          {t("pricing.androidPricing.title")}
+        </h2>
+        <p className="text-gray-500 mb-8">{t("pricing.androidPricing.subtitle")}</p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Free tier */}
+          <div className="rounded-xl border border-gray-200 p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              {t("pricing.androidPricing.free.title")}
+            </h3>
+            <ul className="space-y-2">
+              {(t("pricing.androidPricing.free.features", { returnObjects: true }) as string[]).map(
+                (feature, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                    <span className="text-gray-400 mt-0.5 flex-shrink-0">•</span>
+                    {feature}
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+
+          {/* Pro tier */}
+          <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50/30 p-6">
+            <h3 className="text-lg font-semibold text-emerald-700 mb-4">
+              {t("pricing.androidPricing.pro.title")}
+            </h3>
+            <ul className="space-y-2">
+              {(t("pricing.androidPricing.pro.features", { returnObjects: true }) as string[]).map(
+                (feature, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+                    {feature}
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
         </div>
       </section>
 

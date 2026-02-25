@@ -76,9 +76,9 @@
     "title": "支援平台",
     "android": {
       "name": "Android",
-      "description": "語音鍵盤，在任何 app 中使用",
+      "description": "語音鍵盤，在任何 app 中使用。免費下載含廣告，NT$150 升級 Pro 去廣告",
       "requirement": "Android 8.0 以上",
-      "cta": "下載 APK"
+      "cta": "免費下載"
     },
     "windows": {
       "name": "Windows",
@@ -270,7 +270,7 @@
         "無分析或遙測資料",
         "無回報到我們伺服器的當機報告",
         "無使用者帳號或註冊",
-        "無廣告或追蹤"
+        "Android 免費版含 AdMob 廣告（Pro 版完全無廣告）；無使用追蹤"
       ]
     },
     "audioData": {
@@ -320,7 +320,7 @@
     },
     "thirdParty": {
       "title": "第三方服務",
-      "content": "VoxInk 僅與您明確設定的 API 服務商通訊。我們不整合任何用於分析、廣告或追蹤的第三方 SDK。"
+      "content": "VoxInk 桌面版僅與您明確設定的 API 服務商通訊。Android 免費版整合 Google AdMob 用於顯示廣告，升級 Pro 後即完全移除所有廣告相關連線。我們不整合任何用於分析或追蹤的第三方 SDK。"
     },
     "children": {
       "title": "兒童隱私",
@@ -375,7 +375,7 @@
     },
     "homeBanner": {
       "title": "省下來的，拿去喝咖啡",
-      "yearly": "一年只要",
+      "yearly": "免費下載，Pro 只要",
       "amount": "NT$150",
       "versus": "vs 訂閱制",
       "subscriptionAmount": "NT$4,320+／年",
@@ -389,9 +389,9 @@
       "withLlmLabel": "啟用 AI 潤飾",
       "dailyCost": "每日 API 費用",
       "monthlyCost": "每月 API 費用",
-      "yearlyCost": "每年 API 費用（含 App）",
+      "yearlyCost": "每年 API 費用（含 Pro）",
       "freeNote": "在免費額度內",
-      "appPrice": "App 費用 NT$150（一次性）",
+      "appPrice": "Pro 升級 NT$150（一次性，去廣告 + 無限使用）",
       "whisperRate": "Whisper Turbo US$0.04／小時",
       "llmRate": "Llama 3.1 8B US$0.05–0.08／百萬 tokens"
     },
@@ -407,9 +407,15 @@
       "rows": {
         "appCost": {
           "label": "App 費用",
-          "voxink": "NT$150（一次買斷）",
+          "voxink": "免費下載（含廣告）",
           "serviceA": "NT$0",
           "serviceB": "NT$0"
+        },
+        "proCost": {
+          "label": "去廣告 Pro",
+          "voxink": "NT$150（一次買斷）",
+          "serviceA": "—",
+          "serviceB": "—"
         },
         "monthlyCost": {
           "label": "月費",
@@ -419,13 +425,13 @@
         },
         "yearlyCost": {
           "label": "一年總費用",
-          "voxink": "NT$150",
+          "voxink": "NT$0–150",
           "serviceA": "NT$4,608（年繳 US$12／月）",
           "serviceB": "NT$4,608（年繳 US$12／月）"
         },
         "twoYearCost": {
           "label": "兩年總費用",
-          "voxink": "NT$150",
+          "voxink": "NT$0–150",
           "serviceA": "NT$9,216",
           "serviceB": "NT$9,216"
         },
@@ -488,6 +494,31 @@
         "subscription": "NT$384-960／月"
       }
     },
+    "androidPricing": {
+      "title": "Android 版定價",
+      "subtitle": "免費下載，想去廣告再升級",
+      "free": {
+        "title": "免費版（含廣告）",
+        "features": [
+          "每日 20 次語音輸入",
+          "每日 5 次 AI 潤飾",
+          "每日 2 次檔案轉錄",
+          "底部橫幅廣告",
+          "轉錄完成後偶爾插頁廣告（安裝前 3 天免廣告，每日最多 3 次，間隔至少 5 分鐘）",
+          "觀看短廣告可獲得 5 次額外語音輸入"
+        ]
+      },
+      "pro": {
+        "title": "Pro（NT$150 一次買斷）",
+        "features": [
+          "無限語音輸入",
+          "無限 AI 潤飾",
+          "無限檔案轉錄",
+          "完全無廣告",
+          "一次付費，終身使用"
+        ]
+      }
+    },
     "whyFree": {
       "title": "為什麼語墨可以這麼便宜？",
       "reasons": [
@@ -511,6 +542,6 @@
       "download": "下載語墨",
       "guide": "五分鐘上手教學"
     },
-    "disclaimer": "費用以 Groq 2026 年 2 月官方定價計算，匯率 1 USD ≈ 32 TWD。訂閱制服務價格取自其官網公開定價（年繳方案）。語墨 Android 版 Google Play 售價 NT$150。"
+    "disclaimer": "費用以 Groq 2026 年 2 月官方定價計算，匯率 1 USD ≈ 32 TWD。訂閱制服務價格取自其官網公開定價（年繳方案）。語墨 Android 版免費下載（含廣告），Pro 升級 NT$150（一次買斷，去廣告＋無限使用）。"
   }
 }
