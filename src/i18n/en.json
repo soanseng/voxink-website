@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "title": "VoxInk — AI Voice Input",
+    "description": "Just speak, VoxInk writes for you. AI voice keyboard for Android, Windows, and Linux.",
+    "guideTitle": "VoxInk Guide — Get Started in 5 Minutes",
+    "guideDescription": "Step-by-step guide from Groq API setup to voice input.",
+    "privacyTitle": "VoxInk Privacy — Your Voice, Your Data",
+    "privacyDescription": "How VoxInk's privacy-first architecture keeps your data safe.",
+    "downloadTitle": "Download VoxInk",
+    "downloadDescription": "Available for Android, Windows, and Linux."
+  },
+  "nav": {
+    "features": "Features",
+    "guide": "Guide",
+    "privacy": "Privacy",
+    "download": "Download"
+  },
+  "hero": {
+    "headline": "Just Speak. VoxInk Writes.",
+    "subtitle": "AI voice input for Android / Windows / Linux. Bring your own API key. No subscription.",
+    "cta": {
+      "download": "Download for {{platform}}",
+      "allPlatforms": "All platforms"
+    }
+  },
+  "features": {
+    "title": "Features",
+    "speed": {
+      "title": "Lightning Fast",
+      "description": "Groq Whisper speech recognition — results in 0.5 seconds, the world's fastest inference"
+    },
+    "refine": {
+      "title": "Smart Refinement",
+      "description": "AI removes filler words, fixes grammar, adds punctuation — speak and it's ready"
+    },
+    "multilang": {
+      "title": "Multilingual",
+      "description": "Traditional Chinese, English, Japanese, and mixed-language support with auto-detection"
+    },
+    "transcribe": {
+      "title": "File Transcription",
+      "description": "Transcribe audio and video files to text, with SRT subtitle export"
+    }
+  },
+  "privacy": {
+    "title": "Your Voice, Only Yours",
+    "byok": {
+      "title": "Bring Your Own Key",
+      "description": "Use your own Groq / OpenAI key. No subscription. You control the cost."
+    },
+    "zeroCollection": {
+      "title": "Zero Data Collection",
+      "description": "No account, no tracking, no telemetry. Completely anonymous usage."
+    },
+    "directApi": {
+      "title": "Direct API Connection",
+      "description": "Your voice goes straight to your chosen AI provider — never through VoxInk servers."
+    },
+    "cta": "Learn more"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "steps": [
+      "Sign up at groq.com for free and get an API key",
+      "Install VoxInk and paste your API key in settings",
+      "Enable VoxInk keyboard (Android) or press the hotkey (Desktop)",
+      "Start speaking",
+      "Refined text is automatically entered"
+    ],
+    "cta": "Full guide"
+  },
+  "platforms": {
+    "title": "Platforms",
+    "android": {
+      "name": "Android",
+      "description": "Voice keyboard — use in any app",
+      "requirement": "Android 8.0+",
+      "cta": "Download APK"
+    },
+    "windows": {
+      "name": "Windows",
+      "description": "System tray app — hotkey to record",
+      "requirement": "Windows 10+",
+      "cta": "Download Installer"
+    },
+    "linux": {
+      "name": "Linux",
+      "description": "AppImage — no install needed, X11 & Wayland",
+      "requirement": "Major distributions",
+      "cta": "Download AppImage"
+    },
+    "macos": {
+      "name": "macOS",
+      "description": "Coming soon",
+      "cta": "Coming Soon"
+    }
+  },
+  "footer": {
+    "description": "AI voice input — open source, privacy first",
+    "madeIn": "Made in Taiwan",
+    "links": {
+      "github": "GitHub",
+      "privacy": "Privacy",
+      "guide": "Guide"
+    }
+  },
+  "lang": {
+    "zhTw": "繁中",
+    "en": "EN"
+  },
+  "guide": {
+    "title": "Get Started in 5 Minutes",
+    "subtitle": "From Groq signup to voice input — a complete step-by-step guide",
+    "step1": {
+      "title": "Step 1: Create a Groq Account",
+      "description": "Go to groq.com and click \"Sign Up\" in the top right. Register with Google or email."
+    },
+    "step2": {
+      "title": "Step 2: Get Your API Key",
+      "description": "After logging in to Groq Console, click \"API Keys\" in the left menu, then \"Create API Key\". Name it (e.g. \"VoxInk\"), create it, and copy the key — it's only shown once."
+    },
+    "step3": {
+      "title": "Step 3: Install VoxInk",
+      "tabs": {
+        "android": "Android",
+        "windows": "Windows",
+        "linux": "Linux"
+      },
+      "android": "Search for \"VoxInk\" on Google Play, or download the latest APK from GitHub Releases.",
+      "windows": "Download the latest Windows installer (.exe) from GitHub Releases and run the setup wizard.",
+      "linux": "Download the AppImage from GitHub Releases. Run chmod +x VoxInk*.AppImage, then double-click or run from terminal."
+    },
+    "step4": {
+      "title": "Step 4: Configure Your API Key",
+      "description": "Open VoxInk settings, find the \"Speech\" section. Select Groq as the provider, paste your API key, and click \"Test\" to verify the connection."
+    },
+    "step5": {
+      "title": "Step 5: Start Using",
+      "android": "Android: Go to Settings → Language & Input → Manage Keyboards → Enable \"VoxInk Voice Keyboard\". Switch to VoxInk in any app and tap the mic button.",
+      "desktop": "Desktop: Press the hotkey (default Ctrl+Shift+V) and start speaking. Release to auto-paste the transcription at your cursor."
+    },
+    "cost": {
+      "title": "Cost",
+      "description": "Groq offers a generous free tier with daily API call and token limits. Normal daily usage (dozens of voice inputs) typically stays within the free tier. For heavy users, Groq offers affordable pay-as-you-go pricing."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": {
+        "question": "Forgot my API key?",
+        "answer": "Log in to Groq Console, delete the old key in the API Keys page, and create a new one. Paste it back into VoxInk settings."
+      },
+      "q2": {
+        "question": "Inaccurate speech recognition?",
+        "answer": "Check your language setting (\"Auto-detect\" is recommended). Use in a quiet environment for best results. Enable \"Smart Refinement\" to let AI auto-correct recognition errors."
+      },
+      "q3": {
+        "question": "Can I use OpenAI instead of Groq?",
+        "answer": "Yes. Switch the provider to OpenAI in VoxInk settings and paste your OpenAI API key. However, Groq is faster and has a free tier."
+      },
+      "q4": {
+        "question": "Works offline?",
+        "answer": "VoxInk requires an internet connection for AI-powered speech recognition and refinement. Offline use is not currently supported."
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "Your Voice, Your Data",
+    "subtitle": "How VoxInk's privacy-first architecture keeps your data safe",
+    "architecture": {
+      "title": "Privacy by Design",
+      "flow": "Your Device → Direct to AI Provider → Text Response → Local Storage",
+      "noServer": "No VoxInk server ever touches your data",
+      "byok": {
+        "title": "BYOK Model",
+        "description": "Bring Your Own Key — you get your own API key, and your voice data goes directly to your chosen AI provider (Groq, OpenAI, etc.). VoxInk never proxies, relays, or stores your data."
+      },
+      "zeroCollection": {
+        "title": "Zero Collection Policy",
+        "description": "VoxInk requires no account registration, tracks no usage behavior, and sends no telemetry. No analytics tools, no crash reporters, no \"anonymous usage statistics\". What you use and what you say — only you know."
+      },
+      "encryption": {
+        "title": "Local Encrypted Storage",
+        "description": "API keys are protected by Android Keystore (Android) or Tauri encrypted store (Desktop) — never stored in plain text. Transcription history is in a local database that you can delete anytime."
+      }
+    },
+    "concerns": {
+      "title": "Privacy Concerns with Voice Input Services",
+      "intro": "Some subscription-based voice input services have these data flow risks:",
+      "risks": [
+        "Your voice is first sent to the service provider's server, then relayed to the AI — an extra invisible intermediary",
+        "Account creation with payment info required — your identity and usage can be fully correlated",
+        "Usage behavior may be tracked for \"service improvement\" or \"personalization\"",
+        "Servers may temporarily cache or log your voice data, even when claiming otherwise"
+      ],
+      "links": "Related discussions and reports"
+    },
+    "comparison": {
+      "title": "Privacy Comparison",
+      "headers": {
+        "feature": "Feature",
+        "voxink": "VoxInk",
+        "subscription": "Subscription Services",
+        "offline": "Offline Solutions"
+      },
+      "rows": {
+        "dataFlow": {
+          "label": "Data Flow",
+          "voxink": "Device → AI Provider (direct)",
+          "subscription": "Device → Service Server → AI",
+          "offline": "All on device"
+        },
+        "account": {
+          "label": "Account Required",
+          "voxink": "No",
+          "subscription": "Yes",
+          "offline": "No"
+        },
+        "pricing": {
+          "label": "Pricing",
+          "voxink": "BYOK (free tier available)",
+          "subscription": "$10-30 USD/month",
+          "offline": "One-time purchase"
+        },
+        "openSource": {
+          "label": "Open Source",
+          "voxink": "Yes",
+          "subscription": "No",
+          "offline": "Partial"
+        },
+        "serverIntermediary": {
+          "label": "Server Intermediary",
+          "voxink": "No",
+          "subscription": "Yes",
+          "offline": "No"
+        },
+        "quality": {
+          "label": "Recognition Quality",
+          "voxink": "Cloud AI (high quality)",
+          "subscription": "Cloud AI (high quality)",
+          "offline": "Local model (limited)"
+        }
+      }
+    }
+  },
+  "download": {
+    "title": "Download VoxInk",
+    "subtitle": "Choose your platform",
+    "detected": "Detected: {{platform}}",
+    "version": "Version {{version}}",
+    "updatedAt": "Updated {{date}}",
+    "changelog": "View full changelog",
+    "requirements": "Requirements",
+    "installSteps": "Installation",
+    "android": {
+      "playStore": "Google Play",
+      "apk": "Download APK",
+      "requirement": "Android 8.0 (API 26) or higher",
+      "steps": "Install from Play Store, or download APK and allow unknown sources."
+    },
+    "windows": {
+      "installer": "Download Installer (.exe)",
+      "requirement": "Windows 10+, WebView2 Runtime",
+      "steps": "Run the installer and follow the wizard. VoxInk appears in the system tray."
+    },
+    "linux": {
+      "appimage": "Download AppImage",
+      "requirement": "Major Linux distributions, X11 / Wayland",
+      "steps": "Run chmod +x VoxInk.AppImage, then double-click or run from terminal."
+    },
+    "macos": {
+      "comingSoon": "macOS version coming soon"
+    }
+  }
+}

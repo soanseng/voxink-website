@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "title": "語墨 VoxInk — AI 語音輸入",
+    "description": "出一支嘴，剩下交給語墨。AI 語音輸入鍵盤，支援 Android、Windows、Linux。",
+    "guideTitle": "語墨使用教學 — 五分鐘上手",
+    "guideDescription": "從註冊 Groq API 到開始語音輸入，完整圖文教學。",
+    "privacyTitle": "語墨隱私權 — 家己的聲音家己顧",
+    "privacyDescription": "VoxInk 的隱私架構，為什麼你的資料只屬於你。",
+    "downloadTitle": "下載語墨 VoxInk",
+    "downloadDescription": "Android、Windows、Linux 全平台下載。"
+  },
+  "nav": {
+    "features": "功能",
+    "guide": "教學",
+    "privacy": "隱私",
+    "download": "下載"
+  },
+  "hero": {
+    "headline": "出一支嘴，剩下交給語墨",
+    "subtitle": "AI 語音輸入，支援 Android / Windows / Linux，用你自己的 API key，無訂閱費",
+    "cta": {
+      "download": "下載 {{platform}} 版",
+      "allPlatforms": "查看所有平台"
+    }
+  },
+  "features": {
+    "title": "功能亮點",
+    "speed": {
+      "title": "極速轉錄",
+      "description": "Groq Whisper 語音辨識，0.5 秒出結果，全球最快推論速度"
+    },
+    "refine": {
+      "title": "智慧潤飾",
+      "description": "AI 自動去除贅字、修正文法、加上標點，說話就是完稿"
+    },
+    "multilang": {
+      "title": "多語混打",
+      "description": "繁體中文、English、日本語，中英混合也通，自動偵測語言"
+    },
+    "transcribe": {
+      "title": "檔案轉錄",
+      "description": "音檔、影片直接轉文字，支援 SRT 字幕格式匯出"
+    }
+  },
+  "privacy": {
+    "title": "你的聲音，只屬於你",
+    "byok": {
+      "title": "自帶 API Key",
+      "description": "用你自己的 Groq / OpenAI key，無需訂閱，費用自控"
+    },
+    "zeroCollection": {
+      "title": "零資料收集",
+      "description": "無帳號註冊、無使用追蹤、無遙測回傳，完全匿名使用"
+    },
+    "directApi": {
+      "title": "直連 API",
+      "description": "語音直接傳送到你選擇的 AI 供應商，不經過語墨伺服器"
+    },
+    "cta": "了解更多"
+  },
+  "howItWorks": {
+    "title": "怎麼用？",
+    "steps": [
+      "到 groq.com 免費註冊，取得 API key",
+      "安裝語墨，在設定裡貼上 API key",
+      "啟用語墨鍵盤（Android）或按下快捷鍵（電腦）",
+      "開始說話",
+      "潤飾好的文字自動輸入完成"
+    ],
+    "cta": "詳細教學"
+  },
+  "platforms": {
+    "title": "支援平台",
+    "android": {
+      "name": "Android",
+      "description": "語音鍵盤，在任何 app 中使用",
+      "requirement": "Android 8.0 以上",
+      "cta": "下載 APK"
+    },
+    "windows": {
+      "name": "Windows",
+      "description": "系統匣常駐，快捷鍵一按即錄",
+      "requirement": "Windows 10 以上",
+      "cta": "下載安裝檔"
+    },
+    "linux": {
+      "name": "Linux",
+      "description": "AppImage 免安裝，支援 X11 與 Wayland",
+      "requirement": "主流發行版",
+      "cta": "下載 AppImage"
+    },
+    "macos": {
+      "name": "macOS",
+      "description": "即將推出",
+      "cta": "即將推出"
+    }
+  },
+  "footer": {
+    "description": "AI 語音輸入，開源、隱私優先",
+    "madeIn": "做佇台灣",
+    "links": {
+      "github": "GitHub",
+      "privacy": "隱私權",
+      "guide": "使用教學"
+    }
+  },
+  "lang": {
+    "zhTw": "繁中",
+    "en": "EN"
+  },
+  "guide": {
+    "title": "五分鐘上手語墨",
+    "subtitle": "從註冊 Groq 到開始語音輸入，完整圖文教學",
+    "step1": {
+      "title": "Step 1：註冊 Groq 帳號",
+      "description": "前往 groq.com，點擊右上角「Sign Up」，使用 Google 或 Email 註冊。註冊完成後即可進入 Groq Console。"
+    },
+    "step2": {
+      "title": "Step 2：取得 API Key",
+      "description": "登入 Groq Console 後，點擊左側選單的「API Keys」，再點「Create API Key」。為你的 key 取個名字（例如「VoxInk」），點擊建立。複製產生的 API key 並妥善保存 — 這個 key 只會顯示一次。"
+    },
+    "step3": {
+      "title": "Step 3：安裝語墨",
+      "tabs": {
+        "android": "Android",
+        "windows": "Windows",
+        "linux": "Linux"
+      },
+      "android": "從 Google Play 商店搜尋「VoxInk」安裝，或前往 GitHub Releases 頁面下載最新 APK 檔案。下載後開啟安裝。",
+      "windows": "前往 GitHub Releases 頁面，下載最新的 Windows 安裝檔（.exe），執行安裝精靈即可完成。安裝後語墨會出現在系統匣。",
+      "linux": "前往 GitHub Releases 頁面下載 AppImage 檔案。下載後在終端執行 chmod +x VoxInk*.AppImage，接著雙擊或從終端執行即可。"
+    },
+    "step4": {
+      "title": "Step 4：設定 API Key",
+      "description": "打開語墨的設定頁面，找到「語音」或「Speech」區塊。選擇 Groq 作為語音辨識供應商，在 API Key 欄位貼上剛才複製的 key。點擊「測試」按鈕確認連線成功。"
+    },
+    "step5": {
+      "title": "Step 5：開始使用",
+      "android": "Android 使用者：到系統設定 → 語言與輸入法 → 管理鍵盤 → 啟用「語墨語音鍵盤」。在任何 app 的輸入框切換到語墨鍵盤，點擊麥克風按鈕開始說話。",
+      "desktop": "桌面版使用者：按下快捷鍵（預設 Ctrl+Shift+V），開始說話。放開快捷鍵後，辨識結果會自動貼在游標位置。"
+    },
+    "cost": {
+      "title": "費用說明",
+      "description": "Groq 提供慷慨的免費方案，每日有一定額度的 API 呼叫次數和 token 數。一般日常使用（每天數十次語音輸入）通常不會超過免費額度。如果你是重度使用者，Groq 也提供按用量計費的付費方案，價格相當合理。"
+    },
+    "faq": {
+      "title": "常見問題",
+      "q1": {
+        "question": "API key 忘記了怎麼辦？",
+        "answer": "登入 Groq Console，在 API Keys 頁面可以刪除舊的 key 並重新產生新的。將新 key 貼回語墨設定即可。"
+      },
+      "q2": {
+        "question": "語音辨識不準確怎麼辦？",
+        "answer": "確認語言設定正確（建議使用「自動偵測」），在安靜環境下使用效果最佳。開啟「智慧潤飾」功能可以讓 AI 自動修正辨識結果中的錯誤。"
+      },
+      "q3": {
+        "question": "可以用 OpenAI 替代 Groq 嗎？",
+        "answer": "可以。在語墨設定中將供應商切換為 OpenAI，貼上你的 OpenAI API key 即可。不過 Groq 的推論速度更快且有免費方案，建議優先使用。"
+      },
+      "q4": {
+        "question": "沒有網路可以用嗎？",
+        "answer": "語墨需要網路連線來呼叫 AI API 進行語音辨識和文字潤飾。目前不支援離線使用。"
+      }
+    }
+  },
+  "privacyPage": {
+    "title": "家己的聲音家己顧",
+    "subtitle": "VoxInk 的隱私架構，為什麼你的資料只屬於你",
+    "architecture": {
+      "title": "語墨的隱私設計",
+      "flow": "你的裝置 → 直連 AI 供應商 → 回傳文字 → 本地儲存",
+      "noServer": "全程沒有語墨伺服器經手你的資料",
+      "byok": {
+        "title": "BYOK 模式",
+        "description": "Bring Your Own Key — 你自己申請 API key，語音資料直接傳送到你選擇的 AI 供應商（Groq、OpenAI 等）。語墨不代管、不轉傳、不儲存。你的聲音從你的裝置直達 AI，中間沒有任何第三方。"
+      },
+      "zeroCollection": {
+        "title": "零收集政策",
+        "description": "語墨不要求註冊帳號，不追蹤使用行為，不回傳任何遙測資料。App 內沒有分析工具、沒有錯誤回報系統、沒有「匿名使用統計」。你用了什麼、說了什麼，只有你自己知道。"
+      },
+      "encryption": {
+        "title": "本地加密儲存",
+        "description": "API key 在你的裝置上以 Android Keystore（Android 版）或 Tauri 加密儲存（桌面版）保護，不會以明文形式存放。轉錄紀錄儲存在本地資料庫，你隨時可以刪除，也可以設定自動清理。"
+      }
+    },
+    "concerns": {
+      "title": "語音輸入服務的隱私隱憂",
+      "intro": "部分訂閱制語音輸入服務存在以下資料流風險：",
+      "risks": [
+        "你的語音先傳送到服務商伺服器，再轉傳給 AI 供應商 — 多了一層看不見的經手",
+        "需要建立帳號並綁定付款資訊，你的身份與使用紀錄可被完整關聯",
+        "使用行為可能被追蹤用於「改善服務」或「個人化推薦」",
+        "伺服器端可能暫存或記錄你的語音資料，即使聲稱「不儲存」也難以驗證"
+      ],
+      "links": "相關討論與報導"
+    },
+    "comparison": {
+      "title": "隱私比較",
+      "headers": {
+        "feature": "項目",
+        "voxink": "語墨 VoxInk",
+        "subscription": "訂閱制語音服務",
+        "offline": "離線方案"
+      },
+      "rows": {
+        "dataFlow": {
+          "label": "資料流向",
+          "voxink": "裝置 → AI 供應商（直連）",
+          "subscription": "裝置 → 服務商伺服器 → AI",
+          "offline": "全部在裝置上"
+        },
+        "account": {
+          "label": "需要帳號",
+          "voxink": "否",
+          "subscription": "是",
+          "offline": "否"
+        },
+        "pricing": {
+          "label": "收費模式",
+          "voxink": "BYOK（免費方案可用）",
+          "subscription": "月費 $10-30 USD",
+          "offline": "一次買斷"
+        },
+        "openSource": {
+          "label": "開放原始碼",
+          "voxink": "是",
+          "subscription": "否",
+          "offline": "部分"
+        },
+        "serverIntermediary": {
+          "label": "伺服器經手",
+          "voxink": "否",
+          "subscription": "是",
+          "offline": "否"
+        },
+        "quality": {
+          "label": "辨識品質",
+          "voxink": "雲端 AI（高品質）",
+          "subscription": "雲端 AI（高品質）",
+          "offline": "本地模型（受限）"
+        }
+      }
+    }
+  },
+  "download": {
+    "title": "下載語墨",
+    "subtitle": "選擇你的平台",
+    "detected": "偵測到你的系統：{{platform}}",
+    "version": "版本 {{version}}",
+    "updatedAt": "更新於 {{date}}",
+    "changelog": "查看完整更新紀錄",
+    "requirements": "系統需求",
+    "installSteps": "安裝步驟",
+    "android": {
+      "playStore": "Google Play 下載",
+      "apk": "APK 直接下載",
+      "requirement": "Android 8.0（API 26）以上",
+      "steps": "從 Play Store 安裝，或下載 APK 後允許安裝未知來源 app。"
+    },
+    "windows": {
+      "installer": "下載安裝檔（.exe）",
+      "requirement": "Windows 10 以上，WebView2 Runtime",
+      "steps": "執行安裝檔，依照精靈完成安裝。語墨會出現在系統匣。"
+    },
+    "linux": {
+      "appimage": "下載 AppImage",
+      "requirement": "主流 Linux 發行版，支援 X11 / Wayland",
+      "steps": "下載後執行 chmod +x VoxInk.AppImage，雙擊或從終端執行。"
+    },
+    "macos": {
+      "comingSoon": "macOS 版即將推出"
+    }
+  }
+}
