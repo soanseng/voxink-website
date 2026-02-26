@@ -78,7 +78,7 @@
     "title": "Platforms",
     "android": {
       "name": "Android",
-      "description": "Voice keyboard — use in any app. Free with ads, $4.70 Pro to go ad-free",
+      "description": "Voice keyboard — use in any app. Free (15/day) or $5.99 unlimited",
       "requirement": "Android 8.0+",
       "cta": "Free Download"
     },
@@ -101,7 +101,7 @@
     }
   },
   "footer": {
-    "description": "AI voice input — desktop open source, privacy first",
+    "description": "AI voice input — privacy first, BYOK",
     "madeIn": "Made in Taiwan",
     "links": {
       "github": "GitHub",
@@ -233,15 +233,9 @@
         },
         "pricing": {
           "label": "Pricing",
-          "voxink": "BYOK (free tier available)",
+          "voxink": "Free (15/day) or one-time purchase",
           "subscription": "$10-30 USD/month",
           "offline": "One-time purchase"
-        },
-        "openSource": {
-          "label": "Open Source",
-          "voxink": "Desktop: yes",
-          "subscription": "No",
-          "offline": "Partial"
         },
         "serverIntermediary": {
           "label": "Server Intermediary",
@@ -263,7 +257,7 @@
     "lastUpdated": "Last updated: 2026-02-25",
     "overview": {
       "title": "Overview",
-      "content": "VoxPen (語墨) is an AI voice keyboard (desktop version is open source) that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
+      "content": "VoxPen (語墨) is an AI voice keyboard that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
     },
     "dataCollection": {
       "title": "Data Collection",
@@ -272,7 +266,7 @@
         "No analytics or telemetry",
         "No crash reporting to our servers",
         "No user accounts or registration",
-        "Android free version includes AdMob ads (Pro is completely ad-free); no usage tracking"
+        "No ads on any platform"
       ]
     },
     "audioData": {
@@ -343,7 +337,7 @@
     },
     "thirdParty": {
       "title": "Third-Party Services",
-      "content": "The desktop version of VoxPen communicates only with the API providers you explicitly configure. The Android free version integrates Google AdMob for displaying ads; upgrading to Pro completely removes all ad-related connections. We do not integrate any third-party SDKs for analytics or tracking."
+      "content": "VoxPen communicates only with the API providers you explicitly configure. We do not integrate any third-party SDKs for analytics or tracking."
     },
     "children": {
       "title": "Children's Privacy",
@@ -526,8 +520,7 @@
         "rows": {
           "dataFlow": { "label": "Data Flow", "voxink": "Device → AI Provider (direct)", "subscription": "Device → Service Server → AI", "offline": "All on device" },
           "account": { "label": "Account Required", "voxink": "No", "subscription": "Yes", "offline": "No" },
-          "pricing": { "label": "Pricing", "voxink": "BYOK (free tier available)", "subscription": "$10-30/month", "offline": "One-time purchase" },
-          "openSource": { "label": "Open Source", "voxink": "Desktop: yes", "subscription": "No", "offline": "Partial" },
+          "pricing": { "label": "Pricing", "voxink": "Free (15/day) or one-time purchase", "subscription": "$10-30/month", "offline": "One-time purchase" },
           "serverIntermediary": { "label": "Server Intermediary", "voxink": "No", "subscription": "Yes", "offline": "No" },
           "quality": { "label": "Recognition Quality", "voxink": "Cloud AI (high quality)", "subscription": "Cloud AI (high quality)", "offline": "Local model (limited)" },
           "platforms": { "label": "Platforms", "voxink": "Android + Desktop (3 OS)", "subscription": "macOS / Mac+Win", "offline": "Varies" }
@@ -546,28 +539,86 @@
       "description": "VoxPen + Groq costs less in a year than one month of subscription services. Real numbers, do the math."
     },
     "hero": {
-      "title": "A whole year for less than one month elsewhere",
-      "subtitle": "Same AI voice input. Why pay hundreds per year?"
+      "title": "One price. Yours forever.",
+      "subtitle": "No subscriptions. No recurring fees. Pay once, use forever."
     },
     "homeBanner": {
-      "title": "Save enough for AirPods",
-      "yearly": "Free download, Pro just",
-      "amount": "$4.70",
+      "title": "Pay once. Not every month.",
+      "onetime": "One-time purchase",
+      "amount": "$19.99",
       "versus": "vs subscription",
-      "subscriptionAmount": "$144+/year",
+      "subscriptionAmount": "$120+/year",
       "cta": "See full comparison"
     },
+    "tiers": {
+      "title": "Simple pricing",
+      "subtitle": "Free forever for light users. One-time purchase for unlimited.",
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "description": "Perfect for trying it out",
+        "features": [
+          "15 voice inputs per day",
+          "AI refinement included",
+          "BYOK — bring your own Groq key",
+          "All platforms"
+        ],
+        "cta": "Get started"
+      },
+      "android": {
+        "name": "Android",
+        "price": "$5.99",
+        "period": "one-time",
+        "description": "Unlimited on Android",
+        "features": [
+          "Unlimited voice inputs",
+          "Unlimited AI refinement",
+          "Unlimited file transcription",
+          "No ads, no limits"
+        ],
+        "cta": "Get Android"
+      },
+      "desktop": {
+        "name": "Desktop",
+        "price": "$19.99",
+        "period": "one-time",
+        "badge": "Popular",
+        "description": "Unlimited on Windows, macOS & Linux",
+        "features": [
+          "Unlimited voice inputs",
+          "Unlimited AI refinement",
+          "Works in any app",
+          "Windows, macOS & Linux"
+        ],
+        "cta": "Get Desktop"
+      },
+      "bundle": {
+        "name": "Bundle",
+        "price": "$23.99",
+        "period": "one-time",
+        "badge": "Best Value",
+        "savings": "Save $1.99",
+        "description": "Unlimited on all platforms",
+        "features": [
+          "Everything in Android + Desktop",
+          "All platforms, one purchase",
+          "Best price per platform"
+        ],
+        "cta": "Get Bundle"
+      }
+    },
     "calculator": {
-      "title": "What does it actually cost? Let's do the math.",
-      "subtitle": "Based on real usage, no fluff",
+      "title": "What does API usage cost?",
+      "subtitle": "Your BYOK key, your costs — here's what to expect",
       "inputsLabel": "Voice inputs per day",
       "avgSecondsLabel": "Average seconds each",
       "withLlmLabel": "AI refinement enabled",
       "dailyCost": "Daily API cost",
       "monthlyCost": "Monthly API cost",
-      "yearlyCost": "Yearly cost (incl. Pro)",
+      "yearlyCost": "Yearly API cost",
       "freeNote": "Within free tier",
-      "appPrice": "Pro upgrade: $4.70 (one-time, ad-free + unlimited)",
+      "appPrice": "App: one-time purchase (see tiers above)",
       "whisperRate": "Whisper Turbo $0.04/hr",
       "llmRate": "Llama 3.1 8B $0.05–0.08/M tokens",
       "groqLink": "Get Groq API Key →"
@@ -582,47 +633,35 @@
         "serviceB": "Subscription Service B"
       },
       "rows": {
-        "appCost": {
+        "appPrice": {
           "label": "App price",
-          "voxink": "Free download (with ads)",
-          "serviceA": "$0",
-          "serviceB": "$0"
-        },
-        "proCost": {
-          "label": "Ad-free Pro",
-          "voxink": "$4.70 (one-time)",
-          "serviceA": "—",
-          "serviceB": "—"
+          "voxink": "Free (15/day) or $5.99–23.99 one-time",
+          "serviceA": "$0 (requires subscription)",
+          "serviceB": "$0 (requires subscription)"
         },
         "monthlyCost": {
           "label": "Monthly fee",
-          "voxink": "$0 (within free tier)",
+          "voxink": "$0",
           "serviceA": "$30/mo (or $12/mo yearly)",
           "serviceB": "$15/mo (or $12/mo yearly)"
         },
         "yearlyCost": {
           "label": "Total cost / year",
-          "voxink": "$0–4.70",
+          "voxink": "$0–23.99 (one-time)",
           "serviceA": "$144 (yearly plan)",
           "serviceB": "$144 (yearly plan)"
         },
         "twoYearCost": {
           "label": "Total cost / 2 years",
-          "voxink": "$0–4.70",
+          "voxink": "$0–23.99 (same price)",
           "serviceA": "$288",
           "serviceB": "$288"
         },
         "freeLimit": {
           "label": "Free tier",
-          "voxink": "8 hours of audio/day",
+          "voxink": "15 inputs/day",
           "serviceA": "4,000 words/week",
           "serviceB": "2,000 words/week"
-        },
-        "paidOverage": {
-          "label": "Beyond free tier",
-          "voxink": "~$0.60/month",
-          "serviceA": "Must subscribe",
-          "serviceB": "Must subscribe"
         },
         "dataFlow": {
           "label": "Where your voice goes",
@@ -635,12 +674,6 @@
           "voxink": "No",
           "serviceA": "Yes, with payment info",
           "serviceB": "Yes, with payment info"
-        },
-        "openSource": {
-          "label": "Open source",
-          "voxink": "Desktop: yes",
-          "serviceA": "Closed source",
-          "serviceB": "Closed source"
         }
       }
     },
@@ -648,52 +681,27 @@
       "title": "Cost by Usage",
       "light": {
         "title": "Light use",
-        "usage": "20 inputs/day, 10 sec each",
-        "voxink": "$0/mo (free tier)",
+        "usage": "≤15 inputs/day",
+        "voxink": "$0 forever (free tier)",
         "subscription": "$12–30/mo"
       },
       "normal": {
         "title": "Normal use",
-        "usage": "50 inputs/day, 15 sec each",
-        "voxink": "$0/mo (free tier)",
+        "usage": "50 inputs/day",
+        "voxink": "$5.99–19.99 once + API",
         "subscription": "$12–30/mo"
       },
       "heavy": {
         "title": "Heavy use",
-        "usage": "200 inputs/day, 15 sec each",
-        "voxink": "~$0.60/mo",
+        "usage": "200 inputs/day",
+        "voxink": "$5.99–19.99 once + ~$0.60/mo API",
         "subscription": "$12–30/mo"
       },
       "writer": {
         "title": "Writer / Power user",
-        "usage": "500 inputs/day, 20 sec each",
-        "voxink": "~$1.90/mo",
+        "usage": "500 inputs/day",
+        "voxink": "$5.99–19.99 once + ~$1.90/mo API",
         "subscription": "$12–30/mo"
-      }
-    },
-    "androidPricing": {
-      "title": "Android Pricing",
-      "subtitle": "Free to download — upgrade to remove ads",
-      "free": {
-        "title": "Free (with ads)",
-        "features": [
-          "20 voice inputs per day",
-          "5 AI refinements per day",
-          "2 file transcriptions per day",
-          "Banner ad at bottom of screen",
-          "Occasional interstitial ad after transcription (none for first 3 days, max 3/day, at least 5 min apart)",
-          "Watch a short ad for 5 extra voice inputs"
-        ]
-      },
-      "pro": {
-        "title": "Pro ($4.70 one-time)",
-        "features": [
-          "Unlimited voice inputs",
-          "Unlimited AI refinements",
-          "Unlimited file transcriptions",
-          "Completely ad-free",
-          "Pay once, use forever"
-        ]
       }
     },
     "whyFree": {
@@ -708,8 +716,8 @@
           "description": "VoxPen runs no servers, no account systems, no data storage. Those savings go straight to your wallet."
         },
         {
-          "title": "Desktop is open source = transparent",
-          "description": "The desktop version's code is fully public — you can verify exactly how VoxPen handles your voice. Unlike subscriptions, where you never know what happens behind the scenes."
+          "title": "Transparent pricing, no surprises",
+          "description": "One-time purchase, BYOK API costs you control. No hidden fees, no auto-renewals, no price increases. You own it forever."
         }
       ]
     },
@@ -719,6 +727,6 @@
       "download": "Download VoxPen",
       "guide": "Get started in 5 minutes"
     },
-    "disclaimer": "Pricing based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). VoxPen Android: free download with ads; Pro upgrade $4.70 (one-time, ad-free + unlimited)."
+    "disclaimer": "API costs based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). App purchases are one-time via Lemon Squeezy."
   }
 }

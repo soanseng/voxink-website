@@ -78,7 +78,7 @@
     "title": "支援平台",
     "android": {
       "name": "Android",
-      "description": "語音鍵盤，在任何 app 中使用。免費下載含廣告，NT$150 升級 Pro 去廣告",
+      "description": "語音鍵盤，在任何 app 中使用。免費（15次/天）或 NT$189 無限使用",
       "requirement": "Android 8.0 以上",
       "cta": "免費下載"
     },
@@ -101,7 +101,7 @@
     }
   },
   "footer": {
-    "description": "AI 語音輸入，桌面版開源、隱私優先",
+    "description": "AI 語音輸入，隱私優先、BYOK",
     "madeIn": "做佇台灣",
     "links": {
       "github": "GitHub",
@@ -233,15 +233,9 @@
         },
         "pricing": {
           "label": "收費模式",
-          "voxink": "BYOK（免費方案可用）",
+          "voxink": "免費（15次/天）或一次買斷",
           "subscription": "月費 $10-30 USD",
           "offline": "一次買斷"
-        },
-        "openSource": {
-          "label": "開放原始碼",
-          "voxink": "桌面版開源",
-          "subscription": "否",
-          "offline": "部分"
         },
         "serverIntermediary": {
           "label": "伺服器經手",
@@ -263,7 +257,7 @@
     "lastUpdated": "最後更新：2026-02-25",
     "overview": {
       "title": "概述",
-      "content": "VoxPen（語墨）是一款 AI 語音鍵盤，桌面版開放原始碼，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
+      "content": "VoxPen（語墨）是一款 AI 語音鍵盤，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
     },
     "dataCollection": {
       "title": "資料收集",
@@ -272,7 +266,7 @@
         "無分析或遙測資料",
         "無回報到我們伺服器的當機報告",
         "無使用者帳號或註冊",
-        "Android 免費版含 AdMob 廣告（Pro 版完全無廣告）；無使用追蹤"
+        "任何平台皆無廣告"
       ]
     },
     "audioData": {
@@ -343,7 +337,7 @@
     },
     "thirdParty": {
       "title": "第三方服務",
-      "content": "VoxPen 桌面版僅與您明確設定的 API 服務商通訊。Android 免費版整合 Google AdMob 用於顯示廣告，升級 Pro 後即完全移除所有廣告相關連線。我們不整合任何用於分析或追蹤的第三方 SDK。"
+      "content": "VoxPen 僅與您明確設定的 API 服務商通訊。我們不整合任何用於分析或追蹤的第三方 SDK。"
     },
     "children": {
       "title": "兒童隱私",
@@ -526,8 +520,7 @@
         "rows": {
           "dataFlow": { "label": "資料流向", "voxink": "裝置 → AI 供應商（直連）", "subscription": "裝置 → 服務商伺服器 → AI", "offline": "全部在裝置上" },
           "account": { "label": "需要帳號", "voxink": "否", "subscription": "是", "offline": "否" },
-          "pricing": { "label": "費用", "voxink": "BYOK（有免費額度）", "subscription": "US$10-30/月", "offline": "一次性購買" },
-          "openSource": { "label": "開源", "voxink": "桌面版：是", "subscription": "否", "offline": "部分" },
+          "pricing": { "label": "費用", "voxink": "免費（15次/天）或一次買斷", "subscription": "US$10-30/月", "offline": "一次性購買" },
           "serverIntermediary": { "label": "伺服器經手", "voxink": "否", "subscription": "是", "offline": "否" },
           "quality": { "label": "辨識品質", "voxink": "雲端 AI（高品質）", "subscription": "雲端 AI（高品質）", "offline": "本地模型（有限）" },
           "platforms": { "label": "支援平台", "voxink": "Android + 桌面 3 平台", "subscription": "macOS / Mac+Win", "offline": "不一定" }
@@ -546,28 +539,86 @@
       "description": "語墨 + Groq 一年花費不到一個月訂閱費。真實數據，自己算。"
     },
     "hero": {
-      "title": "一年的花費，不到別人一個月",
-      "subtitle": "同樣是 AI 語音輸入，為什麼要每月花幾百塊？"
+      "title": "一次購買，永久使用",
+      "subtitle": "不用訂閱，不用月繳。買一次，用一輩子。"
     },
     "homeBanner": {
-      "title": "省下來的，夠買 AirPods",
-      "yearly": "免費下載，Pro 只要",
-      "amount": "NT$150",
+      "title": "買一次，不用每月繳",
+      "onetime": "一次買斷",
+      "amount": "NT$639",
       "versus": "vs 訂閱制",
-      "subscriptionAmount": "NT$4,320+／年",
+      "subscriptionAmount": "NT$3,840+／年",
       "cta": "看完整比較"
     },
+    "tiers": {
+      "title": "簡單定價",
+      "subtitle": "輕度使用者永遠免費。一次買斷，無限使用。",
+      "free": {
+        "name": "免費版",
+        "price": "NT$0",
+        "period": "永遠免費",
+        "description": "適合嘗試體驗",
+        "features": [
+          "每日 15 次語音輸入",
+          "含 AI 潤飾",
+          "BYOK — 用你自己的 Groq key",
+          "所有平台"
+        ],
+        "cta": "立即開始"
+      },
+      "android": {
+        "name": "Android",
+        "price": "NT$189",
+        "period": "一次買斷",
+        "description": "Android 無限使用",
+        "features": [
+          "無限語音輸入",
+          "無限 AI 潤飾",
+          "無限檔案轉錄",
+          "無廣告、無限制"
+        ],
+        "cta": "取得 Android 版"
+      },
+      "desktop": {
+        "name": "桌面版",
+        "price": "NT$639",
+        "period": "一次買斷",
+        "badge": "最受歡迎",
+        "description": "Windows、macOS、Linux 無限使用",
+        "features": [
+          "無限語音輸入",
+          "無限 AI 潤飾",
+          "在任何 app 中使用",
+          "Windows、macOS、Linux"
+        ],
+        "cta": "取得桌面版"
+      },
+      "bundle": {
+        "name": "組合包",
+        "price": "NT$769",
+        "period": "一次買斷",
+        "badge": "最划算",
+        "savings": "省 NT$59",
+        "description": "所有平台無限使用",
+        "features": [
+          "Android + 桌面版全部功能",
+          "所有平台，一次購買",
+          "每平台最優惠價"
+        ],
+        "cta": "取得組合包"
+      }
+    },
     "calculator": {
-      "title": "你一天花多少？算給你看",
-      "subtitle": "以實際使用量計算，不灌水",
+      "title": "API 使用費用是多少？",
+      "subtitle": "你的 BYOK key，你的費用——這是大概金額",
       "inputsLabel": "每日語音輸入次數",
       "avgSecondsLabel": "平均每次秒數",
       "withLlmLabel": "啟用 AI 潤飾",
       "dailyCost": "每日 API 費用",
       "monthlyCost": "每月 API 費用",
-      "yearlyCost": "每年 API 費用（含 Pro）",
+      "yearlyCost": "每年 API 費用",
       "freeNote": "在免費額度內",
-      "appPrice": "Pro 升級 NT$150（一次性，去廣告 + 無限使用）",
+      "appPrice": "App 費用：一次買斷（見上方方案）",
       "whisperRate": "Whisper Turbo US$0.04／小時",
       "llmRate": "Llama 3.1 8B US$0.05–0.08／百萬 tokens",
       "groqLink": "申請 Groq API Key →"
@@ -582,47 +633,35 @@
         "serviceB": "訂閱制服務 B"
       },
       "rows": {
-        "appCost": {
+        "appPrice": {
           "label": "App 費用",
-          "voxink": "免費下載（含廣告）",
-          "serviceA": "NT$0",
-          "serviceB": "NT$0"
-        },
-        "proCost": {
-          "label": "去廣告 Pro",
-          "voxink": "NT$150（一次買斷）",
-          "serviceA": "—",
-          "serviceB": "—"
+          "voxink": "免費（15次/天）或 NT$189–769 一次買斷",
+          "serviceA": "NT$0（需訂閱）",
+          "serviceB": "NT$0（需訂閱）"
         },
         "monthlyCost": {
           "label": "月費",
-          "voxink": "NT$0（免費額度內）",
+          "voxink": "NT$0",
           "serviceA": "NT$960／月（US$30）",
           "serviceB": "NT$480／月（US$15）"
         },
         "yearlyCost": {
           "label": "一年總費用",
-          "voxink": "NT$0–150",
+          "voxink": "NT$0–769（一次買斷）",
           "serviceA": "NT$4,608（年繳 US$12／月）",
           "serviceB": "NT$4,608（年繳 US$12／月）"
         },
         "twoYearCost": {
           "label": "兩年總費用",
-          "voxink": "NT$0–150",
+          "voxink": "NT$0–769（同價）",
           "serviceA": "NT$9,216",
           "serviceB": "NT$9,216"
         },
         "freeLimit": {
           "label": "免費額度",
-          "voxink": "每日 8 小時語音",
+          "voxink": "每日 15 次",
           "serviceA": "4,000 字／週",
           "serviceB": "2,000 字／週"
-        },
-        "paidOverage": {
-          "label": "超出免費後",
-          "voxink": "每月約 NT$19",
-          "serviceA": "必須訂閱",
-          "serviceB": "必須訂閱"
         },
         "dataFlow": {
           "label": "你的聲音去哪",
@@ -635,12 +674,6 @@
           "voxink": "不用",
           "serviceA": "要，含付款資訊",
           "serviceB": "要，含付款資訊"
-        },
-        "openSource": {
-          "label": "開放原始碼",
-          "voxink": "桌面版開源",
-          "serviceA": "閉源",
-          "serviceB": "閉源"
         }
       }
     },
@@ -648,52 +681,27 @@
       "title": "各種使用情境",
       "light": {
         "title": "輕度使用",
-        "usage": "每天 20 次，每次 10 秒",
-        "voxink": "NT$0／月（免費額度內）",
+        "usage": "每天 ≤15 次",
+        "voxink": "NT$0 永遠免費",
         "subscription": "NT$384-960／月"
       },
       "normal": {
         "title": "一般使用",
-        "usage": "每天 50 次，每次 15 秒",
-        "voxink": "NT$0／月（免費額度內）",
+        "usage": "每天 50 次",
+        "voxink": "NT$189–639 一次 + API",
         "subscription": "NT$384-960／月"
       },
       "heavy": {
         "title": "重度使用",
-        "usage": "每天 200 次，每次 15 秒",
-        "voxink": "約 NT$19／月",
+        "usage": "每天 200 次",
+        "voxink": "NT$189–639 一次 + 約 NT$19／月 API",
         "subscription": "NT$384-960／月"
       },
       "writer": {
         "title": "文字工作者",
-        "usage": "每天 500 次，每次 20 秒",
-        "voxink": "約 NT$60／月",
+        "usage": "每天 500 次",
+        "voxink": "NT$189–639 一次 + 約 NT$60／月 API",
         "subscription": "NT$384-960／月"
-      }
-    },
-    "androidPricing": {
-      "title": "Android 版定價",
-      "subtitle": "免費下載，想去廣告再升級",
-      "free": {
-        "title": "免費版（含廣告）",
-        "features": [
-          "每日 20 次語音輸入",
-          "每日 5 次 AI 潤飾",
-          "每日 2 次檔案轉錄",
-          "底部橫幅廣告",
-          "轉錄完成後偶爾插頁廣告（安裝前 3 天免廣告，每日最多 3 次，間隔至少 5 分鐘）",
-          "觀看短廣告可獲得 5 次額外語音輸入"
-        ]
-      },
-      "pro": {
-        "title": "Pro（NT$150 一次買斷）",
-        "features": [
-          "無限語音輸入",
-          "無限 AI 潤飾",
-          "無限檔案轉錄",
-          "完全無廣告",
-          "一次付費，終身使用"
-        ]
       }
     },
     "whyFree": {
@@ -708,8 +716,8 @@
           "description": "語墨不架設伺服器、不維護帳號系統、不儲存你的資料。這些省下來的成本，就是你省下來的錢。"
         },
         {
-          "title": "桌面版開源 = 透明",
-          "description": "桌面版程式碼完全公開，你可以親眼檢視語墨如何處理你的聲音。不像訂閱制服務，你永遠不知道背後做了什麼。"
+          "title": "價格透明，沒有驚喜",
+          "description": "一次買斷，API 費用自己掌控。沒有隱藏收費、沒有自動續扣、沒有漲價。買了就是你的，永遠。"
         }
       ]
     },
@@ -719,6 +727,6 @@
       "download": "下載語墨",
       "guide": "五分鐘上手教學"
     },
-    "disclaimer": "費用以 Groq 2026 年 2 月官方定價計算，匯率 1 USD ≈ 32 TWD。訂閱制服務價格取自其官網公開定價（年繳方案）。語墨 Android 版免費下載（含廣告），Pro 升級 NT$150（一次買斷，去廣告＋無限使用）。"
+    "disclaimer": "API 費用以 Groq 2026 年 2 月官方定價計算，匯率 1 USD ≈ 32 TWD。訂閱制服務價格取自其官網公開定價（年繳方案）。App 購買為一次買斷，透過 Lemon Squeezy 付款。"
   }
 }
