@@ -15,8 +15,8 @@ const LLM_MODELS = [
   { id: "openai-gpt41-mini", provider: "OpenAI", name: "GPT-4.1-mini", inputRate: 0.40, outputRate: 1.60, tag: "" },
   // OpenRouter
   { id: "or-gemini3-flash", provider: "OpenRouter", name: "Gemini 3 Flash", inputRate: 0.50, outputRate: 3.00, tag: "recommended" },
-  { id: "or-claude-haiku45", provider: "OpenRouter", name: "Claude Haiku 4.5", inputRate: 0.80, outputRate: 4.00, tag: "quality" },
-  { id: "or-deepseek-chat", provider: "OpenRouter", name: "DeepSeek Chat", inputRate: 0.14, outputRate: 0.28, tag: "budget" },
+  { id: "or-claude-haiku45", provider: "OpenRouter", name: "Claude Haiku 4.5", inputRate: 1.00, outputRate: 5.00, tag: "quality" },
+  { id: "or-deepseek-chat", provider: "OpenRouter", name: "DeepSeek Chat", inputRate: 0.32, outputRate: 0.89, tag: "budget" },
 ] as const;
 
 const comparisonRows = [
