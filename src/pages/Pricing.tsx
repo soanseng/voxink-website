@@ -59,7 +59,7 @@ export default function Pricing() {
 
   const isGroq = selectedModel.provider === "Groq";
   const isFreeAudio = dailyAudioSeconds <= FREE_AUDIO_SECONDS;
-  const isFreeLlm = isGroq && dailyLlmTokens <= FREE_LLM_TOKENS;
+  const isFreeLlm = !withLlm || (isGroq && dailyLlmTokens <= FREE_LLM_TOKENS);
   const isFree = isFreeAudio && isFreeLlm;
 
   const audioCostUsd = isFreeAudio ? 0 : dailyAudioSeconds * WHISPER_RATE;
