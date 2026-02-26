@@ -636,8 +636,10 @@
         "fast": "極速",
         "chinese": "中文最佳",
         "budget": "平價",
-        "quality": "高品質"
-      }
+        "quality": "高品質",
+        "freeTier": "免費額度"
+      },
+      "byokNotice": "{{provider}} 模型為 BYOK（自帶金鑰）— 從第一次使用即開始計費。切換至 Groq 可享免費額度。"
     },
     "comparison": {
       "title": "真實費用比較",
@@ -695,6 +697,7 @@
     },
     "scenarios": {
       "title": "各種使用情境",
+      "footnote": "費用以 Groq 模型（含免費額度）為基準。OpenAI／OpenRouter 費用依模型而異。",
       "light": {
         "title": "輕度使用",
         "usage": "每天 ≤15 次",

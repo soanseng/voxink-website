@@ -636,8 +636,10 @@
         "fast": "ultra-fast",
         "chinese": "best for Chinese",
         "budget": "budget",
-        "quality": "quality"
-      }
+        "quality": "quality",
+        "freeTier": "free tier"
+      },
+      "byokNotice": "{{provider}} models are BYOK — costs start from first use. Switch to Groq for free tier."
     },
     "comparison": {
       "title": "Real Cost Comparison",
@@ -695,6 +697,7 @@
     },
     "scenarios": {
       "title": "Cost by Usage",
+      "footnote": "Costs shown assume Groq models with free tier. OpenAI/OpenRouter costs vary by model.",
       "light": {
         "title": "Light use",
         "usage": "≤15 inputs/day",
