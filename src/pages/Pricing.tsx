@@ -57,8 +57,9 @@ export default function Pricing() {
   const dailyAudioSeconds = inputs * seconds;
   const dailyLlmTokens = withLlm ? inputs * LLM_TOKENS_PER_INPUT : 0;
 
+  const isGroq = selectedModel.provider === "Groq";
   const isFreeAudio = dailyAudioSeconds <= FREE_AUDIO_SECONDS;
-  const isFreeLlm = dailyLlmTokens <= FREE_LLM_TOKENS;
+  const isFreeLlm = isGroq && dailyLlmTokens <= FREE_LLM_TOKENS;
   const isFree = isFreeAudio && isFreeLlm;
 
   const audioCostUsd = isFreeAudio ? 0 : dailyAudioSeconds * WHISPER_RATE;
@@ -129,7 +130,7 @@ export default function Pricing() {
                     <optgroup key={provider} label={provider}>
                       {models.map((m) => (
                         <option key={m.id} value={m.id}>
-                          {m.name}{m.tag ? ` (${t(`pricing.calculator.tags.${m.tag}`)})` : ""}
+                          {m.name}{m.tag ? ` (${t(`pricing.calculator.tags.${m.tag}`)})` : ""}{m.provider === "Groq" ? ` ✦ ${t("pricing.calculator.tags.freeTier")}` : ""}
                         </option>
                       ))}
                     </optgroup>
@@ -232,6 +233,13 @@ export default function Pricing() {
             </div>
           </div>
 
+          {/* BYOK notice for non-Groq models */}
+          {withLlm && !isGroq && (
+            <p className="mt-4 text-sm text-amber-700 bg-amber-50 rounded-lg px-4 py-2">
+              {t("pricing.calculator.byokNotice", { provider: selectedModel.provider })}
+            </p>
+          )}
+
           {/* Rate footnotes */}
           <div className="mt-4 flex flex-wrap gap-4 text-xs text-gray-400">
             <span>{t("pricing.calculator.appPrice")}</span>
@@ -333,6 +341,9 @@ export default function Pricing() {
             </div>
           ))}
         </div>
+        <p className="mt-4 text-xs text-gray-400">
+          {t("pricing.scenarios.footnote")}
+        </p>
       </section>
 
       {/* Why so cheap */}
