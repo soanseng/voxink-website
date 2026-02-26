@@ -45,6 +45,11 @@
     "transcribe": {
       "title": "檔案轉錄",
       "description": "音檔、影片直接轉文字，支援 SRT 字幕格式匯出"
+    },
+    "tone": {
+      "title": "語氣切換",
+      "description": "日常、正式、信件、筆記、社群，六種語氣一鍵切換，還能自訂 prompt",
+      "presets": ["📝 日常", "💼 正式", "📧 信件", "📋 筆記", "💬 社群", "🔧 自訂"]
     }
   },
   "privacy": {
@@ -523,7 +528,8 @@
           "pricing": { "label": "費用", "voxink": "免費（15次/天）或一次買斷", "subscription": "US$10-30/月", "offline": "一次性購買" },
           "serverIntermediary": { "label": "伺服器經手", "voxink": "否", "subscription": "是", "offline": "否" },
           "quality": { "label": "辨識品質", "voxink": "雲端 AI（高品質）", "subscription": "雲端 AI（高品質）", "offline": "本地模型（有限）" },
-          "platforms": { "label": "支援平台", "voxink": "Android + 桌面 3 平台", "subscription": "macOS / Mac+Win", "offline": "不一定" }
+          "platforms": { "label": "支援平台", "voxink": "Android + 桌面 3 平台", "subscription": "macOS / Mac+Win", "offline": "不一定" },
+          "toneSelection": { "label": "語氣切換", "voxink": "6 種預設 + 自訂 prompt", "subscription": "有限預設", "offline": "無" }
         }
       }
     },

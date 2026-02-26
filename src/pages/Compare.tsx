@@ -18,6 +18,7 @@ const comparisonRows = [
   "serverIntermediary",
   "quality",
   "platforms",
+  "toneSelection",
 ] as const;
 
 const campStyles: Record<string, string> = {

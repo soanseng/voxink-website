@@ -12,6 +12,10 @@ const featureIcons: Record<string, string> = {
 export default function Features() {
   const { t } = useTranslation();
 
+  const tonePresets = t("features.tone.presets", {
+    returnObjects: true,
+  }) as string[];
+
   return (
     <section id="features" className="py-20 px-6 bg-gray-50">
       <div className="max-w-5xl mx-auto">
@@ -30,6 +34,27 @@ export default function Features() {
               </p>
             </div>
           ))}
+
+          {/* Tone — wider featured card */}
+          <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-emerald-100 sm:col-span-2 lg:col-span-2 lg:col-start-2">
+            <div className="text-3xl mb-4">🎭</div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              {t("features.tone.title")}
+            </h3>
+            <p className="text-sm text-gray-500 leading-relaxed mb-4">
+              {t("features.tone.description")}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {tonePresets.map((preset, i) => (
+                <span
+                  key={i}
+                  className="inline-block text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-700"
+                >
+                  {preset}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

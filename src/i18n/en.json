@@ -45,6 +45,11 @@
     "transcribe": {
       "title": "File Transcription",
       "description": "Transcribe audio and video files to text, with SRT subtitle export"
+    },
+    "tone": {
+      "title": "Tone Selection",
+      "description": "Switch between casual, professional, email and more — or write your own custom prompt",
+      "presets": ["📝 Casual", "💼 Professional", "📧 Email", "📋 Note", "💬 Social", "🔧 Custom"]
     }
   },
   "privacy": {
@@ -523,7 +528,8 @@
           "pricing": { "label": "Pricing", "voxink": "Free (15/day) or one-time purchase", "subscription": "$10-30/month", "offline": "One-time purchase" },
           "serverIntermediary": { "label": "Server Intermediary", "voxink": "No", "subscription": "Yes", "offline": "No" },
           "quality": { "label": "Recognition Quality", "voxink": "Cloud AI (high quality)", "subscription": "Cloud AI (high quality)", "offline": "Local model (limited)" },
-          "platforms": { "label": "Platforms", "voxink": "Android + Desktop (3 OS)", "subscription": "macOS / Mac+Win", "offline": "Varies" }
+          "platforms": { "label": "Platforms", "voxink": "Android + Desktop (3 OS)", "subscription": "macOS / Mac+Win", "offline": "Varies" },
+          "toneSelection": { "label": "Tone Selection", "voxink": "6 presets + custom prompt", "subscription": "Limited presets", "offline": "None" }
         }
       }
     },
