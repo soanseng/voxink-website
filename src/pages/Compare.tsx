@@ -15,7 +15,6 @@ const comparisonRows = [
   "dataFlow",
   "account",
   "pricing",
-  "openSource",
   "serverIntermediary",
   "quality",
   "platforms",

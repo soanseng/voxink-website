@@ -2,18 +2,16 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useDocumentHead } from "../hooks/useDocumentHead";
+import TierCards from "../components/pricing/TierCards";
 
 const comparisonRows = [
-  "appCost",
-  "proCost",
+  "appPrice",
   "monthlyCost",
   "yearlyCost",
   "twoYearCost",
   "freeLimit",
-  "paidOverage",
   "dataFlow",
   "account",
-  "openSource",
 ] as const;
 
 const scenarioKeys = ["light", "normal", "heavy", "writer"] as const;
@@ -24,7 +22,6 @@ const LLM_OUTPUT_RATE = 0.08 / 1_000_000; // $/token
 const LLM_TOKENS_PER_INPUT = 400; // ~200 in + ~200 out
 const FREE_AUDIO_SECONDS = 28800;
 const FREE_LLM_TOKENS = 500_000;
-const APP_PRICE_USD = 4.7;
 const USD_TO_TWD = 32;
 
 export default function Pricing() {
@@ -52,7 +49,7 @@ export default function Pricing() {
     : (inputs * 200 * LLM_INPUT_RATE) + (inputs * 200 * LLM_OUTPUT_RATE);
   const dailyCostUsd = audioCostUsd + llmCostUsd;
   const monthlyCostUsd = dailyCostUsd * 30;
-  const yearlyCostUsd = monthlyCostUsd * 12 + APP_PRICE_USD;
+  const yearlyCostUsd = monthlyCostUsd * 12;
 
   function formatCost(usd: number): string {
     if (isTW) {
@@ -81,6 +78,8 @@ export default function Pricing() {
         </h1>
         <p className="text-lg text-gray-500">{t("pricing.hero.subtitle")}</p>
       </div>
+
+      <TierCards />
 
       {/* Interactive calculator */}
       <section className="mb-20">
@@ -279,50 +278,6 @@ export default function Pricing() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Android pricing */}
-      <section className="mb-20">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">
-          {t("pricing.androidPricing.title")}
-        </h2>
-        <p className="text-gray-500 mb-8">{t("pricing.androidPricing.subtitle")}</p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Free tier */}
-          <div className="rounded-xl border border-gray-200 p-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">
-              {t("pricing.androidPricing.free.title")}
-            </h3>
-            <ul className="space-y-2">
-              {(t("pricing.androidPricing.free.features", { returnObjects: true }) as string[]).map(
-                (feature, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="text-gray-400 mt-0.5 flex-shrink-0">•</span>
-                    {feature}
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-
-          {/* Pro tier */}
-          <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50/30 p-6">
-            <h3 className="text-lg font-semibold text-emerald-700 mb-4">
-              {t("pricing.androidPricing.pro.title")}
-            </h3>
-            <ul className="space-y-2">
-              {(t("pricing.androidPricing.pro.features", { returnObjects: true }) as string[]).map(
-                (feature, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                    <span className="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
-                    {feature}
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
         </div>
       </section>
 

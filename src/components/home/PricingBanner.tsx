@@ -21,7 +21,7 @@ export default function PricingBanner() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10 mb-8">
               {/* VoxPen price */}
               <div>
-                <p className="text-sm text-gray-400 mb-1">{t("pricing.homeBanner.yearly")}</p>
+                <p className="text-sm text-gray-400 mb-1">{t("pricing.homeBanner.onetime")}</p>
                 <p className="text-5xl sm:text-6xl font-bold tracking-tight text-emerald-400">
                   {t("pricing.homeBanner.amount")}
                 </p>
