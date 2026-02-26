@@ -9,12 +9,14 @@
     "downloadTitle": "Download VoxInk",
     "downloadDescription": "Available for Android, Windows, and Linux.",
     "policyTitle": "VoxInk Privacy Policy",
-    "policyDescription": "VoxInk privacy policy — we do not collect any user data."
+    "policyDescription": "VoxInk privacy policy — we do not collect any user data.",
+    "compareTitle": "Why VoxInk? — Performance & Privacy Compared",
+    "compareDescription": "Tauri vs Electron performance comparison and privacy architecture analysis."
   },
   "nav": {
     "features": "Features",
     "guide": "Guide",
-    "privacy": "Privacy",
+    "compare": "Compare",
     "download": "Download",
     "pricing": "Pricing"
   },
@@ -383,6 +385,159 @@
     },
     "macos": {
       "comingSoon": "macOS version coming soon"
+    }
+  },
+  "lightweight": {
+    "title": "Lightweight. Seriously.",
+    "subtitle": "Pro tools don't need to be another browser",
+    "bar": {
+      "voxink": "VoxInk (Tauri)",
+      "wispr": "Wispr Flow (Electron)"
+    },
+    "stats": {
+      "size": { "value": "~10MB", "label": "Install size" },
+      "ram": { "value": "~20MB", "label": "RAM usage" },
+      "startup": { "value": "<1s", "label": "Startup" }
+    },
+    "cta": "See full comparison"
+  },
+  "compare": {
+    "meta": {
+      "title": "Why VoxInk? — Performance & Privacy Compared",
+      "description": "Tauri vs Electron performance comparison and privacy architecture analysis."
+    },
+    "hero": {
+      "title": "Why VoxInk?",
+      "subtitle": "Privacy, performance, price — a full comparison"
+    },
+    "tech": {
+      "title": "Desktop: Lightweight Architecture",
+      "subtitle": "Same cross-platform goal, 30x difference in size",
+      "camps": {
+        "native": {
+          "name": "Native Swift",
+          "representative": "Superwhisper",
+          "installSize": "~30MB",
+          "ram": "~100MB",
+          "startup": "~2s",
+          "platforms": "macOS only",
+          "security": "Swift",
+          "pros": ["Small & fast"],
+          "cons": ["macOS only"]
+        },
+        "electron": {
+          "name": "Electron",
+          "representative": "Wispr Flow",
+          "installSize": "~350MB",
+          "ram": "~800MB",
+          "startup": "8-10s",
+          "platforms": "Mac + Windows",
+          "security": "Node.js",
+          "pros": ["Cross-platform"],
+          "cons": ["Bloated & slow"]
+        },
+        "tauri": {
+          "name": "Tauri (Rust)",
+          "representative": "VoxInk",
+          "badge": "Recommended",
+          "installSize": "~10MB",
+          "ram": "~20MB",
+          "startup": "<1s",
+          "platforms": "Mac + Win + Linux",
+          "security": "Rust",
+          "pros": ["Small & fast", "Cross-platform"],
+          "cons": []
+        }
+      },
+      "dimensions": {
+        "installSize": "Install size",
+        "ram": "RAM usage (idle)",
+        "startup": "Startup time",
+        "platforms": "Platforms",
+        "security": "Language safety"
+      },
+      "why": {
+        "title": "Why such a big difference?",
+        "electron": {
+          "title": "How Electron works",
+          "items": [
+            "Bundles an entire Chromium browser (~100MB)",
+            "Plus Node.js runtime (~30MB)",
+            "Every Electron app is a full Chrome instance"
+          ]
+        },
+        "tauri": {
+          "title": "How Tauri works",
+          "items": [
+            "Uses the system's built-in WebView (0MB extra)",
+            "Core is a compiled Rust binary (~5MB)",
+            "Native performance, minimal resource usage"
+          ]
+        }
+      },
+      "quotes": {
+        "title": "What users are saying",
+        "items": [
+          { "text": "Wispr Flow idles at 800MB RAM, drags down my VS Code", "source": "Reddit" },
+          { "text": "8-10 second startup, fans spinning like crazy", "source": "Reddit" },
+          { "text": "Why does every app need a built-in Chrome?", "source": "Hacker News" }
+        ],
+        "conclusion": "This is why we chose Tauri."
+      }
+    },
+    "privacy": {
+      "title": "Consistent Privacy Across All Platforms",
+      "subtitle": "Android and Desktop share the same privacy architecture",
+      "architecture": {
+        "title": "Privacy by Design",
+        "flow": "Your Device → Direct to AI Provider → Text Response → Local Storage",
+        "noServer": "No VoxInk server ever touches your data",
+        "byok": {
+          "title": "BYOK Model",
+          "description": "Bring Your Own Key — your voice data goes directly to your chosen AI provider (Groq, OpenAI, etc.). VoxInk never proxies, relays, or stores your data."
+        },
+        "zeroCollection": {
+          "title": "Zero Collection Policy",
+          "description": "No account required, no usage tracking, no telemetry. What you use and what you say — only you know."
+        },
+        "encryption": {
+          "title": "Local Encrypted Storage",
+          "description": "API keys protected by Android Keystore (Android) or Tauri encrypted store (Desktop). Transcription history is local — delete anytime."
+        }
+      },
+      "concerns": {
+        "title": "Privacy Concerns with Voice Services",
+        "intro": "Some subscription voice services have these data flow risks:",
+        "risks": [
+          "Your voice is routed through the service provider's server before reaching the AI — an invisible intermediary",
+          "Account creation with payment info required — your identity and usage fully correlated",
+          "Usage behavior may be tracked for \"service improvement\"",
+          "Servers may cache or log your voice data, even when claiming otherwise"
+        ]
+      },
+      "comparison": {
+        "title": "Privacy Comparison",
+        "headers": {
+          "feature": "Feature",
+          "voxink": "VoxInk",
+          "subscription": "Subscription Services",
+          "offline": "Offline Solutions"
+        },
+        "rows": {
+          "dataFlow": { "label": "Data Flow", "voxink": "Device → AI Provider (direct)", "subscription": "Device → Service Server → AI", "offline": "All on device" },
+          "account": { "label": "Account Required", "voxink": "No", "subscription": "Yes", "offline": "No" },
+          "pricing": { "label": "Pricing", "voxink": "BYOK (free tier available)", "subscription": "$10-30/month", "offline": "One-time purchase" },
+          "openSource": { "label": "Open Source", "voxink": "Desktop: yes", "subscription": "No", "offline": "Partial" },
+          "serverIntermediary": { "label": "Server Intermediary", "voxink": "No", "subscription": "Yes", "offline": "No" },
+          "quality": { "label": "Recognition Quality", "voxink": "Cloud AI (high quality)", "subscription": "Cloud AI (high quality)", "offline": "Local model (limited)" },
+          "platforms": { "label": "Platforms", "voxink": "Android + Desktop (3 OS)", "subscription": "macOS / Mac+Win", "offline": "Varies" }
+        }
+      }
+    },
+    "cta": {
+      "title": "Experience the difference",
+      "download": "Download VoxInk",
+      "pricing": "See pricing"
     }
   },
   "pricing": {
