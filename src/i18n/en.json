@@ -40,7 +40,7 @@
     },
     "multilang": {
       "title": "Multilingual",
-      "description": "Traditional Chinese, English, Japanese, and mixed-language support with auto-detection"
+      "description": "Mixed-language support with auto-detection"
     },
     "transcribe": {
       "title": "File Transcription",

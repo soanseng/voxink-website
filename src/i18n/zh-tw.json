@@ -40,7 +40,7 @@
     },
     "multilang": {
       "title": "多語混打",
-      "description": "繁體中文、English、日本語，中英混合也通，自動偵測語言"
+      "description": "中英混合也通，自動偵測語言"
     },
     "transcribe": {
       "title": "檔案轉錄",

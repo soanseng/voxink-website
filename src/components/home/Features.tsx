@@ -18,6 +18,19 @@ const featureIcons: Record<string, string> = {
   provider: "\uD83D\uDD0C",
 };
 
+const supportedLanguages = [
+  { flag: "\uD83C\uDDF9\uD83C\uDDFC", name: "繁體中文" },
+  { flag: "\uD83C\uDDFA\uD83C\uDDF8", name: "English" },
+  { flag: "\uD83C\uDDEF\uD83C\uDDF5", name: "日本語" },
+  { flag: "\uD83C\uDDF0\uD83C\uDDF7", name: "한국어" },
+  { flag: "\uD83C\uDDFB\uD83C\uDDF3", name: "Tiếng Việt" },
+  { flag: "\uD83C\uDDF9\uD83C\uDDED", name: "ภาษาไทย" },
+  { flag: "\uD83C\uDDEE\uD83C\uDDE9", name: "Indonesia" },
+  { flag: "\uD83C\uDDEB\uD83C\uDDF7", name: "Français" },
+  { flag: "\uD83C\uDDE9\uD83C\uDDEA", name: "Deutsch" },
+  { flag: "\uD83C\uDDEA\uD83C\uDDF8", name: "Español" },
+];
+
 export default function Features() {
   const { t } = useTranslation();
 
@@ -34,9 +47,27 @@ export default function Features() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {t(`features.${key}.title`)}
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
-                {t(`features.${key}.description`)}
-              </p>
+              {key === "multilang" ? (
+                <>
+                  <div className="flex flex-wrap gap-1.5 mb-2">
+                    {supportedLanguages.map((lang) => (
+                      <span
+                        key={lang.name}
+                        className="inline-flex items-center gap-1 text-xs bg-gray-100 text-gray-700 rounded-full px-2.5 py-1"
+                      >
+                        {lang.flag} {lang.name}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="text-sm text-gray-500 leading-relaxed">
+                    {t(`features.${key}.description`)}
+                  </p>
+                </>
+              ) : (
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  {t(`features.${key}.description`)}
+                </p>
+              )}
             </div>
           ))}
         </div>
