@@ -31,7 +31,7 @@ export default function PrivacyHighlight() {
           ))}
         </div>
         <Link
-          to={`/${lang}/privacy`}
+          to={`/${lang}/compare`}
           className="text-gray-900 font-medium hover:underline"
         >
           {t("privacy.cta")} &rarr;

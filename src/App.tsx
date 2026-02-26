@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Guide from "./pages/Guide";
-import Privacy from "./pages/Privacy";
+import Compare from "./pages/Compare";
 import Download from "./pages/Download";
 import Pricing from "./pages/Pricing";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -46,6 +46,11 @@ function detectLanguage(): Lang {
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
 
+function PrivacyRedirect() {
+  const { lang } = useParams<{ lang: string }>();
+  return <Navigate to={`/${lang}/compare`} replace />;
+}
+
 export default function App() {
   return (
     <BrowserRouter basename={basename}>
@@ -54,7 +59,8 @@ export default function App() {
         <Route path="/:lang" element={<LangLayout />}>
           <Route index element={<Home />} />
           <Route path="guide" element={<Guide />} />
-          <Route path="privacy" element={<Privacy />} />
+          <Route path="compare" element={<Compare />} />
+          <Route path="privacy" element={<PrivacyRedirect />} />
           <Route path="download" element={<Download />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
