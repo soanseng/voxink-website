@@ -48,15 +48,18 @@
     },
     "tone": {
       "title": "語氣切換",
-      "description": "日常、正式、信件、筆記、社群，六種語氣一鍵切換，還能自訂 prompt",
-      "presets": ["📝 日常", "💼 正式", "📧 信件", "📋 筆記", "💬 社群", "🔧 自訂"]
+      "description": "日常、正式、信件、筆記、社群，六種語氣一鍵切換，還能自訂 prompt"
+    },
+    "provider": {
+      "title": "多供應商",
+      "description": "Groq、OpenAI、OpenRouter 或 Ollama 本地模型——選你合用的供應商"
     }
   },
   "privacy": {
     "title": "你的聲音，只屬於你",
     "byok": {
       "title": "自帶 API Key",
-      "description": "用你自己的 Groq / OpenAI key，無需訂閱，費用自控"
+      "description": "用你自己的 Groq、OpenAI、OpenRouter 或 Ollama key，無需訂閱，費用自控"
     },
     "zeroCollection": {
       "title": "零資料收集",
@@ -121,14 +124,14 @@
   },
   "guide": {
     "title": "五分鐘上手語墨",
-    "subtitle": "從註冊 Groq 到開始語音輸入，完整圖文教學",
+    "subtitle": "從取得 API key 到開始語音輸入，完整圖文教學",
     "step1": {
-      "title": "Step 1：註冊 Groq 帳號",
-      "description": "前往 groq.com，點擊右上角「Sign Up」，使用 Google 或 Email 註冊。註冊完成後即可進入 Groq Console。"
+      "title": "Step 1：取得 API Key",
+      "description": "到 groq.com 註冊（推薦，速度快且有免費額度）、openai.com 或 openrouter.ai。在控制台建立 API key。桌面版用戶也可以用 Ollama 跑本地模型。"
     },
     "step2": {
-      "title": "Step 2：取得 API Key",
-      "description": "登入 Groq Console 後，點擊左側選單的「API Keys」，再點「Create API Key」。為你的 key 取個名字（例如「VoxPen」），點擊建立。複製產生的 API key 並妥善保存 — 這個 key 只會顯示一次。"
+      "title": "Step 2：複製 API Key",
+      "description": "進入你選擇的供應商的 API Keys 頁面，建立新的 key，取個名字（例如「VoxPen」），然後複製——key 只會顯示一次。"
     },
     "step3": {
       "title": "Step 3：安裝語墨",
@@ -143,7 +146,7 @@
     },
     "step4": {
       "title": "Step 4：設定 API Key",
-      "description": "打開語墨的設定頁面，找到「語音」或「Speech」區塊。選擇 Groq 作為語音辨識供應商，在 API Key 欄位貼上剛才複製的 key。點擊「測試」按鈕確認連線成功。"
+      "description": "打開語墨的設定頁面，找到「語音」或「Speech」區塊。選擇你的供應商（Groq、OpenAI、OpenRouter 或 Ollama），在 API Key 欄位貼上剛才複製的 key。點擊「測試」按鈕確認連線成功。"
     },
     "step5": {
       "title": "Step 5：開始使用",
@@ -162,7 +165,7 @@
         "breakdown": "語音辨識（Whisper Turbo）：25 分鐘 ≈ NT$0.5／天 | AI 潤飾（Llama 3.1 8B）：約 4 萬 tokens ≈ NT$0.2／天",
         "total": "合計每天不到 NT$1，每月約 NT$19（約 US$0.60），比一杯超商咖啡還便宜。"
       },
-      "note": "以上以 Groq 官方定價計算（Whisper Turbo US$0.04／小時、Llama 3.1 8B US$0.05-0.08／百萬 tokens），匯率以 1 USD ≈ 32 TWD 估算。"
+      "note": "以上以 Groq 2026 年 2 月定價計算：Whisper Turbo US$0.04／小時、GPT-OSS-120B US$0.15–0.60／百萬 tokens。另有其他供應商可選——詳見費用比較頁。"
     },
     "faq": {
       "title": "常見問題",
@@ -175,8 +178,8 @@
         "answer": "確認語言設定正確（建議使用「自動偵測」），在安靜環境下使用效果最佳。開啟「智慧潤飾」功能可以讓 AI 自動修正辨識結果中的錯誤。"
       },
       "q3": {
-        "question": "可以用 OpenAI 替代 Groq 嗎？",
-        "answer": "可以。在語墨設定中將供應商切換為 OpenAI，貼上你的 OpenAI API key 即可。不過 Groq 的推論速度更快且有免費方案，建議優先使用。"
+        "question": "支援哪些供應商？",
+        "answer": "Groq（推薦——速度最快、有免費額度）、OpenAI（GPT-5-nano 非常便宜）、OpenRouter（一把 key 用 Google、Anthropic、DeepSeek 等）、以及 Ollama 在桌面版跑本地模型。"
       },
       "q4": {
         "question": "沒有網路可以用嗎？",
@@ -616,7 +619,8 @@
     },
     "calculator": {
       "title": "API 使用費用是多少？",
-      "subtitle": "你的 BYOK key，你的費用——這是大概金額",
+      "subtitle": "你的 BYOK key，你的費用——這是大概金額（2026 年 2 月價格）",
+      "modelLabel": "潤飾模型",
       "inputsLabel": "每日語音輸入次數",
       "avgSecondsLabel": "平均每次秒數",
       "withLlmLabel": "啟用 AI 潤飾",
@@ -626,8 +630,14 @@
       "freeNote": "在免費額度內",
       "appPrice": "App 費用：一次買斷（見上方方案）",
       "whisperRate": "Whisper Turbo US$0.04／小時",
-      "llmRate": "Llama 3.1 8B US$0.05–0.08／百萬 tokens",
-      "groqLink": "申請 Groq API Key →"
+      "groqLink": "申請 Groq API Key →",
+      "tags": {
+        "recommended": "推薦",
+        "fast": "極速",
+        "chinese": "中文最佳",
+        "budget": "平價",
+        "quality": "高品質"
+      }
     },
     "comparison": {
       "title": "真實費用比較",

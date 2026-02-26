@@ -48,15 +48,18 @@
     },
     "tone": {
       "title": "Tone Selection",
-      "description": "Switch between casual, professional, email and more — or write your own custom prompt",
-      "presets": ["📝 Casual", "💼 Professional", "📧 Email", "📋 Note", "💬 Social", "🔧 Custom"]
+      "description": "Switch between casual, professional, email and more — or write your own custom prompt"
+    },
+    "provider": {
+      "title": "Multi-Provider",
+      "description": "Groq, OpenAI, OpenRouter, or local models with Ollama — pick the provider that fits your needs"
     }
   },
   "privacy": {
     "title": "Your Voice, Only Yours",
     "byok": {
       "title": "Bring Your Own Key",
-      "description": "Use your own Groq / OpenAI key. No subscription. You control the cost."
+      "description": "Use your own Groq, OpenAI, OpenRouter, or Ollama key. No subscription. You control the cost."
     },
     "zeroCollection": {
       "title": "Zero Data Collection",
@@ -121,14 +124,14 @@
   },
   "guide": {
     "title": "Get Started in 5 Minutes",
-    "subtitle": "From Groq signup to voice input — a complete step-by-step guide",
+    "subtitle": "From API key setup to voice input — a complete step-by-step guide",
     "step1": {
-      "title": "Step 1: Create a Groq Account",
-      "description": "Go to groq.com and click \"Sign Up\" in the top right. Register with Google or email."
+      "title": "Step 1: Get an API Key",
+      "description": "Sign up at groq.com (recommended — fast and has a free tier), openai.com, or openrouter.ai. Create an API key in the console. Desktop users can also use Ollama for local models."
     },
     "step2": {
-      "title": "Step 2: Get Your API Key",
-      "description": "After logging in to Groq Console, click \"API Keys\" in the left menu, then \"Create API Key\". Name it (e.g. \"VoxPen\"), create it, and copy the key — it's only shown once."
+      "title": "Step 2: Copy Your API Key",
+      "description": "Go to the API Keys page of your chosen provider, create a new key, name it (e.g. \"VoxPen\"), and copy it — it's only shown once."
     },
     "step3": {
       "title": "Step 3: Install VoxPen",
@@ -143,7 +146,7 @@
     },
     "step4": {
       "title": "Step 4: Configure Your API Key",
-      "description": "Open VoxPen settings, find the \"Speech\" section. Select Groq as the provider, paste your API key, and click \"Test\" to verify the connection."
+      "description": "Open VoxPen settings, find the \"Speech\" section. Select your provider (Groq, OpenAI, OpenRouter, or Ollama), paste your API key, and click \"Test\" to verify the connection."
     },
     "step5": {
       "title": "Step 5: Start Using",
@@ -162,7 +165,7 @@
         "breakdown": "Speech recognition (Whisper Turbo): 25 min ≈ $0.017/day | AI refinement (Llama 3.1 8B): ~40K tokens ≈ $0.005/day",
         "total": "Total: under $0.03/day, about $0.60/month — less than a cup of coffee."
       },
-      "note": "Based on Groq pricing: Whisper Turbo $0.04/hr, Llama 3.1 8B $0.05–0.08/M tokens."
+      "note": "Based on Groq pricing (Feb 2026): Whisper Turbo $0.04/hr, GPT-OSS-120B $0.15–0.60/M tokens. Other providers available — see pricing page for comparison."
     },
     "faq": {
       "title": "FAQ",
@@ -175,8 +178,8 @@
         "answer": "Check your language setting (\"Auto-detect\" is recommended). Use in a quiet environment for best results. Enable \"Smart Refinement\" to let AI auto-correct recognition errors."
       },
       "q3": {
-        "question": "Can I use OpenAI instead of Groq?",
-        "answer": "Yes. Switch the provider to OpenAI in VoxPen settings and paste your OpenAI API key. However, Groq is faster and has a free tier."
+        "question": "What providers are supported?",
+        "answer": "Groq (recommended — fastest, free tier), OpenAI (GPT-5-nano is very cheap), OpenRouter (one key for Google, Anthropic, DeepSeek, etc.), and Ollama for running local models on desktop."
       },
       "q4": {
         "question": "Works offline?",
@@ -616,7 +619,8 @@
     },
     "calculator": {
       "title": "What does API usage cost?",
-      "subtitle": "Your BYOK key, your costs — here's what to expect",
+      "subtitle": "Your BYOK key, your costs — here's what to expect (prices as of February 2026)",
+      "modelLabel": "Refinement model",
       "inputsLabel": "Voice inputs per day",
       "avgSecondsLabel": "Average seconds each",
       "withLlmLabel": "AI refinement enabled",
@@ -626,8 +630,14 @@
       "freeNote": "Within free tier",
       "appPrice": "App: one-time purchase (see tiers above)",
       "whisperRate": "Whisper Turbo $0.04/hr",
-      "llmRate": "Llama 3.1 8B $0.05–0.08/M tokens",
-      "groqLink": "Get Groq API Key →"
+      "groqLink": "Get Groq API Key →",
+      "tags": {
+        "recommended": "recommended",
+        "fast": "ultra-fast",
+        "chinese": "best for Chinese",
+        "budget": "budget",
+        "quality": "quality"
+      }
     },
     "comparison": {
       "title": "Real Cost Comparison",

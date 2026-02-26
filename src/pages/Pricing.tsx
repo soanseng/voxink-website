@@ -4,6 +4,21 @@ import { useTranslation } from "react-i18next";
 import { useDocumentHead } from "../hooks/useDocumentHead";
 import TierCards from "../components/pricing/TierCards";
 
+const LLM_MODELS = [
+  // Groq
+  { id: "groq-gpt-oss-120b", provider: "Groq", name: "GPT-OSS-120B", inputRate: 0.15, outputRate: 0.60, tag: "recommended" },
+  { id: "groq-gpt-oss-20b", provider: "Groq", name: "GPT-OSS-20B", inputRate: 0.075, outputRate: 0.30, tag: "fast" },
+  { id: "groq-qwen3-32b", provider: "Groq", name: "Qwen3-32B", inputRate: 0.29, outputRate: 0.59, tag: "chinese" },
+  // OpenAI
+  { id: "openai-gpt5-nano", provider: "OpenAI", name: "GPT-5-nano", inputRate: 0.05, outputRate: 0.40, tag: "budget" },
+  { id: "openai-gpt5-mini", provider: "OpenAI", name: "GPT-5-mini", inputRate: 0.25, outputRate: 2.00, tag: "" },
+  { id: "openai-gpt41-mini", provider: "OpenAI", name: "GPT-4.1-mini", inputRate: 0.40, outputRate: 1.60, tag: "" },
+  // OpenRouter
+  { id: "or-gemini3-flash", provider: "OpenRouter", name: "Gemini 3 Flash", inputRate: 0.50, outputRate: 3.00, tag: "recommended" },
+  { id: "or-claude-haiku45", provider: "OpenRouter", name: "Claude Haiku 4.5", inputRate: 0.80, outputRate: 4.00, tag: "quality" },
+  { id: "or-deepseek-chat", provider: "OpenRouter", name: "DeepSeek Chat", inputRate: 0.14, outputRate: 0.28, tag: "budget" },
+] as const;
+
 const comparisonRows = [
   "appPrice",
   "monthlyCost",
@@ -17,8 +32,6 @@ const comparisonRows = [
 const scenarioKeys = ["light", "normal", "heavy", "writer"] as const;
 
 const WHISPER_RATE = 0.04 / 3600; // $/second
-const LLM_INPUT_RATE = 0.05 / 1_000_000; // $/token
-const LLM_OUTPUT_RATE = 0.08 / 1_000_000; // $/token
 const LLM_TOKENS_PER_INPUT = 400; // ~200 in + ~200 out
 const FREE_AUDIO_SECONDS = 28800;
 const FREE_LLM_TOKENS = 500_000;
@@ -34,6 +47,11 @@ export default function Pricing() {
   const [inputs, setInputs] = useState(50);
   const [seconds, setSeconds] = useState(15);
   const [withLlm, setWithLlm] = useState(true);
+  const [modelId, setModelId] = useState("groq-gpt-oss-120b");
+
+  const selectedModel = LLM_MODELS.find((m) => m.id === modelId) ?? LLM_MODELS[0];
+  const llmInputRate = selectedModel.inputRate / 1_000_000;
+  const llmOutputRate = selectedModel.outputRate / 1_000_000;
 
   // Calculate costs
   const dailyAudioSeconds = inputs * seconds;
@@ -46,7 +64,7 @@ export default function Pricing() {
   const audioCostUsd = isFreeAudio ? 0 : dailyAudioSeconds * WHISPER_RATE;
   const llmCostUsd = isFreeLlm
     ? 0
-    : (inputs * 200 * LLM_INPUT_RATE) + (inputs * 200 * LLM_OUTPUT_RATE);
+    : (inputs * 200 * llmInputRate) + (inputs * 200 * llmOutputRate);
   const dailyCostUsd = audioCostUsd + llmCostUsd;
   const monthlyCostUsd = dailyCostUsd * 30;
   const yearlyCostUsd = monthlyCostUsd * 12;
@@ -89,6 +107,38 @@ export default function Pricing() {
         <p className="text-gray-500 mb-8">{t("pricing.calculator.subtitle")}</p>
 
         <div className="bg-gray-50 rounded-2xl p-6 sm:p-8">
+          {/* Model selector */}
+          {withLlm && (
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                {t("pricing.calculator.modelLabel")}
+              </label>
+              <select
+                value={modelId}
+                onChange={(e) => setModelId(e.target.value)}
+                className="w-full sm:w-auto px-4 py-2 rounded-lg border border-gray-300 bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900"
+              >
+                {(() => {
+                  const groups = new Map<string, typeof LLM_MODELS[number][]>();
+                  for (const m of LLM_MODELS) {
+                    const list = groups.get(m.provider) ?? [];
+                    list.push(m);
+                    groups.set(m.provider, list);
+                  }
+                  return Array.from(groups.entries()).map(([provider, models]) => (
+                    <optgroup key={provider} label={provider}>
+                      {models.map((m) => (
+                        <option key={m.id} value={m.id}>
+                          {m.name}{m.tag ? ` (${t(`pricing.calculator.tags.${m.tag}`)})` : ""}
+                        </option>
+                      ))}
+                    </optgroup>
+                  ));
+                })()}
+              </select>
+            </div>
+          )}
+
           {/* Sliders */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
             <div>
@@ -186,7 +236,11 @@ export default function Pricing() {
           <div className="mt-4 flex flex-wrap gap-4 text-xs text-gray-400">
             <span>{t("pricing.calculator.appPrice")}</span>
             <span>{t("pricing.calculator.whisperRate")}</span>
-            {withLlm && <span>{t("pricing.calculator.llmRate")}</span>}
+            {withLlm && (
+              <span>
+                {selectedModel.name}: ${selectedModel.inputRate}/${selectedModel.outputRate} per 1M tokens
+              </span>
+            )}
             <a
               href="https://console.groq.com/keys"
               target="_blank"
