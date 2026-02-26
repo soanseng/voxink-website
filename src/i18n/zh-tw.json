@@ -9,12 +9,14 @@
     "downloadTitle": "下載語墨 VoxInk",
     "downloadDescription": "Android、Windows、Linux 全平台下載。",
     "policyTitle": "VoxInk 隱私權政策",
-    "policyDescription": "VoxInk（語墨）隱私權政策 — 我們不收集任何使用者資料。"
+    "policyDescription": "VoxInk（語墨）隱私權政策 — 我們不收集任何使用者資料。",
+    "compareTitle": "為什麼選語墨？— 效能與隱私全面比較",
+    "compareDescription": "Tauri vs Electron 效能比較、隱私架構分析，了解語墨的技術優勢。"
   },
   "nav": {
     "features": "功能",
     "guide": "教學",
-    "privacy": "隱私",
+    "compare": "比較",
     "download": "下載",
     "pricing": "費用比較"
   },
@@ -383,6 +385,159 @@
     },
     "macos": {
       "comingSoon": "macOS 版即將推出"
+    }
+  },
+  "lightweight": {
+    "title": "輕量到你毋敢相信",
+    "subtitle": "專業工具不需要是另一個瀏覽器",
+    "bar": {
+      "voxink": "語墨 VoxInk（Tauri）",
+      "wispr": "Wispr Flow（Electron）"
+    },
+    "stats": {
+      "size": { "value": "~10MB", "label": "安裝大小" },
+      "ram": { "value": "~20MB", "label": "RAM 佔用" },
+      "startup": { "value": "<1 秒", "label": "啟動速度" }
+    },
+    "cta": "看完整比較"
+  },
+  "compare": {
+    "meta": {
+      "title": "為什麼選語墨？— 效能與隱私全面比較",
+      "description": "Tauri vs Electron 效能比較、隱私架構分析，了解語墨的技術優勢。"
+    },
+    "hero": {
+      "title": "為什麼選語墨？",
+      "subtitle": "隱私、效能、價格——全面比較"
+    },
+    "tech": {
+      "title": "桌面版：輕量技術架構",
+      "subtitle": "同樣是跨平台 app，差距可以是 30 倍",
+      "camps": {
+        "native": {
+          "name": "Native Swift",
+          "representative": "Superwhisper",
+          "installSize": "~30MB",
+          "ram": "~100MB",
+          "startup": "~2 秒",
+          "platforms": "僅 macOS",
+          "security": "Swift",
+          "pros": ["小而快"],
+          "cons": ["只有 macOS"]
+        },
+        "electron": {
+          "name": "Electron",
+          "representative": "Wispr Flow",
+          "installSize": "~350MB",
+          "ram": "~800MB",
+          "startup": "8-10 秒",
+          "platforms": "Mac + Windows",
+          "security": "Node.js",
+          "pros": ["跨平台"],
+          "cons": ["肥大緩慢"]
+        },
+        "tauri": {
+          "name": "Tauri（Rust）",
+          "representative": "語墨 VoxInk",
+          "badge": "推薦",
+          "installSize": "~10MB",
+          "ram": "~20MB",
+          "startup": "<1 秒",
+          "platforms": "Mac + Windows + Linux",
+          "security": "Rust",
+          "pros": ["小而快", "跨平台"],
+          "cons": []
+        }
+      },
+      "dimensions": {
+        "installSize": "安裝大小",
+        "ram": "RAM 佔用（閒置）",
+        "startup": "啟動時間",
+        "platforms": "支援平台",
+        "security": "安全語言"
+      },
+      "why": {
+        "title": "為什麼差這麼多？",
+        "electron": {
+          "title": "Electron 的運作方式",
+          "items": [
+            "打包整個 Chromium 瀏覽器（~100MB）",
+            "加上 Node.js runtime（~30MB）",
+            "每個 Electron app 都是一個完整的 Chrome"
+          ]
+        },
+        "tauri": {
+          "title": "Tauri 的運作方式",
+          "items": [
+            "使用系統內建 WebView（0MB 額外負擔）",
+            "核心是 Rust 編譯的小 binary（~5MB）",
+            "原生級效能，最小化資源佔用"
+          ]
+        }
+      },
+      "quotes": {
+        "title": "使用者怎麼說",
+        "items": [
+          { "text": "Wispr Flow idle 就吃 800MB RAM，拖垮我的 VS Code", "source": "Reddit" },
+          { "text": "8-10 秒啟動，風扇狂轉", "source": "Reddit" },
+          { "text": "為什麼每個 app 都要內建一個 Chrome？", "source": "Hacker News" }
+        ],
+        "conclusion": "這就是我們選擇 Tauri 的原因。"
+      }
+    },
+    "privacy": {
+      "title": "全平台一致的隱私架構",
+      "subtitle": "Android 和桌面版共用相同的隱私設計",
+      "architecture": {
+        "title": "隱私設計",
+        "flow": "你的裝置 → 直連 AI 供應商 → 回傳文字 → 本地儲存",
+        "noServer": "全程沒有語墨伺服器經手你的資料",
+        "byok": {
+          "title": "BYOK 模式",
+          "description": "Bring Your Own Key — 你自己申請 API key，語音資料直接傳送到你選擇的 AI 供應商（Groq、OpenAI 等）。語墨不代管、不轉傳、不儲存。"
+        },
+        "zeroCollection": {
+          "title": "零收集政策",
+          "description": "語墨不要求註冊帳號，不追蹤使用行為，不回傳任何遙測資料。你用了什麼、說了什麼，只有你自己知道。"
+        },
+        "encryption": {
+          "title": "本地加密儲存",
+          "description": "API key 以 Android Keystore（Android 版）或 Tauri 加密儲存（桌面版）保護。轉錄紀錄儲存在本地資料庫，你隨時可以刪除。"
+        }
+      },
+      "concerns": {
+        "title": "語音輸入服務的隱私隱憂",
+        "intro": "部分訂閱制語音輸入服務存在以下資料流風險：",
+        "risks": [
+          "你的語音先傳送到服務商伺服器，再轉傳給 AI 供應商 — 多了一層看不見的經手",
+          "需要建立帳號並綁定付款資訊，你的身份與使用紀錄可被完整關聯",
+          "使用行為可能被追蹤用於「改善服務」或「個人化推薦」",
+          "伺服器端可能暫存或記錄你的語音資料，即使聲稱「不儲存」也難以驗證"
+        ]
+      },
+      "comparison": {
+        "title": "隱私比較",
+        "headers": {
+          "feature": "項目",
+          "voxink": "語墨 VoxInk",
+          "subscription": "訂閱制語音服務",
+          "offline": "離線方案"
+        },
+        "rows": {
+          "dataFlow": { "label": "資料流向", "voxink": "裝置 → AI 供應商（直連）", "subscription": "裝置 → 服務商伺服器 → AI", "offline": "全部在裝置上" },
+          "account": { "label": "需要帳號", "voxink": "否", "subscription": "是", "offline": "否" },
+          "pricing": { "label": "費用", "voxink": "BYOK（有免費額度）", "subscription": "US$10-30/月", "offline": "一次性購買" },
+          "openSource": { "label": "開源", "voxink": "桌面版：是", "subscription": "否", "offline": "部分" },
+          "serverIntermediary": { "label": "伺服器經手", "voxink": "否", "subscription": "是", "offline": "否" },
+          "quality": { "label": "辨識品質", "voxink": "雲端 AI（高品質）", "subscription": "雲端 AI（高品質）", "offline": "本地模型（有限）" },
+          "platforms": { "label": "支援平台", "voxink": "Android + 桌面 3 平台", "subscription": "macOS / Mac+Win", "offline": "不一定" }
+        }
+      }
+    },
+    "cta": {
+      "title": "體驗輕量的差異",
+      "download": "下載語墨",
+      "pricing": "看定價"
     }
   },
   "pricing": {
