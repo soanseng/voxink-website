@@ -263,7 +263,7 @@ export default function Pricing() {
               </p>
               <div className="flex items-baseline justify-between">
                 <div>
-                  <p className="text-xs text-gray-400 mb-0.5">VoxInk</p>
+                  <p className="text-xs text-gray-400 mb-0.5">VoxPen</p>
                   <p className="text-lg font-bold text-emerald-600">
                     {t(`pricing.scenarios.${key}.voxink`)}
                   </p>

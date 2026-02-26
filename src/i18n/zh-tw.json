@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "語墨 VoxInk — AI 語音輸入",
+    "title": "語墨 VoxPen — AI 語音輸入",
     "description": "出一支嘴，剩下交給語墨。AI 語音輸入鍵盤，支援 Android、Windows、Linux。",
     "guideTitle": "語墨使用教學 — 五分鐘上手",
     "guideDescription": "從註冊 Groq API 到開始語音輸入，完整圖文教學。",
     "privacyTitle": "語墨隱私權 — 家己的聲音家己顧",
-    "privacyDescription": "VoxInk 的隱私架構，為什麼你的資料只屬於你。",
-    "downloadTitle": "下載語墨 VoxInk",
+    "privacyDescription": "VoxPen 的隱私架構，為什麼你的資料只屬於你。",
+    "downloadTitle": "下載語墨 VoxPen",
     "downloadDescription": "Android、Windows、Linux 全平台下載。",
-    "policyTitle": "VoxInk 隱私權政策",
-    "policyDescription": "VoxInk（語墨）隱私權政策 — 我們不收集任何使用者資料。",
+    "policyTitle": "VoxPen 隱私權政策",
+    "policyDescription": "VoxPen（語墨）隱私權政策 — 我們不收集任何使用者資料。",
     "compareTitle": "為什麼選語墨？— 效能與隱私全面比較",
     "compareDescription": "Tauri vs Electron 效能比較、隱私架構分析，了解語墨的技術優勢。"
   },
@@ -123,7 +123,7 @@
     },
     "step2": {
       "title": "Step 2：取得 API Key",
-      "description": "登入 Groq Console 後，點擊左側選單的「API Keys」，再點「Create API Key」。為你的 key 取個名字（例如「VoxInk」），點擊建立。複製產生的 API key 並妥善保存 — 這個 key 只會顯示一次。"
+      "description": "登入 Groq Console 後，點擊左側選單的「API Keys」，再點「Create API Key」。為你的 key 取個名字（例如「VoxPen」），點擊建立。複製產生的 API key 並妥善保存 — 這個 key 只會顯示一次。"
     },
     "step3": {
       "title": "Step 3：安裝語墨",
@@ -132,9 +132,9 @@
         "windows": "Windows",
         "linux": "Linux"
       },
-      "android": "從 Google Play 商店搜尋「VoxInk」安裝，或前往 GitHub Releases 頁面下載最新 APK 檔案。下載後開啟安裝。",
+      "android": "從 Google Play 商店搜尋「VoxPen」安裝，或前往 GitHub Releases 頁面下載最新 APK 檔案。下載後開啟安裝。",
       "windows": "前往 GitHub Releases 頁面，下載最新的 Windows 安裝檔（.exe），執行安裝精靈即可完成。安裝後語墨會出現在系統匣。",
-      "linux": "前往 GitHub Releases 頁面下載 AppImage 檔案。下載後在終端執行 chmod +x VoxInk*.AppImage，接著雙擊或從終端執行即可。"
+      "linux": "前往 GitHub Releases 頁面下載 AppImage 檔案。下載後在終端執行 chmod +x VoxPen*.AppImage，接著雙擊或從終端執行即可。"
     },
     "step4": {
       "title": "Step 4：設定 API Key",
@@ -181,7 +181,7 @@
   },
   "privacyPage": {
     "title": "家己的聲音家己顧",
-    "subtitle": "VoxInk 的隱私架構，為什麼你的資料只屬於你",
+    "subtitle": "VoxPen 的隱私架構，為什麼你的資料只屬於你",
     "architecture": {
       "title": "語墨的隱私設計",
       "flow": "你的裝置 → 直連 AI 供應商 → 回傳文字 → 本地儲存",
@@ -214,7 +214,7 @@
       "title": "隱私比較",
       "headers": {
         "feature": "項目",
-        "voxink": "語墨 VoxInk",
+        "voxink": "語墨 VoxPen",
         "subscription": "訂閱制語音服務",
         "offline": "離線方案"
       },
@@ -259,15 +259,15 @@
     }
   },
   "policy": {
-    "title": "VoxInk 隱私權政策",
+    "title": "VoxPen 隱私權政策",
     "lastUpdated": "最後更新：2026-02-25",
     "overview": {
       "title": "概述",
-      "content": "VoxInk（語墨）是一款 AI 語音鍵盤，桌面版開放原始碼，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
+      "content": "VoxPen（語墨）是一款 AI 語音鍵盤，桌面版開放原始碼，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
     },
     "dataCollection": {
       "title": "資料收集",
-      "intro": "VoxInk 不收集任何個人資料。",
+      "intro": "VoxPen 不收集任何個人資料。",
       "items": [
         "無分析或遙測資料",
         "無回報到我們伺服器的當機報告",
@@ -277,12 +277,12 @@
     },
     "audioData": {
       "title": "音訊資料",
-      "intro": "使用 VoxInk 語音輸入時：",
+      "intro": "使用 VoxPen 語音輸入時：",
       "items": [
         "音訊在您的裝置上本機錄製",
         "音訊直接從您的裝置傳送至您設定的 API 服務商（如 Groq、OpenAI）",
         "轉錄完成後音訊不會儲存在裝置上",
-        "VoxInk 無法存取傳送至 API 服務商的音訊資料"
+        "VoxPen 無法存取傳送至 API 服務商的音訊資料"
       ],
       "providerNote": "您的 API 服務商的隱私權政策規範他們如何處理音訊資料。"
     },
@@ -308,13 +308,13 @@
       "intro": "啟用文字潤飾功能時：",
       "items": [
         "轉錄文字直接傳送至您設定的 LLM 服務商（如 Groq、OpenAI、Anthropic）",
-        "VoxInk 不會檢視或儲存潤飾後的文字（僅存在您的本機裝置）",
+        "VoxPen 不會檢視或儲存潤飾後的文字（僅存在您的本機裝置）",
         "您的 LLM 服務商的隱私權政策適用於此資料"
       ]
     },
     "permissions": {
       "title": "權限",
-      "intro": "VoxInk 請求以下權限：",
+      "intro": "VoxPen 請求以下權限：",
       "items": [
         "RECORD_AUDIO — 語音錄製以進行語音轉文字",
         "INTERNET — 將音訊傳送至您的 API 服務商"
@@ -322,12 +322,12 @@
     },
     "dataDeletion": {
       "title": "資料刪除",
-      "intro": "VoxInk（語墨）不會在任何伺服器上儲存您的個人資料。所有資料皆儲存在您的本機裝置上。您可以依照以下步驟完全刪除所有資料：",
+      "intro": "VoxPen（語墨）不會在任何伺服器上儲存您的個人資料。所有資料皆儲存在您的本機裝置上。您可以依照以下步驟完全刪除所有資料：",
       "items": [
-        "轉錄紀錄：開啟 VoxInk → 設定 → 轉錄紀錄 → 點擊「全部刪除」，即可清除所有本機儲存的轉錄文字",
-        "API 金鑰：開啟 VoxInk → 設定 → 語音／Speech → 清除 API Key 欄位並儲存",
-        "完整移除（Android）：前往系統設定 → 應用程式 → VoxInk → 儲存空間 → 清除資料，或直接解除安裝 app",
-        "完整移除（桌面版）：解除安裝 VoxInk，應用程式資料夾會一併刪除"
+        "轉錄紀錄：開啟 VoxPen → 設定 → 轉錄紀錄 → 點擊「全部刪除」，即可清除所有本機儲存的轉錄文字",
+        "API 金鑰：開啟 VoxPen → 設定 → 語音／Speech → 清除 API Key 欄位並儲存",
+        "完整移除（Android）：前往系統設定 → 應用程式 → VoxPen → 儲存空間 → 清除資料，或直接解除安裝 app",
+        "完整移除（桌面版）：解除安裝 VoxPen，應用程式資料夾會一併刪除"
       ],
       "dataTypes": {
         "title": "刪除與保留的資料類型",
@@ -336,18 +336,18 @@
           "API 金鑰（本機加密儲存）",
           "應用程式設定與偏好"
         ],
-        "retained": "VoxInk 不會在任何伺服器上保留您的資料，因此無需向我們要求刪除遠端資料。解除安裝或清除應用程式資料後，所有資料即永久刪除，無額外保留期限。",
+        "retained": "VoxPen 不會在任何伺服器上保留您的資料，因此無需向我們要求刪除遠端資料。解除安裝或清除應用程式資料後，所有資料即永久刪除，無額外保留期限。",
         "deletedLabel": "可刪除的資料",
         "retainedLabel": "伺服器端資料保留"
       }
     },
     "thirdParty": {
       "title": "第三方服務",
-      "content": "VoxInk 桌面版僅與您明確設定的 API 服務商通訊。Android 免費版整合 Google AdMob 用於顯示廣告，升級 Pro 後即完全移除所有廣告相關連線。我們不整合任何用於分析或追蹤的第三方 SDK。"
+      "content": "VoxPen 桌面版僅與您明確設定的 API 服務商通訊。Android 免費版整合 Google AdMob 用於顯示廣告，升級 Pro 後即完全移除所有廣告相關連線。我們不整合任何用於分析或追蹤的第三方 SDK。"
     },
     "children": {
       "title": "兒童隱私",
-      "content": "VoxInk 不會故意收集 13 歲以下兒童的資料。由於 VoxInk 完全不收集任何資料，此點已自然滿足。"
+      "content": "VoxPen 不會故意收集 13 歲以下兒童的資料。由於 VoxPen 完全不收集任何資料，此點已自然滿足。"
     },
     "changes": {
       "title": "政策變更",
@@ -381,7 +381,7 @@
     "linux": {
       "appimage": "下載 AppImage",
       "requirement": "主流 Linux 發行版，支援 X11 / Wayland",
-      "steps": "下載後執行 chmod +x VoxInk.AppImage，雙擊或從終端執行。"
+      "steps": "下載後執行 chmod +x VoxPen.AppImage，雙擊或從終端執行。"
     },
     "macos": {
       "comingSoon": "macOS 版即將推出"
@@ -391,7 +391,7 @@
     "title": "輕量到你毋敢相信",
     "subtitle": "專業工具不需要是另一個瀏覽器",
     "bar": {
-      "voxink": "語墨 VoxInk（Tauri）",
+      "voxink": "語墨 VoxPen（Tauri）",
       "wispr": "Wispr Flow（Electron）"
     },
     "stats": {
@@ -438,7 +438,7 @@
         },
         "tauri": {
           "name": "Tauri（Rust）",
-          "representative": "語墨 VoxInk",
+          "representative": "語墨 VoxPen",
           "badge": "推薦",
           "installSize": "~10MB",
           "ram": "~20MB",
@@ -519,7 +519,7 @@
         "title": "隱私比較",
         "headers": {
           "feature": "項目",
-          "voxink": "語墨 VoxInk",
+          "voxink": "語墨 VoxPen",
           "subscription": "訂閱制語音服務",
           "offline": "離線方案"
         },
@@ -577,7 +577,7 @@
       "subtitle": "以「每天 50 次語音輸入」的一般使用者為基準",
       "headers": {
         "item": "項目",
-        "voxink": "語墨 VoxInk",
+        "voxink": "語墨 VoxPen",
         "serviceA": "訂閱制服務 A",
         "serviceB": "訂閱制服務 B"
       },

@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "VoxInk — AI Voice Input",
-    "description": "Just speak, VoxInk writes for you. AI voice keyboard for Android, Windows, and Linux.",
-    "guideTitle": "VoxInk Guide — Get Started in 5 Minutes",
+    "title": "VoxPen — AI Voice Input",
+    "description": "Just speak, VoxPen writes for you. AI voice keyboard for Android, Windows, and Linux.",
+    "guideTitle": "VoxPen Guide — Get Started in 5 Minutes",
     "guideDescription": "Step-by-step guide from Groq API setup to voice input.",
-    "privacyTitle": "VoxInk Privacy — Your Voice, Your Data",
-    "privacyDescription": "How VoxInk's privacy-first architecture keeps your data safe.",
-    "downloadTitle": "Download VoxInk",
+    "privacyTitle": "VoxPen Privacy — Your Voice, Your Data",
+    "privacyDescription": "How VoxPen's privacy-first architecture keeps your data safe.",
+    "downloadTitle": "Download VoxPen",
     "downloadDescription": "Available for Android, Windows, and Linux.",
-    "policyTitle": "VoxInk Privacy Policy",
-    "policyDescription": "VoxInk privacy policy — we do not collect any user data.",
-    "compareTitle": "Why VoxInk? — Performance & Privacy Compared",
+    "policyTitle": "VoxPen Privacy Policy",
+    "policyDescription": "VoxPen privacy policy — we do not collect any user data.",
+    "compareTitle": "Why VoxPen? — Performance & Privacy Compared",
     "compareDescription": "Tauri vs Electron performance comparison and privacy architecture analysis."
   },
   "nav": {
@@ -21,7 +21,7 @@
     "pricing": "Pricing"
   },
   "hero": {
-    "headline": "Just Speak. VoxInk Writes.",
+    "headline": "Just Speak. VoxPen Writes.",
     "subtitle": "AI voice input for Android / Windows / Linux. Bring your own API key. No subscription.",
     "cta": {
       "download": "Download for {{platform}}",
@@ -59,7 +59,7 @@
     },
     "directApi": {
       "title": "Direct API Connection",
-      "description": "Your voice goes straight to your chosen AI provider — never through VoxInk servers."
+      "description": "Your voice goes straight to your chosen AI provider — never through VoxPen servers."
     },
     "cta": "Learn more"
   },
@@ -67,8 +67,8 @@
     "title": "How It Works",
     "steps": [
       "Sign up at groq.com for free and get an API key",
-      "Install VoxInk and paste your API key in settings",
-      "Enable VoxInk keyboard (Android) or press the hotkey (Desktop)",
+      "Install VoxPen and paste your API key in settings",
+      "Enable VoxPen keyboard (Android) or press the hotkey (Desktop)",
       "Start speaking",
       "Refined text is automatically entered"
     ],
@@ -123,26 +123,26 @@
     },
     "step2": {
       "title": "Step 2: Get Your API Key",
-      "description": "After logging in to Groq Console, click \"API Keys\" in the left menu, then \"Create API Key\". Name it (e.g. \"VoxInk\"), create it, and copy the key — it's only shown once."
+      "description": "After logging in to Groq Console, click \"API Keys\" in the left menu, then \"Create API Key\". Name it (e.g. \"VoxPen\"), create it, and copy the key — it's only shown once."
     },
     "step3": {
-      "title": "Step 3: Install VoxInk",
+      "title": "Step 3: Install VoxPen",
       "tabs": {
         "android": "Android",
         "windows": "Windows",
         "linux": "Linux"
       },
-      "android": "Search for \"VoxInk\" on Google Play, or download the latest APK from GitHub Releases.",
+      "android": "Search for \"VoxPen\" on Google Play, or download the latest APK from GitHub Releases.",
       "windows": "Download the latest Windows installer (.exe) from GitHub Releases and run the setup wizard.",
-      "linux": "Download the AppImage from GitHub Releases. Run chmod +x VoxInk*.AppImage, then double-click or run from terminal."
+      "linux": "Download the AppImage from GitHub Releases. Run chmod +x VoxPen*.AppImage, then double-click or run from terminal."
     },
     "step4": {
       "title": "Step 4: Configure Your API Key",
-      "description": "Open VoxInk settings, find the \"Speech\" section. Select Groq as the provider, paste your API key, and click \"Test\" to verify the connection."
+      "description": "Open VoxPen settings, find the \"Speech\" section. Select Groq as the provider, paste your API key, and click \"Test\" to verify the connection."
     },
     "step5": {
       "title": "Step 5: Start Using",
-      "android": "Android: Go to Settings → Language & Input → Manage Keyboards → Enable \"VoxInk Voice Keyboard\". Switch to VoxInk in any app and tap the mic button.",
+      "android": "Android: Go to Settings → Language & Input → Manage Keyboards → Enable \"VoxPen Voice Keyboard\". Switch to VoxPen in any app and tap the mic button.",
       "desktop": "Desktop: Press the hotkey (default Ctrl+Shift+V) and start speaking. Release to auto-paste the transcription at your cursor."
     },
     "cost": {
@@ -163,7 +163,7 @@
       "title": "FAQ",
       "q1": {
         "question": "Forgot my API key?",
-        "answer": "Log in to Groq Console, delete the old key in the API Keys page, and create a new one. Paste it back into VoxInk settings."
+        "answer": "Log in to Groq Console, delete the old key in the API Keys page, and create a new one. Paste it back into VoxPen settings."
       },
       "q2": {
         "question": "Inaccurate speech recognition?",
@@ -171,28 +171,28 @@
       },
       "q3": {
         "question": "Can I use OpenAI instead of Groq?",
-        "answer": "Yes. Switch the provider to OpenAI in VoxInk settings and paste your OpenAI API key. However, Groq is faster and has a free tier."
+        "answer": "Yes. Switch the provider to OpenAI in VoxPen settings and paste your OpenAI API key. However, Groq is faster and has a free tier."
       },
       "q4": {
         "question": "Works offline?",
-        "answer": "VoxInk requires an internet connection for AI-powered speech recognition and refinement. Offline use is not currently supported."
+        "answer": "VoxPen requires an internet connection for AI-powered speech recognition and refinement. Offline use is not currently supported."
       }
     }
   },
   "privacyPage": {
     "title": "Your Voice, Your Data",
-    "subtitle": "How VoxInk's privacy-first architecture keeps your data safe",
+    "subtitle": "How VoxPen's privacy-first architecture keeps your data safe",
     "architecture": {
       "title": "Privacy by Design",
       "flow": "Your Device → Direct to AI Provider → Text Response → Local Storage",
-      "noServer": "No VoxInk server ever touches your data",
+      "noServer": "No VoxPen server ever touches your data",
       "byok": {
         "title": "BYOK Model",
-        "description": "Bring Your Own Key — you get your own API key, and your voice data goes directly to your chosen AI provider (Groq, OpenAI, etc.). VoxInk never proxies, relays, or stores your data."
+        "description": "Bring Your Own Key — you get your own API key, and your voice data goes directly to your chosen AI provider (Groq, OpenAI, etc.). VoxPen never proxies, relays, or stores your data."
       },
       "zeroCollection": {
         "title": "Zero Collection Policy",
-        "description": "VoxInk requires no account registration, tracks no usage behavior, and sends no telemetry. No analytics tools, no crash reporters, no \"anonymous usage statistics\". What you use and what you say — only you know."
+        "description": "VoxPen requires no account registration, tracks no usage behavior, and sends no telemetry. No analytics tools, no crash reporters, no \"anonymous usage statistics\". What you use and what you say — only you know."
       },
       "encryption": {
         "title": "Local Encrypted Storage",
@@ -214,7 +214,7 @@
       "title": "Privacy Comparison",
       "headers": {
         "feature": "Feature",
-        "voxink": "VoxInk",
+        "voxink": "VoxPen",
         "subscription": "Subscription Services",
         "offline": "Offline Solutions"
       },
@@ -259,15 +259,15 @@
     }
   },
   "policy": {
-    "title": "VoxInk Privacy Policy",
+    "title": "VoxPen Privacy Policy",
     "lastUpdated": "Last updated: 2026-02-25",
     "overview": {
       "title": "Overview",
-      "content": "VoxInk (語墨) is an AI voice keyboard (desktop version is open source) that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
+      "content": "VoxPen (語墨) is an AI voice keyboard (desktop version is open source) that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
     },
     "dataCollection": {
       "title": "Data Collection",
-      "intro": "VoxInk does not collect any personal data.",
+      "intro": "VoxPen does not collect any personal data.",
       "items": [
         "No analytics or telemetry",
         "No crash reporting to our servers",
@@ -277,12 +277,12 @@
     },
     "audioData": {
       "title": "Audio Data",
-      "intro": "When you use VoxInk for voice input:",
+      "intro": "When you use VoxPen for voice input:",
       "items": [
         "Audio is recorded locally on your device",
         "Audio is sent directly from your device to the API provider you configured (e.g., Groq, OpenAI)",
         "Audio is not stored on your device after transcription completes",
-        "VoxInk has no access to the audio data sent to your API provider"
+        "VoxPen has no access to the audio data sent to your API provider"
       ],
       "providerNote": "Your API provider's privacy policy governs how they handle the audio data."
     },
@@ -308,13 +308,13 @@
       "intro": "When text refinement is enabled:",
       "items": [
         "Transcribed text is sent directly to your configured LLM provider (e.g., Groq, OpenAI, Anthropic)",
-        "VoxInk does not see or store the refined text beyond your local device",
+        "VoxPen does not see or store the refined text beyond your local device",
         "Your LLM provider's privacy policy applies to this data"
       ]
     },
     "permissions": {
       "title": "Permissions",
-      "intro": "VoxInk requests the following permissions:",
+      "intro": "VoxPen requests the following permissions:",
       "items": [
         "RECORD_AUDIO — Voice recording for speech-to-text",
         "INTERNET — Sending audio to your API provider"
@@ -322,12 +322,12 @@
     },
     "dataDeletion": {
       "title": "Data Deletion",
-      "intro": "VoxInk does not store any personal data on any server. All data is stored locally on your device. You can completely delete all data by following these steps:",
+      "intro": "VoxPen does not store any personal data on any server. All data is stored locally on your device. You can completely delete all data by following these steps:",
       "items": [
-        "Transcription history: Open VoxInk → Settings → Transcription History → Tap \"Delete All\" to clear all locally stored transcriptions",
-        "API keys: Open VoxInk → Settings → Speech → Clear the API Key field and save",
-        "Full removal (Android): Go to System Settings → Apps → VoxInk → Storage → Clear Data, or simply uninstall the app",
-        "Full removal (Desktop): Uninstall VoxInk — the application data folder will be removed along with it"
+        "Transcription history: Open VoxPen → Settings → Transcription History → Tap \"Delete All\" to clear all locally stored transcriptions",
+        "API keys: Open VoxPen → Settings → Speech → Clear the API Key field and save",
+        "Full removal (Android): Go to System Settings → Apps → VoxPen → Storage → Clear Data, or simply uninstall the app",
+        "Full removal (Desktop): Uninstall VoxPen — the application data folder will be removed along with it"
       ],
       "dataTypes": {
         "title": "Data Types: Deleted vs Retained",
@@ -336,18 +336,18 @@
           "API keys (local encrypted storage)",
           "App settings and preferences"
         ],
-        "retained": "VoxInk does not retain any data on any server, so there is no need to request remote data deletion from us. After uninstalling or clearing app data, all data is permanently deleted with no additional retention period.",
+        "retained": "VoxPen does not retain any data on any server, so there is no need to request remote data deletion from us. After uninstalling or clearing app data, all data is permanently deleted with no additional retention period.",
         "deletedLabel": "Data that can be deleted",
         "retainedLabel": "Server-side data retention"
       }
     },
     "thirdParty": {
       "title": "Third-Party Services",
-      "content": "The desktop version of VoxInk communicates only with the API providers you explicitly configure. The Android free version integrates Google AdMob for displaying ads; upgrading to Pro completely removes all ad-related connections. We do not integrate any third-party SDKs for analytics or tracking."
+      "content": "The desktop version of VoxPen communicates only with the API providers you explicitly configure. The Android free version integrates Google AdMob for displaying ads; upgrading to Pro completely removes all ad-related connections. We do not integrate any third-party SDKs for analytics or tracking."
     },
     "children": {
       "title": "Children's Privacy",
-      "content": "VoxInk does not knowingly collect data from children under 13. Since VoxInk collects no data at all, this is inherently satisfied."
+      "content": "VoxPen does not knowingly collect data from children under 13. Since VoxPen collects no data at all, this is inherently satisfied."
     },
     "changes": {
       "title": "Changes",
@@ -359,7 +359,7 @@
     }
   },
   "download": {
-    "title": "Download VoxInk",
+    "title": "Download VoxPen",
     "subtitle": "Choose your platform",
     "detected": "Detected: {{platform}}",
     "version": "Version {{version}}",
@@ -376,12 +376,12 @@
     "windows": {
       "installer": "Download Installer (.exe)",
       "requirement": "Windows 10+, WebView2 Runtime",
-      "steps": "Run the installer and follow the wizard. VoxInk appears in the system tray."
+      "steps": "Run the installer and follow the wizard. VoxPen appears in the system tray."
     },
     "linux": {
       "appimage": "Download AppImage",
       "requirement": "Major Linux distributions, X11 / Wayland",
-      "steps": "Run chmod +x VoxInk.AppImage, then double-click or run from terminal."
+      "steps": "Run chmod +x VoxPen.AppImage, then double-click or run from terminal."
     },
     "macos": {
       "comingSoon": "macOS version coming soon"
@@ -391,7 +391,7 @@
     "title": "Lightweight. Seriously.",
     "subtitle": "Pro tools don't need to be another browser",
     "bar": {
-      "voxink": "VoxInk (Tauri)",
+      "voxink": "VoxPen (Tauri)",
       "wispr": "Wispr Flow (Electron)"
     },
     "stats": {
@@ -403,11 +403,11 @@
   },
   "compare": {
     "meta": {
-      "title": "Why VoxInk? — Performance & Privacy Compared",
+      "title": "Why VoxPen? — Performance & Privacy Compared",
       "description": "Tauri vs Electron performance comparison and privacy architecture analysis."
     },
     "hero": {
-      "title": "Why VoxInk?",
+      "title": "Why VoxPen?",
       "subtitle": "Privacy, performance, price — a full comparison"
     },
     "tech": {
@@ -438,7 +438,7 @@
         },
         "tauri": {
           "name": "Tauri (Rust)",
-          "representative": "VoxInk",
+          "representative": "VoxPen",
           "badge": "Recommended",
           "installSize": "~10MB",
           "ram": "~20MB",
@@ -491,10 +491,10 @@
       "architecture": {
         "title": "Privacy by Design",
         "flow": "Your Device → Direct to AI Provider → Text Response → Local Storage",
-        "noServer": "No VoxInk server ever touches your data",
+        "noServer": "No VoxPen server ever touches your data",
         "byok": {
           "title": "BYOK Model",
-          "description": "Bring Your Own Key — your voice data goes directly to your chosen AI provider (Groq, OpenAI, etc.). VoxInk never proxies, relays, or stores your data."
+          "description": "Bring Your Own Key — your voice data goes directly to your chosen AI provider (Groq, OpenAI, etc.). VoxPen never proxies, relays, or stores your data."
         },
         "zeroCollection": {
           "title": "Zero Collection Policy",
@@ -519,7 +519,7 @@
         "title": "Privacy Comparison",
         "headers": {
           "feature": "Feature",
-          "voxink": "VoxInk",
+          "voxink": "VoxPen",
           "subscription": "Subscription Services",
           "offline": "Offline Solutions"
         },
@@ -536,14 +536,14 @@
     },
     "cta": {
       "title": "Experience the difference",
-      "download": "Download VoxInk",
+      "download": "Download VoxPen",
       "pricing": "See pricing"
     }
   },
   "pricing": {
     "meta": {
-      "title": "Pricing — VoxInk vs Subscription Voice Input",
-      "description": "VoxInk + Groq costs less in a year than one month of subscription services. Real numbers, do the math."
+      "title": "Pricing — VoxPen vs Subscription Voice Input",
+      "description": "VoxPen + Groq costs less in a year than one month of subscription services. Real numbers, do the math."
     },
     "hero": {
       "title": "A whole year for less than one month elsewhere",
@@ -577,7 +577,7 @@
       "subtitle": "Based on a typical user with 50 voice inputs per day",
       "headers": {
         "item": "Item",
-        "voxink": "VoxInk",
+        "voxink": "VoxPen",
         "serviceA": "Subscription Service A",
         "serviceB": "Subscription Service B"
       },
@@ -697,28 +697,28 @@
       }
     },
     "whyFree": {
-      "title": "How is VoxInk so cheap?",
+      "title": "How is VoxPen so cheap?",
       "reasons": [
         {
           "title": "No middleman",
-          "description": "Subscription services charge you monthly, then call the same AI API with your money. VoxInk lets you call it directly — cutting out the middleman's profit."
+          "description": "Subscription services charge you monthly, then call the same AI API with your money. VoxPen lets you call it directly — cutting out the middleman's profit."
         },
         {
           "title": "No server costs",
-          "description": "VoxInk runs no servers, no account systems, no data storage. Those savings go straight to your wallet."
+          "description": "VoxPen runs no servers, no account systems, no data storage. Those savings go straight to your wallet."
         },
         {
           "title": "Desktop is open source = transparent",
-          "description": "The desktop version's code is fully public — you can verify exactly how VoxInk handles your voice. Unlike subscriptions, where you never know what happens behind the scenes."
+          "description": "The desktop version's code is fully public — you can verify exactly how VoxPen handles your voice. Unlike subscriptions, where you never know what happens behind the scenes."
         }
       ]
     },
     "cta": {
       "title": "Done the math?",
       "subtitle": "One year of savings buys you AirPods. Two years? That's 10 fancy dinners out.",
-      "download": "Download VoxInk",
+      "download": "Download VoxPen",
       "guide": "Get started in 5 minutes"
     },
-    "disclaimer": "Pricing based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). VoxInk Android: free download with ads; Pro upgrade $4.70 (one-time, ad-free + unlimited)."
+    "disclaimer": "Pricing based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). VoxPen Android: free download with ads; Pro upgrade $4.70 (one-time, ad-free + unlimited)."
   }
 }

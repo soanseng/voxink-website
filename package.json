@@ -2,7 +2,7 @@
   "name": "voxink-website",
   "version": "1.0.0",
   "type": "module",
-  "description": "VoxInk landing page",
+  "description": "VoxPen landing page",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

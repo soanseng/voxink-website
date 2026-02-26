@@ -42,10 +42,10 @@ export default function Navbar() {
         <Link to={base} className="flex items-center gap-2 text-xl font-bold text-gray-900">
           <img
             src={`${import.meta.env.BASE_URL}logo.svg`}
-            alt="VoxInk"
+            alt="VoxPen"
             className="h-8 w-8"
           />
-          語墨 <span className="text-gray-400 font-normal">VoxInk</span>
+          語墨 <span className="text-gray-400 font-normal">VoxPen</span>
         </Link>
 
         {/* Desktop nav */}

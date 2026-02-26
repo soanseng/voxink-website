@@ -1,8 +1,8 @@
-# VoxInk Website
+# VoxPen Website
 
 ## Project Overview
 
-Landing page for VoxInk (語墨) — AI voice keyboard/dictation app.
+Landing page for VoxPen (語墨) — AI voice keyboard/dictation app.
 Bilingual: Traditional Chinese (primary) + English.
 Target market: Taiwan.
 
@@ -46,14 +46,14 @@ pnpm format       # Run Prettier
 ## Design Decisions
 
 - See `docs/plans/2026-02-25-landing-page-design.md` for full design document
-- Tech stack chosen for consistency with voxink-desktop (same Vite + React + Tailwind + react-i18next)
+- Tech stack chosen for consistency with voxpen-desktop (same Vite + React + Tailwind + react-i18next)
 - Brand voice: Taiwanese local flavor (台語口語詞 in taglines)
-- Privacy-first messaging: BYOK, zero collection, no VoxInk server
+- Privacy-first messaging: BYOK, zero collection, no VoxPen server
 
 ## Related Projects
 
-- `~/projects/voxink-android` — Android app (Kotlin, Jetpack Compose)
-- `~/projects/voxink-desktop` — Desktop app (Tauri v2, Rust + React)
+- `~/projects/voxpen-android` — Android app (Kotlin, Jetpack Compose)
+- `~/projects/voxpen-desktop` — Desktop app (Tauri v2, Rust + React)
 
 ## Conventions
 

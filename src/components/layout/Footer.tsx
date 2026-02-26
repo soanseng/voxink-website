@@ -14,10 +14,10 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <img
                 src={`${import.meta.env.BASE_URL}logo.svg`}
-                alt="VoxInk"
+                alt="VoxPen"
                 className="h-8 w-8"
               />
-              <p className="text-lg font-bold text-gray-900">語墨 VoxInk</p>
+              <p className="text-lg font-bold text-gray-900">語墨 VoxPen</p>
             </div>
             <p className="text-sm text-gray-500 mt-1">{t("footer.description")}</p>
           </div>
