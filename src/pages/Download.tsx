@@ -3,7 +3,6 @@ import { useDocumentHead } from "../hooks/useDocumentHead";
 import { usePlatformDetect } from "../hooks/usePlatformDetect";
 
 const platforms = [
-  { key: "android", icon: "📱" },
   { key: "macos", icon: "🍎" },
   { key: "windows", icon: "🖥️" },
   { key: "linux", icon: "🐧" },
@@ -61,9 +60,7 @@ export default function Download() {
             <div className="flex flex-wrap gap-3">
               <a
                 href={
-                  key === "android"
-                    ? "https://github.com/soanseng/voxink-android/releases/latest"
-                    : key === "macos"
+                  key === "macos"
                     ? "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_aarch64.dmg"
                     : key === "windows"
                     ? "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_x64-setup.exe"
@@ -73,27 +70,21 @@ export default function Download() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors"
               >
-                {key === "android"
-                  ? t("download.android.apk")
-                  : key === "macos"
+                {key === "macos"
                   ? t("download.macos.dmg")
                   : key === "windows"
                   ? t("download.windows.installer")
                   : t("download.linux.appimage")}
               </a>
-              {key === "android" && (
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.voxink.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-                >
-                  {t("download.android.playStore")}
-                </a>
-              )}
             </div>
           </div>
         ))}
+
+        {/* Android — coming soon */}
+        <div className="p-8 rounded-xl border border-dashed border-gray-200 bg-gray-50 text-center">
+          <span className="text-3xl">📱</span>
+          <p className="text-gray-400 mt-2">{t("download.android.comingSoon")}</p>
+        </div>
       </div>
 
       {/* Changelog link */}

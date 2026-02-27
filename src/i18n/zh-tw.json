@@ -370,6 +370,7 @@
     "requirements": "系統需求",
     "installSteps": "安裝步驟",
     "android": {
+      "comingSoon": "Android 版即將推出",
       "playStore": "Google Play 下載",
       "apk": "APK 直接下載",
       "requirement": "Android 8.0（API 26）以上",

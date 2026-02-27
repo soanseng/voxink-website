@@ -370,6 +370,7 @@
     "requirements": "Requirements",
     "installSteps": "Installation",
     "android": {
+      "comingSoon": "Android version coming soon",
       "playStore": "Google Play",
       "apk": "Download APK",
       "requirement": "Android 8.0 (API 26) or higher",
