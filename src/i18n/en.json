@@ -86,7 +86,7 @@
     "title": "Platforms",
     "android": {
       "name": "Android",
-      "description": "Voice keyboard — use in any app. Free (15/day) or $5.99 unlimited",
+      "description": "Voice keyboard — use in any app. Free (30/day) or $4.99 unlimited",
       "requirement": "Android 8.0+",
       "cta": "Free Download"
     },
@@ -241,7 +241,7 @@
         },
         "pricing": {
           "label": "Pricing",
-          "voxink": "Free (15/day) or one-time purchase",
+          "voxink": "Free (30/day) or one-time purchase",
           "subscription": "$10-30 USD/month",
           "offline": "One-time purchase"
         },
@@ -528,7 +528,7 @@
         "rows": {
           "dataFlow": { "label": "Data Flow", "voxink": "Device → AI Provider (direct)", "subscription": "Device → Service Server → AI", "offline": "All on device" },
           "account": { "label": "Account Required", "voxink": "No", "subscription": "Yes", "offline": "No" },
-          "pricing": { "label": "Pricing", "voxink": "Free (15/day) or one-time purchase", "subscription": "$10-30/month", "offline": "One-time purchase" },
+          "pricing": { "label": "Pricing", "voxink": "Free (30/day) or one-time purchase", "subscription": "$10-30/month", "offline": "One-time purchase" },
           "serverIntermediary": { "label": "Server Intermediary", "voxink": "No", "subscription": "Yes", "offline": "No" },
           "quality": { "label": "Recognition Quality", "voxink": "Cloud AI (high quality)", "subscription": "Cloud AI (high quality)", "offline": "Local model (limited)" },
           "platforms": { "label": "Platforms", "voxink": "Android + Desktop (3 OS)", "subscription": "macOS / Mac+Win", "offline": "Varies" },
@@ -554,30 +554,30 @@
     "homeBanner": {
       "title": "Pay once. Not every month.",
       "onetime": "One-time purchase",
-      "amount": "$19.99",
+      "amount": "$14.99",
       "versus": "vs subscription",
       "subscriptionAmount": "$120+/year",
       "cta": "See full comparison"
     },
     "tiers": {
       "title": "Simple pricing",
-      "subtitle": "Free forever for light users. One-time purchase for unlimited.",
+      "subtitle": "Free forever for light users. One-time purchase for unlimited. Mobile and Desktop sold separately.",
       "free": {
         "name": "Free",
         "price": "$0",
         "period": "forever",
         "description": "Perfect for trying it out",
         "features": [
-          "15 voice inputs per day",
-          "AI refinement included",
-          "BYOK — bring your own Groq key",
+          "30 voice inputs per day",
+          "10 AI refinements per day",
+          "2 file transcriptions per day",
           "All platforms"
         ],
         "cta": "Get started"
       },
       "android": {
-        "name": "Android",
-        "price": "$5.99",
+        "name": "Mobile",
+        "price": "$4.99",
         "period": "one-time",
         "description": "Unlimited on Android",
         "features": [
@@ -586,11 +586,11 @@
           "Unlimited file transcription",
           "No ads, no limits"
         ],
-        "cta": "Get Android"
+        "cta": "Get Mobile"
       },
       "desktop": {
         "name": "Desktop",
-        "price": "$19.99",
+        "price": "$14.99",
         "period": "one-time",
         "badge": "Popular",
         "description": "Unlimited on Windows, macOS & Linux",
@@ -601,20 +601,6 @@
           "Windows, macOS & Linux"
         ],
         "cta": "Get Desktop"
-      },
-      "bundle": {
-        "name": "Bundle",
-        "price": "$23.99",
-        "period": "one-time",
-        "badge": "Best Value",
-        "savings": "Save $1.99",
-        "description": "Unlimited on all platforms",
-        "features": [
-          "Everything in Android + Desktop",
-          "All platforms, one purchase",
-          "Best price per platform"
-        ],
-        "cta": "Get Bundle"
       }
     },
     "calculator": {
@@ -653,7 +639,7 @@
       "rows": {
         "appPrice": {
           "label": "App price",
-          "voxink": "Free (15/day) or $5.99–23.99 one-time",
+          "voxink": "Free (30/day) or $4.99–14.99 one-time",
           "serviceA": "$0 (requires subscription)",
           "serviceB": "$0 (requires subscription)"
         },
@@ -665,19 +651,19 @@
         },
         "yearlyCost": {
           "label": "Total cost / year",
-          "voxink": "$0–23.99 (one-time)",
+          "voxink": "$0–14.99 (one-time)",
           "serviceA": "$144 (yearly plan)",
           "serviceB": "$144 (yearly plan)"
         },
         "twoYearCost": {
           "label": "Total cost / 2 years",
-          "voxink": "$0–23.99 (same price)",
+          "voxink": "$0–14.99 (same price)",
           "serviceA": "$288",
           "serviceB": "$288"
         },
         "freeLimit": {
           "label": "Free tier",
-          "voxink": "15 inputs/day",
+          "voxink": "30 inputs/day",
           "serviceA": "4,000 words/week",
           "serviceB": "2,000 words/week"
         },
@@ -700,26 +686,26 @@
       "footnote": "Costs shown assume Groq models with free tier. OpenAI/OpenRouter costs vary by model.",
       "light": {
         "title": "Light use",
-        "usage": "≤15 inputs/day",
+        "usage": "≤30 inputs/day",
         "voxink": "$0 forever (free tier)",
         "subscription": "$12–30/mo"
       },
       "normal": {
         "title": "Normal use",
         "usage": "50 inputs/day",
-        "voxink": "$5.99–19.99 once + API",
+        "voxink": "$4.99–14.99 once + API",
         "subscription": "$12–30/mo"
       },
       "heavy": {
         "title": "Heavy use",
         "usage": "200 inputs/day",
-        "voxink": "$5.99–19.99 once + ~$0.60/mo API",
+        "voxink": "$4.99–14.99 once + ~$0.60/mo API",
         "subscription": "$12–30/mo"
       },
       "writer": {
         "title": "Writer / Power user",
         "usage": "500 inputs/day",
-        "voxink": "$5.99–19.99 once + ~$1.90/mo API",
+        "voxink": "$4.99–14.99 once + ~$1.90/mo API",
         "subscription": "$12–30/mo"
       }
     },

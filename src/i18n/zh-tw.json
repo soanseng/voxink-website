@@ -86,7 +86,7 @@
     "title": "支援平台",
     "android": {
       "name": "Android",
-      "description": "語音鍵盤，在任何 app 中使用。免費（15次/天）或 NT$189 無限使用",
+      "description": "語音鍵盤，在任何 app 中使用。免費（30次/天）或 NT$159 無限使用",
       "requirement": "Android 8.0 以上",
       "cta": "免費下載"
     },
@@ -241,7 +241,7 @@
         },
         "pricing": {
           "label": "收費模式",
-          "voxink": "免費（15次/天）或一次買斷",
+          "voxink": "免費（30次/天）或一次買斷",
           "subscription": "月費 $10-30 USD",
           "offline": "一次買斷"
         },
@@ -528,7 +528,7 @@
         "rows": {
           "dataFlow": { "label": "資料流向", "voxink": "裝置 → AI 供應商（直連）", "subscription": "裝置 → 服務商伺服器 → AI", "offline": "全部在裝置上" },
           "account": { "label": "需要帳號", "voxink": "否", "subscription": "是", "offline": "否" },
-          "pricing": { "label": "費用", "voxink": "免費（15次/天）或一次買斷", "subscription": "US$10-30/月", "offline": "一次性購買" },
+          "pricing": { "label": "費用", "voxink": "免費（30次/天）或一次買斷", "subscription": "US$10-30/月", "offline": "一次性購買" },
           "serverIntermediary": { "label": "伺服器經手", "voxink": "否", "subscription": "是", "offline": "否" },
           "quality": { "label": "辨識品質", "voxink": "雲端 AI（高品質）", "subscription": "雲端 AI（高品質）", "offline": "本地模型（有限）" },
           "platforms": { "label": "支援平台", "voxink": "Android + 桌面 3 平台", "subscription": "macOS / Mac+Win", "offline": "不一定" },
@@ -554,30 +554,30 @@
     "homeBanner": {
       "title": "買一次，不用每月繳",
       "onetime": "一次買斷",
-      "amount": "NT$639",
+      "amount": "NT$479",
       "versus": "vs 訂閱制",
       "subscriptionAmount": "NT$3,840+／年",
       "cta": "看完整比較"
     },
     "tiers": {
       "title": "簡單定價",
-      "subtitle": "輕度使用者永遠免費。一次買斷，無限使用。",
+      "subtitle": "輕度使用者永遠免費。一次買斷，無限使用。手機版與桌面版分開購買。",
       "free": {
         "name": "免費版",
         "price": "NT$0",
         "period": "永遠免費",
         "description": "適合嘗試體驗",
         "features": [
-          "每日 15 次語音輸入",
-          "含 AI 潤飾",
-          "BYOK — 用你自己的 Groq key",
+          "每日 30 次語音輸入",
+          "每日 10 次 AI 潤飾",
+          "每日 2 次檔案轉錄",
           "所有平台"
         ],
         "cta": "立即開始"
       },
       "android": {
-        "name": "Android",
-        "price": "NT$189",
+        "name": "手機版",
+        "price": "NT$159",
         "period": "一次買斷",
         "description": "Android 無限使用",
         "features": [
@@ -586,11 +586,11 @@
           "無限檔案轉錄",
           "無廣告、無限制"
         ],
-        "cta": "取得 Android 版"
+        "cta": "取得手機版"
       },
       "desktop": {
         "name": "桌面版",
-        "price": "NT$639",
+        "price": "NT$479",
         "period": "一次買斷",
         "badge": "最受歡迎",
         "description": "Windows、macOS、Linux 無限使用",
@@ -601,20 +601,6 @@
           "Windows、macOS、Linux"
         ],
         "cta": "取得桌面版"
-      },
-      "bundle": {
-        "name": "組合包",
-        "price": "NT$769",
-        "period": "一次買斷",
-        "badge": "最划算",
-        "savings": "省 NT$59",
-        "description": "所有平台無限使用",
-        "features": [
-          "Android + 桌面版全部功能",
-          "所有平台，一次購買",
-          "每平台最優惠價"
-        ],
-        "cta": "取得組合包"
       }
     },
     "calculator": {
@@ -653,7 +639,7 @@
       "rows": {
         "appPrice": {
           "label": "App 費用",
-          "voxink": "免費（15次/天）或 NT$189–769 一次買斷",
+          "voxink": "免費（30次/天）或 NT$159–479 一次買斷",
           "serviceA": "NT$0（需訂閱）",
           "serviceB": "NT$0（需訂閱）"
         },
@@ -665,19 +651,19 @@
         },
         "yearlyCost": {
           "label": "一年總費用",
-          "voxink": "NT$0–769（一次買斷）",
+          "voxink": "NT$0–479（一次買斷）",
           "serviceA": "NT$4,608（年繳 US$12／月）",
           "serviceB": "NT$4,608（年繳 US$12／月）"
         },
         "twoYearCost": {
           "label": "兩年總費用",
-          "voxink": "NT$0–769（同價）",
+          "voxink": "NT$0–479（同價）",
           "serviceA": "NT$9,216",
           "serviceB": "NT$9,216"
         },
         "freeLimit": {
           "label": "免費額度",
-          "voxink": "每日 15 次",
+          "voxink": "每日 30 次",
           "serviceA": "4,000 字／週",
           "serviceB": "2,000 字／週"
         },
@@ -700,26 +686,26 @@
       "footnote": "費用以 Groq 模型（含免費額度）為基準。OpenAI／OpenRouter 費用依模型而異。",
       "light": {
         "title": "輕度使用",
-        "usage": "每天 ≤15 次",
+        "usage": "每天 ≤30 次",
         "voxink": "NT$0 永遠免費",
         "subscription": "NT$384-960／月"
       },
       "normal": {
         "title": "一般使用",
         "usage": "每天 50 次",
-        "voxink": "NT$189–639 一次 + API",
+        "voxink": "NT$159–479 一次 + API",
         "subscription": "NT$384-960／月"
       },
       "heavy": {
         "title": "重度使用",
         "usage": "每天 200 次",
-        "voxink": "NT$189–639 一次 + 約 NT$19／月 API",
+        "voxink": "NT$159–479 一次 + 約 NT$19／月 API",
         "subscription": "NT$384-960／月"
       },
       "writer": {
         "title": "文字工作者",
         "usage": "每天 500 次",
-        "voxink": "NT$189–639 一次 + 約 NT$60／月 API",
+        "voxink": "NT$159–479 一次 + 約 NT$60／月 API",
         "subscription": "NT$384-960／月"
       }
     },

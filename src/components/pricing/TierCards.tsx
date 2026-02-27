@@ -1,13 +1,12 @@
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const tierKeys = ["free", "android", "desktop", "bundle"] as const;
+const tierKeys = ["free", "android", "desktop"] as const;
 
 const tierStyles: Record<string, string> = {
   free: "border-gray-200 bg-white",
   android: "border-gray-200 bg-white",
   desktop: "border-emerald-500 border-2 bg-white",
-  bundle: "border-emerald-500 border-2 bg-emerald-50/30",
 };
 
 export default function TierCards() {
@@ -21,7 +20,7 @@ export default function TierCards() {
       </h2>
       <p className="text-gray-500 mb-8">{t("pricing.tiers.subtitle")}</p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {tierKeys.map((key) => {
           const badge = t(`pricing.tiers.${key}.badge`, { defaultValue: "" });
           const savings = t(`pricing.tiers.${key}.savings`, {
@@ -79,7 +78,7 @@ export default function TierCards() {
               <Link
                 to={`/${lang}/download`}
                 className={`mt-6 block text-center py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                  key === "desktop" || key === "bundle"
+                  key === "desktop"
                     ? "bg-gray-900 text-white hover:bg-gray-800"
                     : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                 }`}
