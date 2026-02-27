@@ -386,7 +386,9 @@
       "steps": "下載後執行 chmod +x VoxPen.AppImage，雙擊或從終端執行。"
     },
     "macos": {
-      "comingSoon": "macOS 版即將推出"
+      "dmg": "下載 DMG（Apple Silicon）",
+      "requirement": "macOS 10.15 以上，Apple Silicon（M1 / M2 / M3+）",
+      "steps": "開啟 DMG，將 VoxPen 拖入 Applications 資料夾。首次執行請右鍵選「開啟」。"
     }
   },
   "lightweight": {
