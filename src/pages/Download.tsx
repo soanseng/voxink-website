@@ -3,9 +3,10 @@ import { useDocumentHead } from "../hooks/useDocumentHead";
 import { usePlatformDetect } from "../hooks/usePlatformDetect";
 
 const platforms = [
-  { key: "android", icon: "\uD83D\uDCF1" },
-  { key: "windows", icon: "\uD83D\uDDA5\uFE0F" },
-  { key: "linux", icon: "\uD83D\uDC27" },
+  { key: "android", icon: "📱" },
+  { key: "macos", icon: "🍎" },
+  { key: "windows", icon: "🖥️" },
+  { key: "linux", icon: "🐧" },
 ] as const;
 
 export default function Download() {
@@ -62,7 +63,11 @@ export default function Download() {
                 href={
                   key === "android"
                     ? "https://github.com/soanseng/voxink-android/releases/latest"
-                    : "https://github.com/soanseng/voxink-desktop/releases/latest"
+                    : key === "macos"
+                    ? "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_aarch64.dmg"
+                    : key === "windows"
+                    ? "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_x64-setup.exe"
+                    : "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_amd64.AppImage"
                 }
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,6 +75,8 @@ export default function Download() {
               >
                 {key === "android"
                   ? t("download.android.apk")
+                  : key === "macos"
+                  ? t("download.macos.dmg")
                   : key === "windows"
                   ? t("download.windows.installer")
                   : t("download.linux.appimage")}
@@ -87,18 +94,12 @@ export default function Download() {
             </div>
           </div>
         ))}
-
-        {/* macOS */}
-        <div className="p-8 rounded-xl border border-dashed border-gray-200 bg-gray-50 text-center">
-          <span className="text-3xl">{"\uD83C\uDF4E"}</span>
-          <p className="text-gray-400 mt-2">{t("download.macos.comingSoon")}</p>
-        </div>
       </div>
 
       {/* Changelog link */}
       <div className="mt-12 text-center text-sm text-gray-400">
         <a
-          href="https://github.com/soanseng/voxink-desktop/releases"
+          href="https://github.com/soanseng/voxpen-releases/releases"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-600 transition-colors"
