@@ -10,8 +10,8 @@
     "downloadDescription": "Available for Android, Windows, and Linux.",
     "policyTitle": "VoxPen Privacy Policy",
     "policyDescription": "VoxPen privacy policy — we do not collect any user data.",
-    "compareTitle": "Why VoxPen? — Performance & Privacy Compared",
-    "compareDescription": "Tauri vs Electron performance comparison and privacy architecture analysis."
+    "compareTitle": "Why VoxPen? — Features, Performance & Privacy Compared",
+    "compareDescription": "Feature-level comparison vs Typeless, Tauri vs Electron performance, and privacy architecture analysis."
   },
   "nav": {
     "features": "Features",
@@ -47,8 +47,20 @@
       "description": "Transcribe audio and video files to text, with SRT subtitle export"
     },
     "tone": {
-      "title": "Tone Selection",
-      "description": "Switch between casual, professional, email and more — or write your own custom prompt"
+      "title": "Smart Tone",
+      "description": "Auto-detects your app and picks the right tone — formal for email, casual for chat. 22 apps built-in, plus custom rules and manual override"
+    },
+    "translation": {
+      "title": "Translation Mode",
+      "description": "Speak in one language, output in another. Switch target languages instantly from the keyboard — no app switching needed"
+    },
+    "voiceCommands": {
+      "title": "Voice Commands",
+      "description": "10 editing commands — select all, copy, paste, undo, and more. Works in Chinese, English, and Japanese. No API call needed"
+    },
+    "speakToEdit": {
+      "title": "Speak to Edit",
+      "description": "Select text, then tell AI what to change — rewrite, translate, fix grammar, or follow any instruction. All by voice"
     },
     "provider": {
       "title": "Multi-Provider",
@@ -408,12 +420,12 @@
   },
   "compare": {
     "meta": {
-      "title": "Why VoxPen? — Performance & Privacy Compared",
-      "description": "Tauri vs Electron performance comparison and privacy architecture analysis."
+      "title": "Why VoxPen? — Features, Performance & Privacy Compared",
+      "description": "Feature-level comparison vs Typeless, Tauri vs Electron performance, and privacy architecture analysis."
     },
     "hero": {
       "title": "Why VoxPen?",
-      "subtitle": "Privacy, performance, price — a full comparison"
+      "subtitle": "Features, privacy, performance, price — a full comparison"
     },
     "tech": {
       "title": "Desktop: Lightweight Architecture",
@@ -535,7 +547,50 @@
           "serverIntermediary": { "label": "Server Intermediary", "voxink": "No", "subscription": "Yes", "offline": "No" },
           "quality": { "label": "Recognition Quality", "voxink": "Cloud AI (high quality)", "subscription": "Cloud AI (high quality)", "offline": "Local model (limited)" },
           "platforms": { "label": "Platforms", "voxink": "Android + Desktop (3 OS)", "subscription": "macOS / Mac+Win", "offline": "Varies" },
-          "toneSelection": { "label": "Tone Selection", "voxink": "6 presets + custom prompt", "subscription": "Limited presets", "offline": "None" }
+          "toneSelection": { "label": "Tone Selection", "voxink": "6 presets + custom prompt", "subscription": "Limited presets", "offline": "None" },
+          "translationMode": { "label": "Translation Mode", "voxink": "Speak one language → output another", "subscription": "Not available", "offline": "Not available" },
+          "voiceCommands": { "label": "Voice Commands", "voxink": "10 commands, trilingual, offline", "subscription": "Not available", "offline": "Not available" },
+          "speakToEdit": { "label": "Speak to Edit", "voxink": "Select → voice-instruct rewrite", "subscription": "Not available", "offline": "Not available" },
+          "fileTranscription": { "label": "File Transcription", "voxink": "Audio/video → text + SRT", "subscription": "Not available", "offline": "Limited" }
+        }
+      }
+    },
+    "typeless": {
+      "title": "VoxPen vs Typeless",
+      "subtitle": "Feature-by-feature comparison with the leading subscription voice input service",
+      "headers": {
+        "feature": "Feature",
+        "voxpen": "VoxPen",
+        "typeless": "Typeless"
+      },
+      "advantages": {
+        "title": "Where VoxPen leads",
+        "rows": {
+          "byok": { "label": "BYOK (Bring Your Own Key)", "voxpen": "Yes — use your own API key", "typeless": "No — locked to their backend" },
+          "selfHosted": { "label": "Self-Hosted STT", "voxpen": "Custom endpoint support", "typeless": "Not available" },
+          "multiProvider": { "label": "Multi-Provider", "voxpen": "Groq, OpenAI, OpenRouter, Ollama, custom", "typeless": "Single provider only" },
+          "fileTranscription": { "label": "File Transcription", "voxpen": "Audio/video → text + SRT export", "typeless": "Not available" },
+          "zhTwDepth": { "label": "Traditional Chinese Depth", "voxpen": "Native zh-TW prompts, mixed-language aware", "typeless": "Basic Chinese support" },
+          "onetimePurchase": { "label": "One-Time Purchase", "voxpen": "$4.99 mobile / $14.99 desktop", "typeless": "$12–30/month subscription" },
+          "pricingTransparency": { "label": "Pricing Transparency", "voxpen": "See exact API costs, no markup", "typeless": "Flat monthly fee, costs hidden" },
+          "translationMode": { "label": "Translation Mode", "voxpen": "Speak one language → output another", "typeless": "Not available" },
+          "voiceCommands": { "label": "Voice Commands", "voxpen": "10 commands, trilingual, no API call", "typeless": "Not available" },
+          "speakToEdit": { "label": "Speak to Edit", "voxpen": "Select text → voice-instruct AI rewrite", "typeless": "Not available" },
+          "autoContextTone": { "label": "Auto Context-Aware Tone", "voxpen": "Detects app → adjusts tone automatically", "typeless": "Manual tone selection only" },
+          "copyToClipboard": { "label": "Copy to Clipboard", "voxpen": "One-tap copy from candidate bar", "typeless": "Not available" },
+          "dualResult": { "label": "Dual Result Display", "voxpen": "Original + refined side by side, pick either", "typeless": "Refined only" }
+        }
+      },
+      "parity": {
+        "title": "Feature parity",
+        "rows": {
+          "whisperStt": { "label": "Whisper STT", "voxpen": "Groq / OpenAI Whisper", "typeless": "Whisper-based" },
+          "fillerRemoval": { "label": "Filler Word Removal", "voxpen": "AI-powered, per-language", "typeless": "AI-powered" },
+          "selfCorrection": { "label": "Self-Correction Handling", "voxpen": "Keeps final version only", "typeless": "Keeps final version only" },
+          "autoFormat": { "label": "Auto-Format", "voxpen": "Lists, punctuation, structure", "typeless": "Lists, punctuation, structure" },
+          "customVocabulary": { "label": "Custom Vocabulary / Prompts", "voxpen": "Custom system prompts", "typeless": "Custom vocabulary lists" },
+          "mixedLanguage": { "label": "Mixed-Language Support", "voxpen": "zh-en, zh-ja code-switching", "typeless": "Multi-language mixing" },
+          "onDeviceHistory": { "label": "On-Device History", "voxpen": "Local database, exportable", "typeless": "Local storage" }
         }
       }
     },

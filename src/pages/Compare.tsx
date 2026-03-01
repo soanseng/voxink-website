@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useDocumentHead } from "../hooks/useDocumentHead";
+import TypelessComparison from "../components/compare/TypelessComparison";
 
 const campKeys = ["native", "electron", "tauri"] as const;
 const dimensionKeys = [
@@ -19,6 +20,10 @@ const comparisonRows = [
   "quality",
   "platforms",
   "toneSelection",
+  "translationMode",
+  "voiceCommands",
+  "speakToEdit",
+  "fileTranscription",
 ] as const;
 
 const campStyles: Record<string, string> = {
@@ -168,8 +173,11 @@ export default function Compare() {
         </div>
       </section>
 
-      {/* Section 2: Privacy Architecture */}
-      <section className="py-20 px-6">
+      {/* Section 2: VoxPen vs Typeless */}
+      <TypelessComparison />
+
+      {/* Section 3: Privacy Architecture */}
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-center text-gray-900 mb-2">
             {t("compare.privacy.title")}

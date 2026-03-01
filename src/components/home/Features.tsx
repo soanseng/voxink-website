@@ -7,6 +7,9 @@ const featureKeys = [
   "transcribe",
   "tone",
   "provider",
+  "translation",
+  "voiceCommands",
+  "speakToEdit",
 ] as const;
 
 const featureIcons: Record<string, string> = {
@@ -16,6 +19,9 @@ const featureIcons: Record<string, string> = {
   transcribe: "\uD83D\uDCC4",
   tone: "\uD83C\uDFAD",
   provider: "\uD83D\uDD0C",
+  translation: "\uD83D\uDD04",
+  voiceCommands: "\uD83C\uDF99\uFE0F",
+  speakToEdit: "\u270F\uFE0F",
 };
 
 const supportedLanguages = [
