@@ -19,7 +19,7 @@ export default function LangSwitcher() {
       onClick={switchLang}
       className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors px-3 py-1.5 rounded-md hover:bg-gray-100"
     >
-      {lang === "zh-tw" ? "EN" : "繁中"}
+      {lang === "zh-tw" ? "🇺🇸 EN" : "🇹🇼 繁中"}
     </button>
   );
 }
