@@ -8,6 +8,7 @@ import Compare from "./pages/Compare";
 import Download from "./pages/Download";
 import Pricing from "./pages/Pricing";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Roadmap from "./pages/Roadmap";
 
 const SUPPORTED_LANGS = ["zh-tw", "en"] as const;
 type Lang = (typeof SUPPORTED_LANGS)[number];
@@ -63,6 +64,7 @@ export default function App() {
           <Route path="privacy" element={<PrivacyRedirect />} />
           <Route path="download" element={<Download />} />
           <Route path="pricing" element={<Pricing />} />
+          <Route path="roadmap" element={<Roadmap />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>

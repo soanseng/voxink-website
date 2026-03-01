@@ -11,14 +11,17 @@
     "policyTitle": "VoxPen 隱私權政策",
     "policyDescription": "VoxPen（語墨）隱私權政策 — 我們不收集任何使用者資料。",
     "compareTitle": "為什麼選語墨？— 功能、效能與隱私全面比較",
-    "compareDescription": "與 Typeless 功能對比、Tauri vs Electron 效能比較、隱私架構分析。"
+    "compareDescription": "與 Typeless 功能對比、Tauri vs Electron 效能比較、隱私架構分析。",
+    "roadmapTitle": "語墨開發路線圖 — 下一步計畫",
+    "roadmapDescription": "已上線功能、開發中項目、未來規劃一覽。"
   },
   "nav": {
     "features": "功能",
     "guide": "教學",
     "compare": "比較",
     "download": "下載",
-    "pricing": "費用比較"
+    "pricing": "費用比較",
+    "roadmap": "路線圖"
   },
   "hero": {
     "headline": "出一支嘴，剩下交給語墨",
@@ -597,6 +600,108 @@
       "title": "體驗輕量的差異",
       "download": "下載語墨",
       "pricing": "看定價"
+    }
+  },
+  "roadmap": {
+    "meta": {
+      "title": "語墨開發路線圖 — 下一步計畫",
+      "description": "已上線功能、開發中項目、未來規劃一覽。"
+    },
+    "hero": {
+      "title": "開發路線圖",
+      "subtitle": "已上線的功能、下一步計畫、未來方向"
+    },
+    "shipped": {
+      "title": "已上線",
+      "badge": "已上線",
+      "items": {
+        "translationMode": {
+          "title": "翻譯模式",
+          "description": "用一種語言說話，輸出另一種語言。直接在鍵盤上快速切換目標語言。",
+          "version": "v1.2.0"
+        },
+        "contextAwareTone": {
+          "title": "自動情境語氣",
+          "description": "偵測正在使用的 app，自動調整語氣——寫 email 用正式、聊天用口語。內建 22 款 app 規則，支援自訂覆蓋。",
+          "version": "v1.2.0"
+        },
+        "speakToEdit": {
+          "title": "語音編輯",
+          "description": "選取任何 app 中的文字，用語音指示 AI 改寫、翻譯或修正。",
+          "version": "v1.2.0"
+        },
+        "voiceCommands": {
+          "title": "語音指令",
+          "description": "10 種編輯指令——全選、複製、貼上、復原等。支援中文、英文、日文，不需要呼叫 API。",
+          "version": "v1.2.0"
+        },
+        "copyToClipboard": {
+          "title": "一鍵複製",
+          "description": "候選列一鍵複製——不用插入就能抓取潤飾後的文字。",
+          "version": "v1.2.0"
+        },
+        "translationQuickSwitch": {
+          "title": "翻譯快速切換",
+          "description": "候選列上方的指示列，點擊即可切換目標語言、開關翻譯模式。",
+          "version": "v1.2.0"
+        },
+        "fileTranscription": {
+          "title": "檔案轉錄 + SRT",
+          "description": "音檔、影片直接轉文字，支援 SRT 字幕格式匯出。",
+          "version": "v1.1.0"
+        },
+        "dualResult": {
+          "title": "雙結果顯示",
+          "description": "原文與潤飾文字並排顯示在候選列——點擊選擇要輸入哪一個。",
+          "version": "v1.0.0"
+        },
+        "multiProvider": {
+          "title": "多供應商 BYOK",
+          "description": "Groq、OpenAI、OpenRouter、Anthropic、Ollama 或自訂端點——選你合用的供應商。",
+          "version": "v1.0.0"
+        }
+      }
+    },
+    "planned": {
+      "title": "規劃中",
+      "items": {
+        "moreLanguages": {
+          "title": "100+ 語言支援",
+          "description": "在語言選擇器中開放所有 99 種 Whisper 支援語言。目前顯示 11 種。",
+          "priority": "P2"
+        },
+        "iosApp": {
+          "title": "iOS App",
+          "description": "原生 iOS 語音鍵盤，同樣支援 BYOK 模式、雙結果顯示和智慧潤飾。",
+          "priority": "P2"
+        },
+        "aiQuery": {
+          "title": "AI 問答選取文字",
+          "description": "選取文字，點擊 AI 按鈕，用語音提問——摘要、解釋或翻譯選取的內容。",
+          "priority": "P3"
+        },
+        "personalization": {
+          "title": "寫作風格個人化",
+          "description": "語墨隨時間學習你的寫作風格，讓潤飾更貼近你的語氣和用字。純本地運算，隱私無虞。",
+          "priority": "P3"
+        },
+        "webPlatform": {
+          "title": "網頁版",
+          "description": "在瀏覽器中直接使用語音輸入，適用 Google Docs、Notion 等網頁應用——免安裝。",
+          "priority": "P4"
+        }
+      }
+    },
+    "priorityLabels": {
+      "P2": "即將開發",
+      "P3": "規劃中",
+      "P4": "探索中"
+    },
+    "cta": {
+      "title": "想參與路線圖規劃？",
+      "subtitle": "歡迎在 GitHub 提交功能建議和回饋。",
+      "github": "提交建議",
+      "download": "下載語墨"
     }
   },
   "pricing": {

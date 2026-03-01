@@ -11,14 +11,17 @@
     "policyTitle": "VoxPen Privacy Policy",
     "policyDescription": "VoxPen privacy policy — we do not collect any user data.",
     "compareTitle": "Why VoxPen? — Features, Performance & Privacy Compared",
-    "compareDescription": "Feature-level comparison vs Typeless, Tauri vs Electron performance, and privacy architecture analysis."
+    "compareDescription": "Feature-level comparison vs Typeless, Tauri vs Electron performance, and privacy architecture analysis.",
+    "roadmapTitle": "VoxPen Roadmap — What's Coming Next",
+    "roadmapDescription": "See what's shipped, what's in progress, and what's planned for VoxPen's future."
   },
   "nav": {
     "features": "Features",
     "guide": "Guide",
     "compare": "Compare",
     "download": "Download",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "roadmap": "Roadmap"
   },
   "hero": {
     "headline": "Just Speak. VoxPen Writes.",
@@ -597,6 +600,108 @@
       "title": "Experience the difference",
       "download": "Download VoxPen",
       "pricing": "See pricing"
+    }
+  },
+  "roadmap": {
+    "meta": {
+      "title": "VoxPen Roadmap — What's Coming Next",
+      "description": "See what's shipped, what's in progress, and what's planned for VoxPen's future."
+    },
+    "hero": {
+      "title": "Roadmap",
+      "subtitle": "What we've shipped, what's next, and where we're headed"
+    },
+    "shipped": {
+      "title": "Shipped",
+      "badge": "Shipped",
+      "items": {
+        "translationMode": {
+          "title": "Translation Mode",
+          "description": "Speak in one language, output in another. Quick-switch target languages directly from the keyboard.",
+          "version": "v1.2.0"
+        },
+        "contextAwareTone": {
+          "title": "Auto Context-Aware Tone",
+          "description": "Detects your active app and auto-adjusts tone — formal for email, casual for chat. 22 built-in app rules plus custom overrides.",
+          "version": "v1.2.0"
+        },
+        "speakToEdit": {
+          "title": "Speak to Edit",
+          "description": "Select text in any app, then voice-instruct AI to rewrite, translate, or fix it.",
+          "version": "v1.2.0"
+        },
+        "voiceCommands": {
+          "title": "Voice Commands",
+          "description": "10 editing commands — select all, copy, paste, undo, and more. Works in Chinese, English, and Japanese without an API call.",
+          "version": "v1.2.0"
+        },
+        "copyToClipboard": {
+          "title": "Copy to Clipboard",
+          "description": "One-tap copy from the candidate bar — grab refined text without inserting it.",
+          "version": "v1.2.0"
+        },
+        "translationQuickSwitch": {
+          "title": "Translation Quick-Switch",
+          "description": "Tappable indicator row in the candidate bar to cycle target languages and toggle translation on/off.",
+          "version": "v1.2.0"
+        },
+        "fileTranscription": {
+          "title": "File Transcription + SRT",
+          "description": "Transcribe audio and video files to text with SRT subtitle export.",
+          "version": "v1.1.0"
+        },
+        "dualResult": {
+          "title": "Dual Result Display",
+          "description": "Original and refined text shown side by side in the candidate bar — tap to choose which one to commit.",
+          "version": "v1.0.0"
+        },
+        "multiProvider": {
+          "title": "Multi-Provider BYOK",
+          "description": "Groq, OpenAI, OpenRouter, Anthropic, Ollama, or custom endpoint — pick the provider that fits your needs.",
+          "version": "v1.0.0"
+        }
+      }
+    },
+    "planned": {
+      "title": "Planned",
+      "items": {
+        "moreLanguages": {
+          "title": "100+ Language Support",
+          "description": "Expose all 99 Whisper-supported languages in the language picker. Currently showing 11.",
+          "priority": "P2"
+        },
+        "iosApp": {
+          "title": "iOS App",
+          "description": "Native iOS voice keyboard with the same BYOK model, dual-result display, and refinement features.",
+          "priority": "P2"
+        },
+        "aiQuery": {
+          "title": "AI Query on Selected Text",
+          "description": "Select text, tap the AI button, and speak a question — summarize, explain, or translate highlighted content.",
+          "priority": "P3"
+        },
+        "personalization": {
+          "title": "Writing Style Personalization",
+          "description": "VoxPen learns your writing style over time and adapts refinement to match your tone and phrasing. Local-only, privacy-safe.",
+          "priority": "P3"
+        },
+        "webPlatform": {
+          "title": "Web Platform",
+          "description": "Browser-based voice input for web apps like Google Docs and Notion — no install needed.",
+          "priority": "P4"
+        }
+      }
+    },
+    "priorityLabels": {
+      "P2": "Next up",
+      "P3": "Planned",
+      "P4": "Exploring"
+    },
+    "cta": {
+      "title": "Want to shape the roadmap?",
+      "subtitle": "Feature requests and feedback welcome on GitHub.",
+      "github": "Open an Issue",
+      "download": "Download VoxPen"
     }
   },
   "pricing": {
