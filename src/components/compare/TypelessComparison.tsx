@@ -8,12 +8,10 @@ const advantageKeys = [
   "zhTwDepth",
   "onetimePurchase",
   "pricingTransparency",
-  "translationMode",
-  "voiceCommands",
-  "speakToEdit",
-  "autoContextTone",
   "copyToClipboard",
   "dualResult",
+  "linuxSupport",
+  "customPrompts",
 ] as const;
 
 const parityKeys = [
@@ -21,9 +19,13 @@ const parityKeys = [
   "fillerRemoval",
   "selfCorrection",
   "autoFormat",
-  "customVocabulary",
   "mixedLanguage",
   "onDeviceHistory",
+  "translationMode",
+  "voiceCommands",
+  "speakToEdit",
+  "contextAwareTone",
+  "personalDictionary",
 ] as const;
 
 export default function TypelessComparison() {

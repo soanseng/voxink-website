@@ -40,7 +40,7 @@
     },
     "multilang": {
       "title": "多語混打",
-      "description": "中英混合也通，自動偵測語言"
+      "description": "支援 11 種語言，自動偵測加混語輸入。可加入自訂詞彙，提升專業領域準確度"
     },
     "transcribe": {
       "title": "檔案轉錄",
@@ -548,9 +548,6 @@
           "quality": { "label": "辨識品質", "voxink": "雲端 AI（高品質）", "subscription": "雲端 AI（高品質）", "offline": "本地模型（有限）" },
           "platforms": { "label": "支援平台", "voxink": "Android + 桌面 3 平台", "subscription": "macOS / Mac+Win", "offline": "不一定" },
           "toneSelection": { "label": "語氣切換", "voxink": "6 種預設 + 自訂 prompt", "subscription": "有限預設", "offline": "無" },
-          "translationMode": { "label": "翻譯模式", "voxink": "說 A 語言 → 輸出 B 語言", "subscription": "無", "offline": "無" },
-          "voiceCommands": { "label": "語音指令", "voxink": "10 種指令，三語支援，離線可用", "subscription": "無", "offline": "無" },
-          "speakToEdit": { "label": "語音編輯", "voxink": "選取 → 語音指示 AI 改寫", "subscription": "無", "offline": "無" },
           "fileTranscription": { "label": "檔案轉錄", "voxink": "音檔/影片 → 文字 + SRT", "subscription": "無", "offline": "有限" }
         }
       }
@@ -573,12 +570,10 @@
           "zhTwDepth": { "label": "繁體中文深度", "voxpen": "原生 zh-TW prompt，混語感知", "typeless": "基本中文支援" },
           "onetimePurchase": { "label": "一次買斷", "voxpen": "手機 $4.99 / 桌面 $14.99", "typeless": "月費 $12–30" },
           "pricingTransparency": { "label": "價格透明", "voxpen": "看得到 API 費用，零加價", "typeless": "月繳固定費，成本不透明" },
-          "translationMode": { "label": "翻譯模式", "voxpen": "說 A 語言 → 輸出 B 語言", "typeless": "不支援" },
-          "voiceCommands": { "label": "語音指令", "voxpen": "10 種指令，三語支援，不需 API", "typeless": "不支援" },
-          "speakToEdit": { "label": "語音編輯", "voxpen": "選取文字 → 語音指示 AI 改寫", "typeless": "不支援" },
-          "autoContextTone": { "label": "自動情境語氣", "voxpen": "偵測 app → 自動調整語氣", "typeless": "僅手動選擇語氣" },
           "copyToClipboard": { "label": "一鍵複製", "voxpen": "候選列一鍵複製到剪貼簿", "typeless": "不支援" },
-          "dualResult": { "label": "雙結果顯示", "voxpen": "原文 + 潤飾並排，選你要的", "typeless": "僅顯示潤飾結果" }
+          "dualResult": { "label": "雙結果顯示", "voxpen": "原文 + 潤飾並排，選你要的", "typeless": "僅顯示潤飾結果" },
+          "linuxSupport": { "label": "Linux 桌面版", "voxpen": "完整 Linux 支援（AppImage）", "typeless": "不支援" },
+          "customPrompts": { "label": "自訂系統 Prompt", "voxpen": "各語言可完整編輯潤飾 prompt", "typeless": "不支援" }
         }
       },
       "parity": {
@@ -588,9 +583,13 @@
           "fillerRemoval": { "label": "去除贅字", "voxpen": "AI 驅動，各語言專屬", "typeless": "AI 驅動" },
           "selfCorrection": { "label": "自我修正處理", "voxpen": "只保留最終版本", "typeless": "只保留最終版本" },
           "autoFormat": { "label": "自動排版", "voxpen": "列表、標點、結構", "typeless": "列表、標點、結構" },
-          "customVocabulary": { "label": "自訂詞彙 / Prompt", "voxpen": "自訂系統 prompt", "typeless": "自訂詞彙表" },
           "mixedLanguage": { "label": "混語支援", "voxpen": "中英、中日混打", "typeless": "多語混合" },
-          "onDeviceHistory": { "label": "本地紀錄", "voxpen": "本地資料庫，可匯出", "typeless": "本地儲存" }
+          "onDeviceHistory": { "label": "本地紀錄", "voxpen": "本地資料庫，可匯出", "typeless": "本地儲存" },
+          "translationMode": { "label": "翻譯模式", "voxpen": "說 A 語言 → 輸出 B 語言", "typeless": "說 A 語言 → 輸出 B 語言" },
+          "voiceCommands": { "label": "語音指令", "voxpen": "標點 + 編輯，三語支援，離線可用", "typeless": "標點 + 排版" },
+          "speakToEdit": { "label": "語音編輯", "voxpen": "選取文字 → 語音指示 AI 改寫", "typeless": "選取文字 → 語音編輯" },
+          "contextAwareTone": { "label": "情境語氣", "voxpen": "22 款 app 規則 + 自訂規則", "typeless": "依 app 調整語氣" },
+          "personalDictionary": { "label": "個人詞典", "voxpen": "自訂詞彙注入 STT + LLM prompt", "typeless": "自訂詞彙" }
         }
       }
     },

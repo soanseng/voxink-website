@@ -20,9 +20,6 @@ const comparisonRows = [
   "quality",
   "platforms",
   "toneSelection",
-  "translationMode",
-  "voiceCommands",
-  "speakToEdit",
   "fileTranscription",
 ] as const;
 
