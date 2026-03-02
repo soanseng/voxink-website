@@ -13,7 +13,9 @@
     "compareTitle": "為什麼選語墨？— 功能、效能與隱私全面比較",
     "compareDescription": "與 Typeless 功能對比、Tauri vs Electron 效能比較、隱私架構分析。",
     "roadmapTitle": "語墨開發路線圖 — 下一步計畫",
-    "roadmapDescription": "已上線功能、開發中項目、未來規劃一覽。"
+    "roadmapDescription": "已上線功能、開發中項目、未來規劃一覽。",
+    "blogTitle": "語墨部落格 — 最新消息與技巧",
+    "blogDescription": "語墨團隊的最新動態、使用技巧和開發日誌。"
   },
   "nav": {
     "features": "功能",
@@ -21,7 +23,8 @@
     "compare": "比較",
     "download": "下載",
     "pricing": "費用",
-    "roadmap": "路線圖"
+    "roadmap": "路線圖",
+    "blog": "部落格"
   },
   "hero": {
     "headline": "出一支嘴，剩下交給語墨",
@@ -895,5 +898,17 @@
       "guide": "五分鐘上手教學"
     },
     "disclaimer": "API 費用以 Groq 2026 年 2 月官方定價計算，匯率 1 USD ≈ 32 TWD。訂閱制服務價格取自其官網公開定價（年繳方案）。App 購買為一次買斷，透過 Lemon Squeezy 付款。"
+  },
+  "blog": {
+    "meta": {
+      "title": "語墨部落格 — 最新消息與技巧",
+      "description": "語墨團隊的最新動態、使用技巧和開發日誌。"
+    },
+    "hero": {
+      "title": "部落格",
+      "subtitle": "最新消息、使用技巧、開發日誌"
+    },
+    "empty": "目前還沒有文章，敬請期待！",
+    "backToList": "返回部落格"
   }
 }

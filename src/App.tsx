@@ -9,6 +9,8 @@ import Download from "./pages/Download";
 import Pricing from "./pages/Pricing";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Roadmap from "./pages/Roadmap";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const SUPPORTED_LANGS = ["zh-tw", "en"] as const;
 type Lang = (typeof SUPPORTED_LANGS)[number];
@@ -65,6 +67,8 @@ export default function App() {
           <Route path="download" element={<Download />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="roadmap" element={<Roadmap />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>

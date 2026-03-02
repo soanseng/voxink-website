@@ -13,7 +13,9 @@
     "compareTitle": "Why VoxPen? — Features, Performance & Privacy Compared",
     "compareDescription": "Feature-level comparison vs Typeless, Tauri vs Electron performance, and privacy architecture analysis.",
     "roadmapTitle": "VoxPen Roadmap — What's Coming Next",
-    "roadmapDescription": "See what's shipped, what's in progress, and what's planned for VoxPen's future."
+    "roadmapDescription": "See what's shipped, what's in progress, and what's planned for VoxPen's future.",
+    "blogTitle": "VoxPen Blog — News & Tips",
+    "blogDescription": "Latest updates, tips, and dev logs from the VoxPen team."
   },
   "nav": {
     "features": "Features",
@@ -21,7 +23,8 @@
     "compare": "Compare",
     "download": "Download",
     "pricing": "Pricing",
-    "roadmap": "Roadmap"
+    "roadmap": "Roadmap",
+    "blog": "Blog"
   },
   "hero": {
     "headline": "Just Speak. VoxPen Writes.",
@@ -895,5 +898,17 @@
       "guide": "Get started in 5 minutes"
     },
     "disclaimer": "API costs based on Groq's February 2026 rates. Exchange rate: 1 USD ≈ 32 TWD. Subscription service prices sourced from their public pricing pages (annual plans). App purchases are one-time via Lemon Squeezy."
+  },
+  "blog": {
+    "meta": {
+      "title": "VoxPen Blog — News & Tips",
+      "description": "Latest updates, tips, and dev logs from the VoxPen team."
+    },
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Latest news, tips, and dev logs"
+    },
+    "empty": "No posts yet — stay tuned!",
+    "backToList": "Back to blog"
   }
 }

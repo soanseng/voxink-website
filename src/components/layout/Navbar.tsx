@@ -34,6 +34,7 @@ export default function Navbar() {
     { href: `${base}/compare`, label: t("nav.compare"), isHash: false },
     { href: `${base}/pricing`, label: t("nav.pricing"), isHash: false },
     { href: `${base}/roadmap`, label: t("nav.roadmap"), isHash: false },
+    { href: `${base}/blog`, label: t("nav.blog"), isHash: false },
     { href: `${base}/download`, label: t("nav.download"), isHash: false },
   ];
 
