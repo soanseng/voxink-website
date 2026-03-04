@@ -574,7 +574,7 @@
           "multiProvider": { "label": "多供應商", "voxpen": "Groq、OpenAI、OpenRouter、Ollama、自訂", "typeless": "僅單一供應商" },
           "fileTranscription": { "label": "檔案轉錄", "voxpen": "音檔/影片 → 文字 + SRT 匯出", "typeless": "不支援" },
           "zhTwDepth": { "label": "繁體中文深度", "voxpen": "原生 zh-TW prompt，混語感知", "typeless": "基本中文支援" },
-          "onetimePurchase": { "label": "一次買斷", "voxpen": "手機 $4.99 / 桌面 $14.99", "typeless": "月費 $12–30" },
+          "onetimePurchase": { "label": "一次買斷", "voxpen": "手機 $4.99 / 桌面 $5.99", "typeless": "月費 $12–30" },
           "pricingTransparency": { "label": "價格透明", "voxpen": "看得到 API 費用，零加價", "typeless": "月繳固定費，成本不透明" },
           "copyToClipboard": { "label": "一鍵複製", "voxpen": "候選列一鍵複製到剪貼簿", "typeless": "不支援" },
           "dualResult": { "label": "雙結果顯示", "voxpen": "原文 + 潤飾並排，選你要的", "typeless": "僅顯示潤飾結果" },
@@ -719,7 +719,7 @@
     "homeBanner": {
       "title": "買一次，不用每月繳",
       "onetime": "一次買斷",
-      "amount": "NT$479",
+      "amount": "NT$199",
       "versus": "vs 訂閱制",
       "subscriptionAmount": "NT$3,840+／年",
       "cta": "看完整比較"
@@ -755,15 +755,15 @@
       },
       "desktop": {
         "name": "桌面版",
-        "price": "NT$479",
+        "price": "NT$199",
         "period": "一次買斷",
         "badge": "最受歡迎",
-        "description": "Windows、macOS、Linux 無限使用",
+        "description": "Windows、Linux 無限使用（macOS 即將推出）",
         "features": [
           "無限語音輸入",
           "無限 AI 潤飾",
           "在任何 app 中使用",
-          "Windows、macOS、Linux"
+          "Windows、Linux（macOS 即將推出）"
         ],
         "cta": "取得桌面版"
       }

@@ -75,16 +75,23 @@ export default function TierCards() {
                 ))}
               </ul>
 
-              <Link
-                to={`/${lang}/download`}
-                className={`mt-6 block text-center py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                  key === "desktop"
-                    ? "bg-gray-900 text-white hover:bg-gray-800"
-                    : "bg-gray-100 text-gray-900 hover:bg-gray-200"
-                }`}
-              >
-                {t(`pricing.tiers.${key}.cta`)}
-              </Link>
+              {key === "desktop" ? (
+                <a
+                  href="https://anatomind.lemonsqueezy.com/checkout/buy/7e9cc7dc-289b-45f3-a56e-b8f59d3fb592"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 block text-center py-2.5 rounded-lg text-sm font-medium transition-colors bg-gray-900 text-white hover:bg-gray-800"
+                >
+                  {t(`pricing.tiers.${key}.cta`)}
+                </a>
+              ) : (
+                <Link
+                  to={`/${lang}/download`}
+                  className="mt-6 block text-center py-2.5 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-900 hover:bg-gray-200"
+                >
+                  {t(`pricing.tiers.${key}.cta`)}
+                </Link>
+              )}
             </div>
           );
         })}

@@ -574,7 +574,7 @@
           "multiProvider": { "label": "Multi-Provider", "voxpen": "Groq, OpenAI, OpenRouter, Ollama, custom", "typeless": "Single provider only" },
           "fileTranscription": { "label": "File Transcription", "voxpen": "Audio/video → text + SRT export", "typeless": "Not available" },
           "zhTwDepth": { "label": "Traditional Chinese Depth", "voxpen": "Native zh-TW prompts, mixed-language aware", "typeless": "Basic Chinese support" },
-          "onetimePurchase": { "label": "One-Time Purchase", "voxpen": "$4.99 mobile / $14.99 desktop", "typeless": "$12–30/month subscription" },
+          "onetimePurchase": { "label": "One-Time Purchase", "voxpen": "$4.99 mobile / $5.99 desktop", "typeless": "$12–30/month subscription" },
           "pricingTransparency": { "label": "Pricing Transparency", "voxpen": "See exact API costs, no markup", "typeless": "Flat monthly fee, costs hidden" },
           "copyToClipboard": { "label": "Copy to Clipboard", "voxpen": "One-tap copy from candidate bar", "typeless": "Not available" },
           "dualResult": { "label": "Dual Result Display", "voxpen": "Original + refined side by side, pick either", "typeless": "Refined only" },
@@ -719,7 +719,7 @@
     "homeBanner": {
       "title": "Pay once. Not every month.",
       "onetime": "One-time purchase",
-      "amount": "$14.99",
+      "amount": "$5.99",
       "versus": "vs subscription",
       "subscriptionAmount": "$120+/year",
       "cta": "See full comparison"
@@ -755,15 +755,15 @@
       },
       "desktop": {
         "name": "Desktop",
-        "price": "$14.99",
+        "price": "$5.99",
         "period": "one-time",
         "badge": "Popular",
-        "description": "Unlimited on Windows, macOS & Linux",
+        "description": "Unlimited on Windows & Linux (macOS coming soon)",
         "features": [
           "Unlimited voice inputs",
           "Unlimited AI refinement",
           "Works in any app",
-          "Windows, macOS & Linux"
+          "Windows & Linux (macOS coming soon)"
         ],
         "cta": "Get Desktop"
       }
