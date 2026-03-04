@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
 import { useDocumentHead } from "../hooks/useDocumentHead";
 import { usePlatformDetect } from "../hooks/usePlatformDetect";
 
@@ -8,10 +9,30 @@ const platforms = [
   { key: "linux", icon: "🐧" },
 ] as const;
 
+const platformScreenshots: Record<string, { en: string; tw: string; alt: string }> = {
+  macos: {
+    en: "screenshots/desktop/settings-general-en.webp",
+    tw: "screenshots/desktop/settings-general-tw.webp",
+    alt: "VoxPen Desktop",
+  },
+  windows: {
+    en: "screenshots/desktop/settings-general-en.webp",
+    tw: "screenshots/desktop/settings-general-tw.webp",
+    alt: "VoxPen Desktop",
+  },
+  linux: {
+    en: "screenshots/desktop/settings-speech-en.webp",
+    tw: "screenshots/desktop/settings-speech-tw.webp",
+    alt: "VoxPen Desktop",
+  },
+};
+
 export default function Download() {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
   useDocumentHead(t("meta.downloadTitle"), t("meta.downloadDescription"));
   const detected = usePlatformDetect();
+  const imgLang = lang === "zh-tw" ? "tw" : "en";
 
   const sorted = [...platforms].sort((a, b) => {
     if (a.key === detected) return -1;
@@ -57,6 +78,14 @@ export default function Download() {
               <span className="font-medium text-gray-700">{t("download.installSteps")}:</span>{" "}
               {t(`download.${key}.steps`)}
             </p>
+            {platformScreenshots[key] && (
+              <img
+                src={`${import.meta.env.BASE_URL}${platformScreenshots[key][imgLang]}`}
+                alt={platformScreenshots[key].alt}
+                className="mb-4 rounded-lg border border-gray-200 shadow-sm max-w-full"
+                loading="lazy"
+              />
+            )}
             <div className="flex flex-wrap gap-3">
               <a
                 href={
@@ -84,6 +113,12 @@ export default function Download() {
         <div className="p-8 rounded-xl border border-dashed border-gray-200 bg-gray-50 text-center">
           <span className="text-3xl">📱</span>
           <p className="text-gray-400 mt-2">{t("download.android.comingSoon")}</p>
+          <img
+            src={`${import.meta.env.BASE_URL}screenshots/android/home.webp`}
+            alt="VoxPen Android"
+            className="mt-4 mx-auto rounded-lg border border-gray-200 shadow-sm max-w-[280px]"
+            loading="lazy"
+          />
         </div>
       </div>
 

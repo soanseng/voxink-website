@@ -1,14 +1,38 @@
 import { useTranslation } from "react-i18next";
 import { useDocumentHead } from "../hooks/useDocumentHead";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const tabs = ["android", "windows", "linux"] as const;
+
+const tabScreenshots: Record<
+  string,
+  { en: string; tw: string; alt: string }
+> = {
+  android: {
+    en: "screenshots/android/settings-llm.webp",
+    tw: "screenshots/android/settings-llm.webp",
+    alt: "VoxPen Android LLM Settings",
+  },
+  windows: {
+    en: "screenshots/desktop/settings-general-en.webp",
+    tw: "screenshots/desktop/settings-general-tw.webp",
+    alt: "VoxPen Desktop Settings",
+  },
+  linux: {
+    en: "screenshots/desktop/settings-speech-en.webp",
+    tw: "screenshots/desktop/settings-speech-tw.webp",
+    alt: "VoxPen Desktop Speech Settings",
+  },
+};
 const faqKeys = ["q1", "q2", "q3", "q4"] as const;
 
 export default function Guide() {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
   useDocumentHead(t("meta.guideTitle"), t("meta.guideDescription"));
   const [activeTab, setActiveTab] = useState<(typeof tabs)[number]>("android");
+  const imgLang = lang === "zh-tw" ? "tw" : "en";
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
@@ -75,6 +99,14 @@ export default function Guide() {
           ))}
         </div>
         <p className="text-gray-600 leading-relaxed">{t(`guide.step3.${activeTab}`)}</p>
+        {tabScreenshots[activeTab] && (
+          <img
+            src={`${import.meta.env.BASE_URL}${tabScreenshots[activeTab][imgLang]}`}
+            alt={tabScreenshots[activeTab].alt}
+            className="mt-6 rounded-xl border border-gray-200 shadow-sm max-w-full"
+            loading="lazy"
+          />
+        )}
       </section>
 
       {/* Steps 4-5 */}
