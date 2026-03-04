@@ -804,7 +804,7 @@
       "rows": {
         "appPrice": {
           "label": "App price",
-          "voxink": "Free (30/day) or $4.99–14.99 one-time",
+          "voxink": "Free (30/day) or $4.99–5.99 one-time",
           "serviceA": "$0 (requires subscription)",
           "serviceB": "$0 (requires subscription)"
         },
@@ -816,13 +816,13 @@
         },
         "yearlyCost": {
           "label": "Total cost / year",
-          "voxink": "$0–14.99 (one-time)",
+          "voxink": "$0–5.99 (one-time)",
           "serviceA": "$144 (yearly plan)",
           "serviceB": "$144 (yearly plan)"
         },
         "twoYearCost": {
           "label": "Total cost / 2 years",
-          "voxink": "$0–14.99 (same price)",
+          "voxink": "$0–5.99 (same price)",
           "serviceA": "$288",
           "serviceB": "$288"
         },
@@ -858,19 +858,19 @@
       "normal": {
         "title": "Normal use",
         "usage": "50 inputs/day",
-        "voxink": "$4.99–14.99 once + API",
+        "voxink": "$4.99–5.99 once + API",
         "subscription": "$12–30/mo"
       },
       "heavy": {
         "title": "Heavy use",
         "usage": "200 inputs/day",
-        "voxink": "$4.99–14.99 once + ~$0.60/mo API",
+        "voxink": "$4.99–5.99 once + ~$0.60/mo API",
         "subscription": "$12–30/mo"
       },
       "writer": {
         "title": "Writer / Power user",
         "usage": "500 inputs/day",
-        "voxink": "$4.99–14.99 once + ~$1.90/mo API",
+        "voxink": "$4.99–5.99 once + ~$1.90/mo API",
         "subscription": "$12–30/mo"
       }
     },

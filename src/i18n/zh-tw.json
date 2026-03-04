@@ -804,7 +804,7 @@
       "rows": {
         "appPrice": {
           "label": "App 費用",
-          "voxink": "免費（30次/天）或 NT$159–479 一次買斷",
+          "voxink": "免費（30次/天）或 NT$159–199 一次買斷",
           "serviceA": "NT$0（需訂閱）",
           "serviceB": "NT$0（需訂閱）"
         },
@@ -816,13 +816,13 @@
         },
         "yearlyCost": {
           "label": "一年總費用",
-          "voxink": "NT$0–479（一次買斷）",
+          "voxink": "NT$0–199（一次買斷）",
           "serviceA": "NT$4,608（年繳 US$12／月）",
           "serviceB": "NT$4,608（年繳 US$12／月）"
         },
         "twoYearCost": {
           "label": "兩年總費用",
-          "voxink": "NT$0–479（同價）",
+          "voxink": "NT$0–199（同價）",
           "serviceA": "NT$9,216",
           "serviceB": "NT$9,216"
         },
@@ -858,19 +858,19 @@
       "normal": {
         "title": "一般使用",
         "usage": "每天 50 次",
-        "voxink": "NT$159–479 一次 + API",
+        "voxink": "NT$159–199 一次 + API",
         "subscription": "NT$384-960／月"
       },
       "heavy": {
         "title": "重度使用",
         "usage": "每天 200 次",
-        "voxink": "NT$159–479 一次 + 約 NT$19／月 API",
+        "voxink": "NT$159–199 一次 + 約 NT$19／月 API",
         "subscription": "NT$384-960／月"
       },
       "writer": {
         "title": "文字工作者",
         "usage": "每天 500 次",
-        "voxink": "NT$159–479 一次 + 約 NT$60／月 API",
+        "voxink": "NT$159–199 一次 + 約 NT$60／月 API",
         "subscription": "NT$384-960／月"
       }
     },
