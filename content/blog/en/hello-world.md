@@ -21,4 +21,4 @@ Most voice input tools require a monthly subscription, and your voice data passe
 
 ### What's Next
 
-We're working on more features including an iOS app and 100+ language support. Head to [GitHub](https://github.com/soanseng/voxpen-releases) to submit feature requests!
+We're working on more features including an iOS app and 100+ language support. Head to [GitHub](https://github.com/soanseng/voxpen-desktop) to submit feature requests!

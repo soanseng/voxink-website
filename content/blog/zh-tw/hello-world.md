@@ -21,4 +21,4 @@ description: "語墨 VoxPen 正式發布——AI 語音輸入，隱私優先、B
 
 ### 下一步
 
-我們正在開發更多功能，包括 iOS 版本和 100+ 語言支援。歡迎到 [GitHub](https://github.com/soanseng/voxpen-releases) 提交功能建議！
+我們正在開發更多功能，包括 iOS 版本和 100+ 語言支援。歡迎到 [GitHub](https://github.com/soanseng/voxpen-desktop) 提交功能建議！

@@ -84,8 +84,8 @@ export default function Download() {
               <a
                 href={
                   key === "windows"
-                    ? "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_x64-setup.exe"
-                    : "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_amd64.AppImage"
+                    ? "https://github.com/soanseng/voxpen-desktop/releases/latest/download/VoxPen.Desktop_x64-setup.exe"
+                    : "https://github.com/soanseng/voxpen-desktop/releases/latest/download/VoxPen.Desktop_amd64.AppImage"
                 }
                 target="_blank"
                 rel="noopener noreferrer"
@@ -137,7 +137,7 @@ export default function Download() {
       {/* Changelog link */}
       <div className="mt-12 text-center text-sm text-gray-400">
         <a
-          href="https://github.com/soanseng/voxpen-releases/releases"
+          href="https://github.com/soanseng/voxpen-desktop/releases"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-600 transition-colors"
