@@ -39,9 +39,15 @@ export default function Platforms() {
             </div>
           ))}
         </div>
-        <div className="text-center mt-8">
+        <div className="text-center mt-8 space-y-1">
           <p className="text-sm text-gray-400">
             macOS — {t("platforms.macos.description")}
+          </p>
+          <p className="text-xs text-gray-400">
+            {t("download.openSource")}{" "}
+            <a href="https://github.com/soanseng/voxpen-desktop" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Desktop</a>
+            {" · "}
+            <a href="https://github.com/soanseng/voxpen-android" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Android</a>
           </p>
         </div>
       </div>

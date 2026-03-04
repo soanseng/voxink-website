@@ -4,17 +4,11 @@ import { useDocumentHead } from "../hooks/useDocumentHead";
 import { usePlatformDetect } from "../hooks/usePlatformDetect";
 
 const platforms = [
-  { key: "macos", icon: "🍎" },
   { key: "windows", icon: "🖥️" },
   { key: "linux", icon: "🐧" },
 ] as const;
 
 const platformScreenshots: Record<string, { en: string; tw: string; alt: string }> = {
-  macos: {
-    en: "screenshots/desktop/settings-general-en.webp",
-    tw: "screenshots/desktop/settings-general-tw.webp",
-    alt: "VoxPen Desktop",
-  },
   windows: {
     en: "screenshots/desktop/settings-general-en.webp",
     tw: "screenshots/desktop/settings-general-tw.webp",
@@ -89,9 +83,7 @@ export default function Download() {
             <div className="flex flex-wrap gap-3">
               <a
                 href={
-                  key === "macos"
-                    ? "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_aarch64.dmg"
-                    : key === "windows"
+                  key === "windows"
                     ? "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_x64-setup.exe"
                     : "https://github.com/soanseng/voxpen-releases/releases/latest/download/VoxPen.Desktop_amd64.AppImage"
                 }
@@ -99,15 +91,27 @@ export default function Download() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg hover:bg-gray-800 transition-colors"
               >
-                {key === "macos"
-                  ? t("download.macos.dmg")
-                  : key === "windows"
+                {key === "windows"
                   ? t("download.windows.installer")
                   : t("download.linux.appimage")}
+              </a>
+              <a
+                href="https://github.com/soanseng/voxpen-desktop"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+              >
+                {t("download.sourceCode")}
               </a>
             </div>
           </div>
         ))}
+
+        {/* macOS — coming soon */}
+        <div className="p-8 rounded-xl border border-dashed border-gray-200 bg-gray-50 text-center">
+          <span className="text-3xl">🍎</span>
+          <p className="text-gray-400 mt-2">{t("download.macos.comingSoon")}</p>
+        </div>
 
         {/* Android — coming soon */}
         <div className="p-8 rounded-xl border border-dashed border-gray-200 bg-gray-50 text-center">
@@ -119,6 +123,14 @@ export default function Download() {
             className="mt-4 mx-auto rounded-lg border border-gray-200 shadow-sm max-w-[280px]"
             loading="lazy"
           />
+          <a
+            href="https://github.com/soanseng/voxpen-android"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center mt-3 px-6 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            {t("download.sourceCode")}
+          </a>
         </div>
       </div>
 

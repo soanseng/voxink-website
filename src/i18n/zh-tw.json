@@ -386,6 +386,8 @@
     "updatedAt": "更新於 {{date}}",
     "changelog": "查看完整更新紀錄",
     "requirements": "系統需求",
+    "sourceCode": "原始碼（GitHub）",
+    "openSource": "開源於 GitHub：",
     "installSteps": "安裝步驟",
     "android": {
       "comingSoon": "Android 版即將推出",
@@ -405,9 +407,7 @@
       "steps": "下載後執行 chmod +x VoxPen.AppImage，雙擊或從終端執行。"
     },
     "macos": {
-      "dmg": "下載 DMG（Apple Silicon）",
-      "requirement": "macOS 10.15 以上，Apple Silicon（M1 / M2 / M3+）",
-      "steps": "開啟 DMG，將 VoxPen 拖入 Applications 資料夾。首次執行請右鍵選「開啟」。"
+      "comingSoon": "macOS 版即將推出"
     }
   },
   "lightweight": {
