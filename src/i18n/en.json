@@ -144,15 +144,17 @@
     "title": "Get Started in 5 Minutes",
     "subtitle": "From API key setup to voice input — a complete step-by-step guide",
     "step1": {
-      "title": "Step 1: Get an API Key",
-      "description": "Sign up at groq.com (recommended — fast and has a free tier), openai.com, or openrouter.ai. Create an API key in the console. Desktop users can also use Ollama for local models."
+      "title": "Step 1: Get a Groq API Key",
+      "description": "We'll use Groq as an example (recommended — fast with a free tier). You can also use openai.com or openrouter.ai with similar steps. Desktop users can also use Ollama for local models.",
+      "sub1": "Go to groq.com and click \"Developers\" → \"Free API Key\" in the top navigation.",
+      "sub2": "Create an account or log in. You can sign up quickly with Google, GitHub, or email.",
+      "sub3": "After logging in, you'll see the API Keys page. Click \"+ Create API Key\" in the top right.",
+      "sub4": "Enter a display name (e.g. \"Voxpen\"), set expiration to \"No expiration\", complete the verification, and submit.",
+      "sub5": "Your API key will be shown only once — click \"Copy\" immediately! You won't see it again after closing.",
+      "sub6": "Done! Your API key now appears in the list. Next, paste it into VoxPen's settings."
     },
     "step2": {
-      "title": "Step 2: Copy Your API Key",
-      "description": "Go to the API Keys page of your chosen provider, create a new key, name it (e.g. \"VoxPen\"), and copy it — it's only shown once."
-    },
-    "step3": {
-      "title": "Step 3: Install VoxPen",
+      "title": "Step 2: Install VoxPen",
       "tabs": {
         "android": "Android",
         "windows": "Windows",
@@ -162,12 +164,12 @@
       "windows": "Download the latest Windows installer (.exe) from GitHub Releases and run the setup wizard.",
       "linux": "Download the AppImage from GitHub Releases. Run chmod +x VoxPen*.AppImage, then double-click or run from terminal."
     },
-    "step4": {
-      "title": "Step 4: Configure Your API Key",
+    "step3": {
+      "title": "Step 3: Configure Your API Key",
       "description": "Open VoxPen settings, find the \"Speech\" section. Select your provider (Groq, OpenAI, OpenRouter, or Ollama), paste your API key, and click \"Test\" to verify the connection."
     },
-    "step5": {
-      "title": "Step 5: Start Using",
+    "step4": {
+      "title": "Step 4: Start Using",
       "android": "Android: Go to Settings → Language & Input → Manage Keyboards → Enable \"VoxPen Voice Keyboard\". Switch to VoxPen in any app and tap the mic button.",
       "desktop": "Desktop: Press the hotkey (default Ctrl+Shift+V) and start speaking. Release to auto-paste the transcription at your cursor."
     },

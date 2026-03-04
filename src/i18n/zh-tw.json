@@ -144,15 +144,17 @@
     "title": "五分鐘上手語墨",
     "subtitle": "從取得 API key 到開始語音輸入，完整圖文教學",
     "step1": {
-      "title": "Step 1：取得 API Key",
-      "description": "到 groq.com 註冊（推薦，速度快且有免費額度）、openai.com 或 openrouter.ai。在控制台建立 API key。桌面版用戶也可以用 Ollama 跑本地模型。"
+      "title": "Step 1：取得 Groq API Key",
+      "description": "以下用 Groq 做示範（推薦，速度快且有免費額度）。你也可以選 openai.com 或 openrouter.ai，步驟類似。桌面版用戶還可以用 Ollama 跑本地模型。",
+      "sub1": "到 groq.com，點選上方的「Developers」→「Free API Key」。",
+      "sub2": "建立帳號或登入。可以用 Google、GitHub 或 Email 快速註冊。",
+      "sub3": "登入後進入 API Keys 管理頁面，點選右上角「+ Create API Key」。",
+      "sub4": "輸入名稱（例如「Voxpen」），到期時間選「No expiration」，完成人機驗證後送出。",
+      "sub5": "API Key 產生後只會顯示一次！請立即按「Copy」複製，關閉後就看不到了。",
+      "sub6": "完成！你的 API Key 會出現在列表中。接下來把它貼到語墨的設定裡就好。"
     },
     "step2": {
-      "title": "Step 2：複製 API Key",
-      "description": "進入你選擇的供應商的 API Keys 頁面，建立新的 key，取個名字（例如「VoxPen」），然後複製——key 只會顯示一次。"
-    },
-    "step3": {
-      "title": "Step 3：安裝語墨",
+      "title": "Step 2：安裝語墨",
       "tabs": {
         "android": "Android",
         "windows": "Windows",
@@ -162,12 +164,12 @@
       "windows": "前往 GitHub Releases 頁面，下載最新的 Windows 安裝檔（.exe），執行安裝精靈即可完成。安裝後語墨會出現在系統匣。",
       "linux": "前往 GitHub Releases 頁面下載 AppImage 檔案。下載後在終端執行 chmod +x VoxPen*.AppImage，接著雙擊或從終端執行即可。"
     },
-    "step4": {
-      "title": "Step 4：設定 API Key",
+    "step3": {
+      "title": "Step 3：設定 API Key",
       "description": "打開語墨的設定頁面，找到「語音」或「Speech」區塊。選擇你的供應商（Groq、OpenAI、OpenRouter 或 Ollama），在 API Key 欄位貼上剛才複製的 key。點擊「測試」按鈕確認連線成功。"
     },
-    "step5": {
-      "title": "Step 5：開始使用",
+    "step4": {
+      "title": "Step 4：開始使用",
       "android": "Android 使用者：到系統設定 → 語言與輸入法 → 管理鍵盤 → 啟用「語墨語音鍵盤」。在任何 app 的輸入框切換到語墨鍵盤，點擊麥克風按鈕開始說話。",
       "desktop": "桌面版使用者：按下快捷鍵（預設 Ctrl+Shift+V），開始說話。放開快捷鍵後，辨識結果會自動貼在游標位置。"
     },

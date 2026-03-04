@@ -25,6 +25,16 @@ const tabScreenshots: Record<
     alt: "VoxPen Desktop Speech Settings",
   },
 };
+
+const apiKeySteps = [
+  { key: "sub1", img: "screenshots/groq/groq-1.webp" },
+  { key: "sub2", img: "screenshots/groq/groq-2.webp" },
+  { key: "sub3", img: "screenshots/groq/groq-3.webp" },
+  { key: "sub4", img: "screenshots/groq/groq-4.webp" },
+  { key: "sub5", img: "screenshots/groq/groq-5.webp" },
+  { key: "sub6", img: "screenshots/groq/groq-6.webp" },
+] as const;
+
 const faqKeys = ["q1", "q2", "q3", "q4"] as const;
 
 export default function Guide() {
@@ -40,48 +50,46 @@ export default function Guide() {
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">{t("guide.title")}</h1>
       <p className="text-lg text-gray-500 mb-12">{t("guide.subtitle")}</p>
 
-      {/* Step 1 */}
-      <section className="space-y-10 mb-12">
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">
-            {t("guide.step1.title")}
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            {t("guide.step1.description")}
-          </p>
-          <a
-            href="https://groq.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-gray-900 hover:underline"
-          >
-            groq.com &rarr;
-          </a>
+      {/* Step 1: API Key Tutorial */}
+      <section className="mb-12">
+        <h2 className="text-xl font-semibold text-gray-900 mb-2">
+          {t("guide.step1.title")}
+        </h2>
+        <p className="text-gray-600 leading-relaxed mb-6">
+          {t("guide.step1.description")}
+        </p>
+        <div className="space-y-8">
+          {apiKeySteps.map((step, i) => (
+            <div key={step.key}>
+              <p className="text-gray-700 font-medium mb-3">
+                <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-900 text-white text-xs mr-2">
+                  {i + 1}
+                </span>
+                {t(`guide.step1.${step.key}`)}
+              </p>
+              <img
+                src={`${import.meta.env.BASE_URL}${step.img}`}
+                alt={`Groq API Key step ${i + 1}`}
+                className="rounded-xl border border-gray-200 shadow-sm max-w-full"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
-
-        {/* Step 2 */}
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">
-            {t("guide.step2.title")}
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            {t("guide.step2.description")}
-          </p>
-          <a
-            href="https://console.groq.com/keys"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-gray-900 hover:underline"
-          >
-            Groq Console &rarr;
-          </a>
-        </div>
+        <a
+          href="https://console.groq.com/keys"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 mt-6 text-sm font-medium text-gray-900 hover:underline"
+        >
+          Groq Console &rarr;
+        </a>
       </section>
 
-      {/* Step 3 with tabs */}
+      {/* Step 2 with tabs */}
       <section className="mb-12">
         <h2 className="text-xl font-semibold text-gray-900 mb-4">
-          {t("guide.step3.title")}
+          {t("guide.step2.title")}
         </h2>
         <div className="flex gap-2 mb-4">
           {tabs.map((tab) => (
@@ -94,11 +102,11 @@ export default function Guide() {
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
             >
-              {t(`guide.step3.tabs.${tab}`)}
+              {t(`guide.step2.tabs.${tab}`)}
             </button>
           ))}
         </div>
-        <p className="text-gray-600 leading-relaxed">{t(`guide.step3.${activeTab}`)}</p>
+        <p className="text-gray-600 leading-relaxed">{t(`guide.step2.${activeTab}`)}</p>
         {tabScreenshots[activeTab] && (
           <img
             src={`${import.meta.env.BASE_URL}${tabScreenshots[activeTab][imgLang]}`}
@@ -109,20 +117,20 @@ export default function Guide() {
         )}
       </section>
 
-      {/* Steps 4-5 */}
+      {/* Steps 3-4 */}
       <section className="space-y-10 mb-12">
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            {t("guide.step3.title")}
+          </h2>
+          <p className="text-gray-600 leading-relaxed">{t("guide.step3.description")}</p>
+        </div>
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
             {t("guide.step4.title")}
           </h2>
-          <p className="text-gray-600 leading-relaxed">{t("guide.step4.description")}</p>
-        </div>
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">
-            {t("guide.step5.title")}
-          </h2>
-          <p className="text-gray-600 leading-relaxed mb-3">{t("guide.step5.android")}</p>
-          <p className="text-gray-600 leading-relaxed">{t("guide.step5.desktop")}</p>
+          <p className="text-gray-600 leading-relaxed mb-3">{t("guide.step4.android")}</p>
+          <p className="text-gray-600 leading-relaxed">{t("guide.step4.desktop")}</p>
         </div>
       </section>
 
