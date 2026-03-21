@@ -42,7 +42,7 @@
     },
     "refine": {
       "title": "智慧潤飾",
-      "description": "AI 自動去除贅字、修正文法、加上標點，說話就是完稿"
+      "description": "AI 自動去除贅字、修正文法、加上全形標點（，。、「」），說話就是完稿"
     },
     "multilang": {
       "title": "多語混打",
@@ -67,6 +67,10 @@
     "speakToEdit": {
       "title": "語音編輯",
       "description": "選取文字，用語音告訴 AI 怎麼改——改寫、翻譯、修文法，或任何指令。全程語音操作"
+    },
+    "ducking": {
+      "title": "自動降低背景音",
+      "description": "錄音時自動降低其他 app 音量，語音辨識更清晰準確"
     },
     "provider": {
       "title": "多供應商",

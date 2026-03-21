@@ -42,7 +42,7 @@
     },
     "refine": {
       "title": "Smart Refinement",
-      "description": "AI removes filler words, fixes grammar, adds punctuation — speak and it's ready"
+      "description": "AI removes filler words, fixes grammar, adds full-width Chinese punctuation (，。、「」) — speak and it's ready"
     },
     "multilang": {
       "title": "Multilingual",
@@ -67,6 +67,10 @@
     "speakToEdit": {
       "title": "Speak to Edit",
       "description": "Select text, then tell AI what to change — rewrite, translate, fix grammar, or follow any instruction. All by voice"
+    },
+    "ducking": {
+      "title": "Audio Ducking",
+      "description": "Automatically lowers other apps' volume while recording, so your voice comes through clearly"
     },
     "provider": {
       "title": "Multi-Provider",
