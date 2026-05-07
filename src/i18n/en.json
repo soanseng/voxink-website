@@ -3,7 +3,7 @@
     "title": "VoxPen — AI Voice Input",
     "description": "Just speak, VoxPen writes for you. AI voice keyboard for Android, Windows, and Linux.",
     "guideTitle": "VoxPen Guide — Get Started in 5 Minutes",
-    "guideDescription": "Step-by-step guide from Groq API setup to voice input.",
+    "guideDescription": "Step-by-step guide from API key setup to voice input.",
     "privacyTitle": "VoxPen Privacy — Your Voice, Your Data",
     "privacyDescription": "How VoxPen's privacy-first architecture keeps your data safe.",
     "downloadTitle": "Download VoxPen",
@@ -38,7 +38,7 @@
     "title": "Features",
     "speed": {
       "title": "Lightning Fast",
-      "description": "Groq Whisper speech recognition — results in 0.5 seconds, the world's fastest inference"
+      "description": "Fast cloud speech recognition with Groq Whisper or OpenAI Audio API models"
     },
     "refine": {
       "title": "Smart Refinement",
@@ -72,9 +72,13 @@
       "title": "Audio Ducking",
       "description": "Automatically lowers other apps' volume while recording, so your voice comes through clearly"
     },
+    "reliability": {
+      "title": "Retryable Failures",
+      "description": "Long recordings are chunked, provider errors stay readable, and failed recordings can be resent from history"
+    },
     "provider": {
       "title": "Multi-Provider",
-      "description": "Groq, OpenAI, OpenRouter, or local models with Ollama — pick the provider that fits your needs"
+      "description": "Groq Whisper, OpenAI Audio API, OpenRouter, custom endpoints, or local models with Ollama — pick what fits"
     }
   },
   "privacy": {
@@ -170,7 +174,7 @@
     },
     "step3": {
       "title": "Step 3: Configure Your API Key",
-      "description": "Open VoxPen settings, find the \"Speech\" section. Select your provider (Groq, OpenAI, OpenRouter, or Ollama), paste your API key, and click \"Test\" to verify the connection."
+      "description": "Open VoxPen settings, find the \"Speech\" section. Select your provider (Groq Whisper, OpenAI Audio API, custom endpoint, or Ollama where supported), paste your API key, and click \"Test\" to verify the connection."
     },
     "step4": {
       "title": "Step 4: Start Using",
@@ -203,7 +207,7 @@
       },
       "q3": {
         "question": "What providers are supported?",
-        "answer": "Groq (recommended — fastest, free tier), OpenAI (GPT-5-nano is very cheap), OpenRouter (one key for Google, Anthropic, DeepSeek, etc.), and Ollama for running local models on desktop."
+        "answer": "Speech-to-text supports Groq Whisper, OpenAI Audio API models such as whisper-1 and gpt-4o-transcribe, plus custom endpoints. AI refinement supports Groq, OpenAI, OpenRouter, Anthropic, custom providers, and Ollama on desktop."
       },
       "q4": {
         "question": "Works offline?",
@@ -286,7 +290,7 @@
   },
   "policy": {
     "title": "VoxPen Privacy Policy",
-    "lastUpdated": "Last updated: 2026-02-25",
+    "lastUpdated": "Last updated: 2026-05-07",
     "overview": {
       "title": "Overview",
       "content": "VoxPen (語墨) is an AI voice keyboard that operates on a BYOK (Bring Your Own Key) model. We do not collect, store, or transmit any user data to our servers."
@@ -307,7 +311,8 @@
       "items": [
         "Audio is recorded locally on your device",
         "Audio is sent directly from your device to the API provider you configured (e.g., Groq, OpenAI)",
-        "Audio is not stored on your device after transcription completes",
+        "Audio is not stored after successful transcription completes",
+        "If provider transcription fails, VoxPen may save that recording locally so you can manually retry it from history",
         "VoxPen has no access to the audio data sent to your API provider"
       ],
       "providerNote": "Your API provider's privacy policy governs how they handle the audio data."
@@ -325,6 +330,7 @@
       "title": "Transcription History",
       "items": [
         "Transcription results are stored locally on your device in a local database",
+        "Failed transcription rows may include the provider error and a local recording path for manual retry",
         "You can delete individual transcriptions or all data at any time",
         "No transcription data leaves your device unless you explicitly share or export it"
       ]
@@ -350,7 +356,7 @@
       "title": "Data Deletion",
       "intro": "VoxPen does not store any personal data on any server. All data is stored locally on your device. You can completely delete all data by following these steps:",
       "items": [
-        "Transcription history: Open VoxPen → Settings → Transcription History → Tap \"Delete All\" to clear all locally stored transcriptions",
+        "Transcription history and saved failed recordings: Open VoxPen → Settings → Transcription History → delete individual rows or tap \"Delete All\" to clear local transcription data",
         "API keys: Open VoxPen → Settings → Speech → Clear the API Key field and save",
         "Full removal (Android): Go to System Settings → Apps → VoxPen → Storage → Clear Data, or simply uninstall the app",
         "Full removal (Desktop): Uninstall VoxPen — the application data folder will be removed along with it"
@@ -359,6 +365,7 @@
         "title": "Data Types: Deleted vs Retained",
         "deleted": [
           "Transcription history (local database)",
+          "Saved failed recordings used for manual retry",
           "API keys (local encrypted storage)",
           "App settings and preferences"
         ],
@@ -577,11 +584,12 @@
         "rows": {
           "byok": { "label": "BYOK (Bring Your Own Key)", "voxpen": "Yes — use your own API key", "typeless": "No — locked to their backend" },
           "selfHosted": { "label": "Self-Hosted STT", "voxpen": "Custom endpoint support", "typeless": "Not available" },
-          "multiProvider": { "label": "Multi-Provider", "voxpen": "Groq, OpenAI, OpenRouter, Ollama, custom", "typeless": "Single provider only" },
+          "multiProvider": { "label": "Multi-Provider", "voxpen": "Groq, OpenAI Audio API, OpenRouter, Ollama, custom", "typeless": "Single provider only" },
           "fileTranscription": { "label": "File Transcription", "voxpen": "Audio/video → text + SRT export", "typeless": "Not available" },
           "zhTwDepth": { "label": "Traditional Chinese Depth", "voxpen": "Native zh-TW prompts, mixed-language aware", "typeless": "Basic Chinese support" },
           "onetimePurchase": { "label": "One-Time Purchase", "voxpen": "$4.99 mobile / $5.99 desktop", "typeless": "$12–30/month subscription" },
           "pricingTransparency": { "label": "Pricing Transparency", "voxpen": "See exact API costs, no markup", "typeless": "Flat monthly fee, costs hidden" },
+          "reliableRetry": { "label": "Failed Recording Retry", "voxpen": "Readable provider errors + manual resend from history", "typeless": "Not available" },
           "copyToClipboard": { "label": "Copy to Clipboard", "voxpen": "One-tap copy from candidate bar", "typeless": "Not available" },
           "dualResult": { "label": "Dual Result Display", "voxpen": "Original + refined side by side, pick either", "typeless": "Refined only" },
           "linuxSupport": { "label": "Linux Desktop", "voxpen": "Full Linux support (AppImage)", "typeless": "Not available" },
@@ -591,7 +599,7 @@
       "parity": {
         "title": "Feature parity",
         "rows": {
-          "whisperStt": { "label": "Whisper STT", "voxpen": "Groq / OpenAI Whisper", "typeless": "Whisper-based" },
+          "whisperStt": { "label": "Whisper / Audio API STT", "voxpen": "Groq Whisper + OpenAI transcription models", "typeless": "Whisper-based" },
           "fillerRemoval": { "label": "Filler Word Removal", "voxpen": "AI-powered, per-language", "typeless": "AI-powered" },
           "selfCorrection": { "label": "Self-Correction Handling", "voxpen": "Keeps final version only", "typeless": "Keeps final version only" },
           "autoFormat": { "label": "Auto-Format", "voxpen": "Lists, punctuation, structure", "typeless": "Lists, punctuation, structure" },
@@ -666,7 +674,7 @@
         },
         "multiProvider": {
           "title": "Multi-Provider BYOK",
-          "description": "Groq, OpenAI, OpenRouter, Anthropic, Ollama, or custom endpoint — pick the provider that fits your needs.",
+          "description": "Groq Whisper, OpenAI Audio API, OpenRouter, Anthropic, Ollama, or custom endpoint — pick the provider that fits your needs.",
           "version": "v1.0.0"
         }
       }

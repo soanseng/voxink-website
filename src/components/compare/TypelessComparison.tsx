@@ -8,6 +8,7 @@ const advantageKeys = [
   "zhTwDepth",
   "onetimePurchase",
   "pricingTransparency",
+  "reliableRetry",
   "copyToClipboard",
   "dualResult",
   "linuxSupport",

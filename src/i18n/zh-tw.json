@@ -3,7 +3,7 @@
     "title": "語墨 VoxPen — AI 語音輸入",
     "description": "出一支嘴，剩下交給語墨。AI 語音輸入鍵盤，支援 Android、Windows、Linux。",
     "guideTitle": "語墨使用教學 — 五分鐘上手",
-    "guideDescription": "從註冊 Groq API 到開始語音輸入，完整圖文教學。",
+    "guideDescription": "從取得 API key 到開始語音輸入，完整圖文教學。",
     "privacyTitle": "語墨隱私權 — 家己的聲音家己顧",
     "privacyDescription": "VoxPen 的隱私架構，為什麼你的資料只屬於你。",
     "downloadTitle": "下載語墨 VoxPen",
@@ -38,7 +38,7 @@
     "title": "功能亮點",
     "speed": {
       "title": "極速轉錄",
-      "description": "Groq Whisper 語音辨識，0.5 秒出結果，全球最快推論速度"
+      "description": "支援 Groq Whisper 與 OpenAI Audio API 轉錄模型，快速把語音變文字"
     },
     "refine": {
       "title": "智慧潤飾",
@@ -72,9 +72,13 @@
       "title": "自動降低背景音",
       "description": "錄音時自動降低其他 app 音量，語音辨識更清晰準確"
     },
+    "reliability": {
+      "title": "失敗可重送",
+      "description": "長錄音會自動分段，供應商錯誤完整顯示；失敗錄音可從歷史紀錄手動重送"
+    },
     "provider": {
       "title": "多供應商",
-      "description": "Groq、OpenAI、OpenRouter 或 Ollama 本地模型——選你合用的供應商"
+      "description": "Groq Whisper、OpenAI Audio API、OpenRouter、自訂端點或 Ollama 本地模型——選你合用的供應商"
     }
   },
   "privacy": {
@@ -170,7 +174,7 @@
     },
     "step3": {
       "title": "Step 3：設定 API Key",
-      "description": "打開語墨的設定頁面，找到「語音」或「Speech」區塊。選擇你的供應商（Groq、OpenAI、OpenRouter 或 Ollama），在 API Key 欄位貼上剛才複製的 key。點擊「測試」按鈕確認連線成功。"
+      "description": "打開語墨的設定頁面，找到「語音」或「Speech」區塊。選擇你的供應商（Groq Whisper、OpenAI Audio API、自訂端點，或支援平台上的 Ollama），在 API Key 欄位貼上剛才複製的 key。點擊「測試」按鈕確認連線成功。"
     },
     "step4": {
       "title": "Step 4：開始使用",
@@ -203,7 +207,7 @@
       },
       "q3": {
         "question": "支援哪些供應商？",
-        "answer": "Groq（推薦——速度最快、有免費額度）、OpenAI（GPT-5-nano 非常便宜）、OpenRouter（一把 key 用 Google、Anthropic、DeepSeek 等）、以及 Ollama 在桌面版跑本地模型。"
+        "answer": "語音轉文字支援 Groq Whisper、OpenAI Audio API（如 whisper-1、gpt-4o-transcribe）與自訂端點。AI 文字潤飾支援 Groq、OpenAI、OpenRouter、Anthropic、自訂供應商，以及桌面版 Ollama。"
       },
       "q4": {
         "question": "沒有網路可以用嗎？",
@@ -286,7 +290,7 @@
   },
   "policy": {
     "title": "VoxPen 隱私權政策",
-    "lastUpdated": "最後更新：2026-02-25",
+    "lastUpdated": "最後更新：2026-05-07",
     "overview": {
       "title": "概述",
       "content": "VoxPen（語墨）是一款 AI 語音鍵盤，採用 BYOK（自帶金鑰）模式運作。我們不會收集、儲存或傳輸任何使用者資料到我們的伺服器。"
@@ -307,7 +311,8 @@
       "items": [
         "音訊在您的裝置上本機錄製",
         "音訊直接從您的裝置傳送至您設定的 API 服務商（如 Groq、OpenAI）",
-        "轉錄完成後音訊不會儲存在裝置上",
+        "成功轉錄完成後，音訊不會繼續儲存在裝置上",
+        "如果供應商轉錄失敗，VoxPen 可能會將該錄音本機保存，讓您可從歷史紀錄手動重送",
         "VoxPen 無法存取傳送至 API 服務商的音訊資料"
       ],
       "providerNote": "您的 API 服務商的隱私權政策規範他們如何處理音訊資料。"
@@ -325,6 +330,7 @@
       "title": "轉錄紀錄",
       "items": [
         "轉錄結果儲存在您裝置上的本機資料庫",
+        "失敗的轉錄紀錄可能包含供應商錯誤訊息與本機錄音路徑，供手動重送使用",
         "您隨時可以刪除個別轉錄紀錄或全部資料",
         "除非您主動分享或匯出，轉錄資料不會離開您的裝置"
       ]
@@ -350,7 +356,7 @@
       "title": "資料刪除",
       "intro": "VoxPen（語墨）不會在任何伺服器上儲存您的個人資料。所有資料皆儲存在您的本機裝置上。您可以依照以下步驟完全刪除所有資料：",
       "items": [
-        "轉錄紀錄：開啟 VoxPen → 設定 → 轉錄紀錄 → 點擊「全部刪除」，即可清除所有本機儲存的轉錄文字",
+        "轉錄紀錄與失敗錄音：開啟 VoxPen → 設定 → 轉錄紀錄 → 刪除個別項目，或點擊「全部刪除」清除本機轉錄資料",
         "API 金鑰：開啟 VoxPen → 設定 → 語音／Speech → 清除 API Key 欄位並儲存",
         "完整移除（Android）：前往系統設定 → 應用程式 → VoxPen → 儲存空間 → 清除資料，或直接解除安裝 app",
         "完整移除（桌面版）：解除安裝 VoxPen，應用程式資料夾會一併刪除"
@@ -359,6 +365,7 @@
         "title": "刪除與保留的資料類型",
         "deleted": [
           "轉錄紀錄（本機資料庫）",
+          "用於手動重送的失敗錄音",
           "API 金鑰（本機加密儲存）",
           "應用程式設定與偏好"
         ],
@@ -577,11 +584,12 @@
         "rows": {
           "byok": { "label": "BYOK（自帶 API Key）", "voxpen": "支援——用你自己的 API key", "typeless": "不支援——綁定他們的後端" },
           "selfHosted": { "label": "自架 STT 伺服器", "voxpen": "支援自訂端點", "typeless": "不支援" },
-          "multiProvider": { "label": "多供應商", "voxpen": "Groq、OpenAI、OpenRouter、Ollama、自訂", "typeless": "僅單一供應商" },
+          "multiProvider": { "label": "多供應商", "voxpen": "Groq、OpenAI Audio API、OpenRouter、Ollama、自訂", "typeless": "僅單一供應商" },
           "fileTranscription": { "label": "檔案轉錄", "voxpen": "音檔/影片 → 文字 + SRT 匯出", "typeless": "不支援" },
           "zhTwDepth": { "label": "繁體中文深度", "voxpen": "原生 zh-TW prompt，混語感知", "typeless": "基本中文支援" },
           "onetimePurchase": { "label": "一次買斷", "voxpen": "手機 $4.99 / 桌面 $5.99", "typeless": "月費 $12–30" },
           "pricingTransparency": { "label": "價格透明", "voxpen": "看得到 API 費用，零加價", "typeless": "月繳固定費，成本不透明" },
+          "reliableRetry": { "label": "失敗錄音重送", "voxpen": "完整供應商錯誤 + 歷史紀錄手動重送", "typeless": "不支援" },
           "copyToClipboard": { "label": "一鍵複製", "voxpen": "候選列一鍵複製到剪貼簿", "typeless": "不支援" },
           "dualResult": { "label": "雙結果顯示", "voxpen": "原文 + 潤飾並排，選你要的", "typeless": "僅顯示潤飾結果" },
           "linuxSupport": { "label": "Linux 桌面版", "voxpen": "完整 Linux 支援（AppImage）", "typeless": "不支援" },
@@ -591,7 +599,7 @@
       "parity": {
         "title": "功能持平",
         "rows": {
-          "whisperStt": { "label": "Whisper 語音辨識", "voxpen": "Groq / OpenAI Whisper", "typeless": "基於 Whisper" },
+          "whisperStt": { "label": "Whisper / Audio API 語音辨識", "voxpen": "Groq Whisper + OpenAI 轉錄模型", "typeless": "基於 Whisper" },
           "fillerRemoval": { "label": "去除贅字", "voxpen": "AI 驅動，各語言專屬", "typeless": "AI 驅動" },
           "selfCorrection": { "label": "自我修正處理", "voxpen": "只保留最終版本", "typeless": "只保留最終版本" },
           "autoFormat": { "label": "自動排版", "voxpen": "列表、標點、結構", "typeless": "列表、標點、結構" },
@@ -666,7 +674,7 @@
         },
         "multiProvider": {
           "title": "多供應商 BYOK",
-          "description": "Groq、OpenAI、OpenRouter、Anthropic、Ollama 或自訂端點——選你合用的供應商。",
+          "description": "Groq Whisper、OpenAI Audio API、OpenRouter、Anthropic、Ollama 或自訂端點——選你合用的供應商。",
           "version": "v1.0.0"
         }
       }
