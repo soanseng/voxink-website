@@ -7,6 +7,7 @@ import HowItWorks from "../components/home/HowItWorks";
 import PricingBanner from "../components/home/PricingBanner";
 import Platforms from "../components/home/Platforms";
 import LightweightBanner from "../components/home/LightweightBanner";
+import ReleaseBanner from "../components/home/ReleaseBanner";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <ReleaseBanner />
       <Features />
       <PrivacyHighlight />
       <HowItWorks />

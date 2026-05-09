@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useDocumentHead } from "../hooks/useDocumentHead";
 import { usePlatformDetect } from "../hooks/usePlatformDetect";
 
@@ -7,6 +7,8 @@ const platforms = [
   { key: "windows", icon: "🖥️" },
   { key: "linux", icon: "🐧" },
 ] as const;
+
+const desktopVersion = "0.9.6";
 
 const platformScreenshots: Record<string, { en: string; tw: string; alt: string }> = {
   windows: {
@@ -41,6 +43,21 @@ export default function Download() {
       </h1>
       <p className="text-lg text-gray-500 mb-12">{t("download.subtitle")}</p>
 
+      <div className="mb-8 rounded-xl border border-gray-200 bg-gray-50 p-5">
+        <p className="text-sm font-medium text-gray-900">
+          {t("download.latestDesktop", { version: desktopVersion })}
+        </p>
+        <p className="mt-1 text-sm leading-relaxed text-gray-600">
+          {t("download.latestDesktopDescription")}
+        </p>
+        <Link
+          to={`/${lang}/blog/voxpen-desktop-0-9-6`}
+          className="mt-3 inline-flex text-sm font-medium text-gray-900 hover:underline"
+        >
+          {t("download.releaseGuide")} &rarr;
+        </Link>
+      </div>
+
       <div className="space-y-6">
         {sorted.map(({ key, icon }) => (
           <div
@@ -57,6 +74,9 @@ export default function Download() {
                 <h2 className="text-xl font-semibold text-gray-900">
                   {t(`platforms.${key}.name`)}
                 </h2>
+                <p className="text-sm text-gray-400">
+                  {t("download.version", { version: desktopVersion })}
+                </p>
                 {key === detected && (
                   <p className="text-sm text-green-600 font-medium">
                     {t("download.detected", { platform: t(`platforms.${key}.name`) })}

@@ -34,6 +34,27 @@
       "allPlatforms": "查看所有平台"
     }
   },
+  "release": {
+    "badge": "Desktop 0.9.6 更新",
+    "title": "聽寫之外，現在也能用語音請 AI 產出文字",
+    "description": "0.9.6 加入「聽我指令」、失敗轉錄重送、長錄音穩定性修正，並改善 Linux Wayland / PipeWire 使用體驗。",
+    "readPost": "看 0.9.6 更新與教學",
+    "download": "下載最新版",
+    "highlights": {
+      "command": {
+        "title": "聽我指令",
+        "description": "按住獨立快捷鍵說出任務，VoxPen 會用你設定的指令模型生成可貼上的內容。"
+      },
+      "retry": {
+        "title": "失敗可重送",
+        "description": "供應商錯誤會保留在歷史紀錄，錄音也可手動重送，不再像沒有反應。"
+      },
+      "linux": {
+        "title": "Linux 更穩",
+        "description": "改善 PipeWire F32 錄音、KDE Wayland 貼上與 XWayland 快捷鍵 fallback。"
+      }
+    }
+  },
   "features": {
     "title": "功能亮點",
     "speed": {
@@ -63,6 +84,10 @@
     "voiceCommands": {
       "title": "語音指令",
       "description": "10 種編輯指令——全選、複製、貼上、復原等。支援中文、英文、日文，不需要呼叫 API"
+    },
+    "commandMode": {
+      "title": "聽我指令",
+      "description": "按住獨立快捷鍵說出要求，VoxPen 會用指令 LLM 產生可貼上的文字；也可從系統匣快速開關"
     },
     "speakToEdit": {
       "title": "語音編輯",
@@ -118,7 +143,7 @@
     },
     "windows": {
       "name": "Windows",
-      "description": "系統匣常駐，快捷鍵一按即錄",
+      "description": "系統匣常駐，快捷鍵一按即錄；可從 tray 切換語言、語氣、翻譯與聽我指令",
       "requirement": "Windows 10 以上",
       "cta": "下載安裝檔"
     },
@@ -169,7 +194,7 @@
         "linux": "Linux"
       },
       "android": "從 Google Play 商店搜尋「VoxPen」安裝，或前往 GitHub Releases 頁面下載最新 APK 檔案。下載後開啟安裝。",
-      "windows": "前往 GitHub Releases 頁面，下載最新的 Windows 安裝檔（.exe），執行安裝精靈即可完成。安裝後語墨會出現在系統匣。",
+      "windows": "前往 GitHub Releases 頁面，下載最新的 Windows 安裝檔（.exe），執行安裝精靈即可完成。安裝後語墨會出現在系統匣；從 tray 可打開設定、歷史紀錄、更新檢查和快速切換常用模式。",
       "linux": "前往 GitHub Releases 頁面下載 AppImage 檔案。下載後在終端執行 chmod +x VoxPen*.AppImage，接著雙擊或從終端執行即可。"
     },
     "step3": {
@@ -179,7 +204,32 @@
     "step4": {
       "title": "Step 4：開始使用",
       "android": "Android 使用者：到系統設定 → 語言與輸入法 → 管理鍵盤 → 啟用「語墨語音鍵盤」。在任何 app 的輸入框切換到語墨鍵盤，點擊麥克風按鈕開始說話。",
-      "desktop": "桌面版使用者：按下快捷鍵（預設 Ctrl+Shift+V），開始說話。放開快捷鍵後，辨識結果會自動貼在游標位置。"
+      "desktop": "桌面版使用者：按下快捷鍵（預設 Ctrl+Shift+V），開始說話。放開快捷鍵後，辨識結果會自動貼在游標位置；也可以在設定裡改成按一下開始、再按一下停止。"
+    },
+    "desktopControls": {
+      "title": "桌面版快捷鍵與系統匣",
+      "description": "VoxPen Desktop 常駐在系統匣，不需要切換輸入法。錄音、語音編輯和聽我指令各自使用獨立快捷鍵，避免日常聽寫和 AI 指令互相干擾。",
+      "dictation": {
+        "title": "一般聽寫",
+        "shortcut": "Ctrl+Shift+V",
+        "description": "按住快捷鍵錄音，放開後轉文字並自動貼到目前游標位置。可在設定中改成 toggle 模式。"
+      },
+      "voiceEdit": {
+        "title": "語音編輯",
+        "shortcut": "Ctrl+Shift+E",
+        "description": "先選取任何 app 裡的文字，再按住快捷鍵說出修改要求，VoxPen 會用 AI 改寫並替換選取內容。"
+      },
+      "listenCommand": {
+        "title": "聽我指令",
+        "shortcut": "Ctrl+Alt+Space",
+        "description": "按住獨立快捷鍵說出指令，VoxPen 會把生成結果貼上。適合請 AI 寫一段回覆、摘要或格式化文字。"
+      },
+      "tray": {
+        "title": "系統匣快速切換",
+        "shortcut": "Tray",
+        "description": "從系統匣可開啟設定和歷史紀錄，切換語言、語氣、翻譯模式、聽我指令、麥克風，或檢查更新與退出。"
+      },
+      "safety": "聽我指令只產生可貼上的文字；不會執行 shell 命令、修改檔案、送出訊息或控制其他 App。"
     },
     "cost": {
       "title": "費用說明",
@@ -397,6 +447,9 @@
     "detected": "偵測到你的系統：{{platform}}",
     "version": "版本 {{version}}",
     "updatedAt": "更新於 {{date}}",
+    "latestDesktop": "最新版桌面版：{{version}}",
+    "latestDesktopDescription": "新增聽我指令、失敗轉錄重送和 Linux 穩定性修正。Windows 安裝檔與 Linux AppImage 仍透過 GitHub latest release 下載。",
+    "releaseGuide": "閱讀更新內容與設定教學",
     "changelog": "查看完整更新紀錄",
     "requirements": "系統需求",
     "sourceCode": "原始碼（GitHub）",

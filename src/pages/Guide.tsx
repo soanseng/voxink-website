@@ -36,6 +36,7 @@ const apiKeySteps = [
 ] as const;
 
 const faqKeys = ["q1", "q2", "q3", "q4"] as const;
+const desktopControlKeys = ["dictation", "voiceEdit", "listenCommand", "tray"] as const;
 
 export default function Guide() {
   const { t } = useTranslation();
@@ -131,6 +132,38 @@ export default function Guide() {
           </h2>
           <p className="text-gray-600 leading-relaxed mb-3">{t("guide.step4.android")}</p>
           <p className="text-gray-600 leading-relaxed">{t("guide.step4.desktop")}</p>
+        </div>
+      </section>
+
+      {/* Desktop shortcuts and tray */}
+      <section className="mb-12">
+        <div className="rounded-2xl border border-gray-200 bg-gray-950 p-6 text-white">
+          <h2 className="text-xl font-semibold mb-2">
+            {t("guide.desktopControls.title")}
+          </h2>
+          <p className="text-sm leading-relaxed text-gray-300 mb-6">
+            {t("guide.desktopControls.description")}
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {desktopControlKeys.map((key) => (
+              <div key={key} className="rounded-xl border border-white/10 bg-white/5 p-4">
+                <div className="mb-3 flex items-center justify-between gap-3">
+                  <h3 className="text-sm font-semibold text-white">
+                    {t(`guide.desktopControls.${key}.title`)}
+                  </h3>
+                  <span className="shrink-0 rounded-md border border-white/10 bg-black/30 px-2 py-1 font-mono text-xs text-gray-200">
+                    {t(`guide.desktopControls.${key}.shortcut`)}
+                  </span>
+                </div>
+                <p className="text-sm leading-relaxed text-gray-300">
+                  {t(`guide.desktopControls.${key}.description`)}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-xs leading-relaxed text-gray-400">
+            {t("guide.desktopControls.safety")}
+          </p>
         </div>
       </section>
 

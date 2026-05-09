@@ -34,6 +34,27 @@
       "allPlatforms": "All platforms"
     }
   },
+  "release": {
+    "badge": "Desktop 0.9.6 update",
+    "title": "Beyond dictation: ask AI to draft text by voice",
+    "description": "0.9.6 adds Listen to My Command, retryable failed transcriptions, long-recording reliability fixes, and better Linux Wayland / PipeWire behavior.",
+    "readPost": "Read the 0.9.6 guide",
+    "download": "Download latest",
+    "highlights": {
+      "command": {
+        "title": "Listen to My Command",
+        "description": "Hold a separate shortcut, speak a task, and VoxPen asks your command model to generate pasteable output."
+      },
+      "retry": {
+        "title": "Retry failed recordings",
+        "description": "Provider errors stay visible in history, and saved recordings can be resent manually."
+      },
+      "linux": {
+        "title": "More reliable Linux",
+        "description": "Improves PipeWire F32 recording, KDE Wayland paste behavior, and XWayland hotkey fallback."
+      }
+    }
+  },
   "features": {
     "title": "Features",
     "speed": {
@@ -63,6 +84,10 @@
     "voiceCommands": {
       "title": "Voice Commands",
       "description": "10 editing commands — select all, copy, paste, undo, and more. Works in Chinese, English, and Japanese. No API call needed"
+    },
+    "commandMode": {
+      "title": "Listen to My Command",
+      "description": "Hold a separate shortcut, speak an instruction, and VoxPen asks your command LLM to generate pasteable text. You can toggle it from the system tray"
     },
     "speakToEdit": {
       "title": "Speak to Edit",
@@ -118,7 +143,7 @@
     },
     "windows": {
       "name": "Windows",
-      "description": "System tray app — hotkey to record",
+      "description": "System tray app with hotkeys for dictation, plus tray toggles for language, tone, translation, and command mode",
       "requirement": "Windows 10+",
       "cta": "Download Installer"
     },
@@ -169,7 +194,7 @@
         "linux": "Linux"
       },
       "android": "Search for \"VoxPen\" on Google Play, or download the latest APK from GitHub Releases.",
-      "windows": "Download the latest Windows installer (.exe) from GitHub Releases and run the setup wizard.",
+      "windows": "Download the latest Windows installer (.exe) from GitHub Releases and run the setup wizard. VoxPen appears in the system tray, where you can open Settings, History, update checks, and quick mode toggles.",
       "linux": "Download the AppImage from GitHub Releases. Run chmod +x VoxPen*.AppImage, then double-click or run from terminal."
     },
     "step3": {
@@ -179,7 +204,32 @@
     "step4": {
       "title": "Step 4: Start Using",
       "android": "Android: Go to Settings → Language & Input → Manage Keyboards → Enable \"VoxPen Voice Keyboard\". Switch to VoxPen in any app and tap the mic button.",
-      "desktop": "Desktop: Press the hotkey (default Ctrl+Shift+V) and start speaking. Release to auto-paste the transcription at your cursor."
+      "desktop": "Desktop: Press the hotkey (default Ctrl+Shift+V) and start speaking. Release to auto-paste the transcription at your cursor, or switch to toggle mode in settings."
+    },
+    "desktopControls": {
+      "title": "Desktop Shortcuts and System Tray",
+      "description": "VoxPen Desktop runs from the system tray, so you do not need to switch input methods. Dictation, voice editing, and Listen to My Command use separate shortcuts to keep normal dictation and AI instructions distinct.",
+      "dictation": {
+        "title": "Dictation",
+        "shortcut": "Ctrl+Shift+V",
+        "description": "Hold the shortcut to record, then release to transcribe and paste at the current cursor. You can change this to toggle mode in settings."
+      },
+      "voiceEdit": {
+        "title": "Voice Edit",
+        "shortcut": "Ctrl+Shift+E",
+        "description": "Select text in any app, hold the shortcut, and speak your edit request. VoxPen rewrites the selection with AI and replaces it in place."
+      },
+      "listenCommand": {
+        "title": "Listen to My Command",
+        "shortcut": "Ctrl+Alt+Space",
+        "description": "Hold the separate shortcut and speak an instruction. VoxPen generates pasteable text, useful for replies, summaries, or formatting."
+      },
+      "tray": {
+        "title": "System Tray Toggles",
+        "shortcut": "Tray",
+        "description": "Use the tray to open Settings and History, switch language, tone, translation mode, command mode, microphone, check for updates, or quit."
+      },
+      "safety": "Listen to My Command only generates pasteable text. It will not execute shell commands, edit files, send messages, or control other apps."
     },
     "cost": {
       "title": "Cost",
@@ -397,6 +447,9 @@
     "detected": "Detected: {{platform}}",
     "version": "Version {{version}}",
     "updatedAt": "Updated {{date}}",
+    "latestDesktop": "Latest desktop release: {{version}}",
+    "latestDesktopDescription": "Adds Listen to My Command, retryable failed transcriptions, and Linux reliability fixes. Windows installer and Linux AppImage still download through the GitHub latest release.",
+    "releaseGuide": "Read the update and setup guide",
     "changelog": "View full changelog",
     "sourceCode": "Source Code (GitHub)",
     "openSource": "Open source on GitHub:",

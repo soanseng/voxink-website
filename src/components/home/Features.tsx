@@ -11,6 +11,7 @@ const featureKeys = [
   "provider",
   "translation",
   "voiceCommands",
+  "commandMode",
   "speakToEdit",
 ] as const;
 
@@ -25,6 +26,7 @@ const featureIcons: Record<string, string> = {
   provider: "\uD83D\uDD0C",
   translation: "\uD83D\uDD04",
   voiceCommands: "\uD83C\uDF99\uFE0F",
+  commandMode: "\u2328\uFE0F",
   speakToEdit: "\u270F\uFE0F",
 };
 
