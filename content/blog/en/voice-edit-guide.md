@@ -35,7 +35,9 @@ Voice Edit uses a shortcut combination so it is harder to trigger by accident wh
 2. Hold `Ctrl+Shift+E`.
 3. Speak what you want changed.
 4. Release the shortcut.
-5. VoxPen replaces the selected text with the edited version.
+5. After you release the shortcut, VoxPen reads the still-selected text, asks AI to edit it, and replaces that selection with the edited version.
+
+Keep the original text selected until you release the shortcut. VoxPen briefly uses the clipboard to read the selection and then tries to restore your previous clipboard text.
 
 For example, select:
 
@@ -119,11 +121,15 @@ This release improves reliability for long recordings, unstable networks, and pr
 
 ### Nothing happened?
 
-Make sure you selected text first. Voice Edit starts by copying the current selection. If nothing is selected, VoxPen has nothing to edit.
+Make sure you selected text first, and that the selection is still active when you release the shortcut. Voice Edit copies the current selection after recording stops. If nothing is selected, VoxPen has nothing to edit.
 
 ### Does it work in browsers, Slack, VS Code, and Notion?
 
 Yes, as long as the app supports text selection, copy, and paste.
+
+### Does it work in Word, Vim, or a terminal?
+
+Yes, as long as the app keeps the selection active and normal copy/paste shortcuts work. VoxPen waits until you release the Voice Edit shortcut before copying the selected text, which reduces modifier-key conflicts in apps like Word, Vim, and terminals.
 
 ### How is this different from Listen to My Command?
 

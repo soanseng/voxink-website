@@ -217,7 +217,7 @@
       "voiceEdit": {
         "title": "語音編輯",
         "shortcut": "Ctrl+Shift+E",
-        "description": "先選取任何 app 裡的文字，再按住快捷鍵說出修改要求，VoxPen 會用 AI 改寫並替換選取內容。"
+        "description": "先選取任何 app 裡的文字，按住快捷鍵說出修改要求；放開後 VoxPen 會讀取選取內容，用 AI 改寫並替換原本那段文字。"
       },
       "listenCommand": {
         "title": "聽我指令",

@@ -217,7 +217,7 @@
       "voiceEdit": {
         "title": "Voice Edit",
         "shortcut": "Ctrl+Shift+E",
-        "description": "Select text in any app, hold the shortcut, and speak your edit request. VoxPen rewrites the selection with AI and replaces it in place."
+        "description": "Select text in any app, hold the shortcut, and speak your edit request. After you release, VoxPen reads the selection, rewrites it with AI, and replaces it in place."
       },
       "listenCommand": {
         "title": "Listen to My Command",
